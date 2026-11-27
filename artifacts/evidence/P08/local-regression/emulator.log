@@ -1,0 +1,4 @@
+
+> foodordernext@0.1.0 test:emulator
+> node scripts/dev/run-emulator-tests.mjs
+

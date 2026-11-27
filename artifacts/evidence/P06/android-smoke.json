@@ -1,0 +1,34 @@
+{
+  "result": "PASS",
+  "cases": [
+    {
+      "case": "Assigned driver accepts trip and confirms pickup in Android",
+      "result": "PASS"
+    },
+    {
+      "case": "Android shows denied location permission and disabled location services",
+      "result": "PASS"
+    },
+    {
+      "case": "Synthetic Android GPS reaches scoped Firestore tracking through Express",
+      "result": "PASS"
+    },
+    {
+      "case": "Android sends no new GPS updates while app is in background",
+      "result": "PASS"
+    },
+    {
+      "case": "Customer sees scoped location and a stale marker after updates stop",
+      "result": "PASS"
+    },
+    {
+      "case": "Driver confirms exact COD, sees history and customer tracking is closed",
+      "result": "PASS"
+    }
+  ],
+  "evidence": {
+    "backgroundSampleWindowSeconds": 14
+  },
+  "environment": "Android Emulator, synthetic GPS, Firebase Emulator, local Express",
+  "atUtc": "2026-11-19T11:02:39.096554+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "atDate": "2026-11-07",
+  "scope": "Documentation/evidence consistency; does not replace app tests",
+  "result": "PASS",
+  "backlogTaskCount": 84,
+  "taskStatuses": {
+    "DONE": 11,
+    "IN_PROGRESS": 2,
+    "NOT_STARTED": 69,
+    "IN_REVIEW": 2
+  },
+  "phaseCheckboxCount": 84,
+  "markdownFilesChecked": 27,
+  "relativeLinksChecked": 130,
+  "errors": []
+}

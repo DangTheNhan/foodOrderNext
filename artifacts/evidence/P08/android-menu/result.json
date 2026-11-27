@@ -1,0 +1,26 @@
+{
+  "environment": "Dedicated Android Emulator and local Express/Firebase with seeded menu fixture",
+  "initialListUiMsIncludingAdb": 5328,
+  "imageLocalHttp": {
+    "firstBytes": 537318,
+    "firstMs": 94,
+    "conditionalBytes": 0,
+    "conditionalMs": 62
+  },
+  "nextPageUiMsIncludingAdbAndScroll": [
+    2719,
+    2469
+  ],
+  "result": "PASS",
+  "cases": [
+    {
+      "case": "Published photo renders and conditional HTTP delivers no image bytes",
+      "result": "PASS"
+    },
+    {
+      "case": "Android virtualized catalog reveals items from pages two and three",
+      "result": "PASS"
+    }
+  ],
+  "atUtc": "2026-11-25T11:42:18.933181+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "projectId": "foodordernext-staging",
+  "appId": "1:201222548655:android:5b7a1135f131e25d7cf85a",
+  "checkedAt": "2026-11-25T12:40:16.239Z",
+  "checks": {
+    "androidConfig": "PASS",
+    "anonymousOrderReadDenied": "PASS",
+    "categoriesCompoundRead": {
+      "status": "PASS",
+      "documentsReturned": 0
+    },
+    "shopsCompoundRead": {
+      "status": "PASS",
+      "documentsReturned": 0
+    },
+    "emailPasswordSignup": "PASS",
+    "emailPasswordSignin": "PASS",
+    "orderReadDeniedWithoutProfile": "PASS",
+    "temporaryAuthAccountDeleted": "PASS"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "checkedOn": "2026-11-25",
+  "androidPackage": "com.foodordernext.app",
+  "debugFirebaseProject": "demo-foodordernext",
+  "releaseFirebaseProject": "foodordernext-staging",
+  "checks": {
+    "debugKotlinCompiled": true,
+    "debugGoogleServicesResourcesVerified": true,
+    "releaseGoogleServicesResourcesVerified": true,
+    "missingAndHttpApiUrlRejected": true,
+    "missingReleaseSigningRejected": true,
+    "httpsApiUrlIncludedOnlyInReleaseBuildConfig": true
+  },
+  "releaseBuildConfigFixture": { "temporaryTestKeystore": true, "apiBaseUrl": "https://staging.example.invalid/api/v1" },
+  "releaseApkSigned": false,
+  "deployedApiTested": false
+}

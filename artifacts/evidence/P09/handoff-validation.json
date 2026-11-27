@@ -1,0 +1,15 @@
+{
+  "scope": "local evidence and handoff links",
+  "status": "PASS",
+  "backlog": {
+    "DONE": 60,
+    "IN_PROGRESS": 9,
+    "IN_REVIEW": 15
+  },
+  "tasks": 84,
+  "evidenceReferences": 84,
+  "slides": 12,
+  "routesWithLocalEvidence": 29,
+  "apkSha256": "8aae3e58069eafc4500c7e770190bf0752474bdd1927291391060593405615d9",
+  "androidApi": 37
+}

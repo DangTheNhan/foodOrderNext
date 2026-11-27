@@ -1,0 +1,15 @@
+{
+  "environment": "3 separate signed-in JS Firestore clients, same Windows host and Local Emulator Suite",
+  "measurements": {
+    "createdToCustomerMs": 99,
+    "createdToMerchantMs": 99,
+    "assignmentToDriverMs": 67,
+    "merchantReplyToClientMs": [
+      26,
+      25,
+      25
+    ],
+    "merchantReconnectMs": 18
+  },
+  "note": "Observed snapshot time minus Firestore document commit time. Single run, not a production latency estimate."
+}

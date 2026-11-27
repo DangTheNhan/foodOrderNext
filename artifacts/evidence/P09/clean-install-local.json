@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "package": "com.foodordernext.app",
+  "sha256": "8aae3e58069eafc4500c7e770190bf0752474bdd1927291391060593405615d9",
+  "device": "Medium_Phone Android Emulator",
+  "android": "17",
+  "apiLevel": 37,
+  "abi": "x86_64",
+  "clearedAppData": true,
+  "scope": "Local, one Android Emulator",
+  "tests": [
+    "artifacts/evidence/P08/android-menu/result.json",
+    "artifacts/evidence/P08/android-gps/result.json"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "checkedAt": "2026-11-19T08:30:59.806Z",
+  "environment": "LOCAL demo-foodordernext",
+  "menu": {
+    "id": "es6BAqT4Ehxm33uDwDmT",
+    "available": 6,
+    "reserved": 0,
+    "priceVnd": 42000,
+    "attachedImage": true
+  },
+  "order": {
+    "id": "demo-pending",
+    "status": "READY_FOR_PICKUP",
+    "assignment": "ASSIGNED",
+    "driver": "demo-driver"
+  },
+  "approvedDriver": {
+    "id": "demo-locked",
+    "shopId": "shop3",
+    "approved": true,
+    "authorityVersion": 1
+  },
+  "daily": {
+    "day": "2026-01-01",
+    "createdCount": 2,
+    "completedCount": 1,
+    "codVnd": 65000
+  },
+  "auditTypes": [
+    "DRIVER_APPROVAL_UPDATED",
+    "MENU_CREATED",
+    "MENU_UPDATED",
+    "STOCK_ADJUSTED",
+    "USER_AUTHORITY_UPDATED"
+  ]
+}

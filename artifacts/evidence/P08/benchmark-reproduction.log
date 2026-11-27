@@ -1,0 +1,81 @@
+
+> foodordernext@0.1.0 benchmark:local
+> node scripts/dev/run-emulator-tests.mjs --benchmark
+
+i  emulators: Starting emulators: auth, firestore, storage
+i  emulators: Detected demo project ID "demo-foodordernext-p08", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
++  firestore: Firestore Emulator was started in standard edition.
++  firestore: Firestore Emulator UI websocket is running on 9155.
+i  Running script: node scripts/performance/local.mjs
+(node:26868) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/src/services/customerQueries.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Benchmark documents written: 200
+Benchmark documents written: 2200
+Benchmark documents written: 4200
+Benchmark documents written: 6200
+Benchmark documents written: 8200
+Benchmark documents written: 10200
+{
+  "output": "work/p08-benchmark.json",
+  "counts": {
+    "users": 8,
+    "categories": 2,
+    "shops": 3,
+    "menuItems": 279,
+    "orders": 10003,
+    "reviews": 1001,
+    "vouchers": 1,
+    "voucherCodes": 1,
+    "system": 1
+  },
+  "timings": {
+    "catalogTwoPages": {
+      "p50Ms": 46.79,
+      "p95Ms": 64.19
+    },
+    "customerHistoryTwoPages": {
+      "p50Ms": 141.44,
+      "p95Ms": 194.93
+    },
+    "merchantQueueTwoPages": {
+      "p50Ms": 124.03,
+      "p95Ms": 155.57
+    },
+    "publicReviewsTwoPages": {
+      "p50Ms": 30.81,
+      "p95Ms": 38.6
+    },
+    "dailyReport": {
+      "p50Ms": 122.57,
+      "p95Ms": 159.57
+    },
+    "dailyReportNext": {
+      "p50Ms": 118.72,
+      "p95Ms": 135.28
+    },
+    "dailyReportNextRowsOnly": {
+      "p50Ms": 92.43,
+      "p95Ms": 104.3
+    },
+    "orderWriteAndListen": {
+      "p50Ms": 15.44,
+      "p95Ms": 23.13
+    }
+  }
+}
++  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  firestore: Stopping Firestore Emulator
+!  Firestore Emulator has exited upon receiving signal: SIGINT
+i  auth: Stopping Authentication Emulator
+i  storage: Stopping Storage Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator
+!  Unexpected rules runtime error: Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "line" is null
+	at com.google.firebase.rules.tools.local.server.Server.processRequestsFromInputStream(Server.java:75)
+	at com.google.firebase.rules.tools.local.server.Server.start(Server.java:57)
+	at com.google.firebase.rules.tools.local.FirebaseRulesTooling.main(FirebaseRulesTooling.java:81)
+

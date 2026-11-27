@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "atUtc": "2026-11-07T05:12:39.849820+00:00",
+  "environment": "LOCAL demo-foodordernext, synthetic account, Android emulator",
+  "cases": [
+    {
+      "case": "Native registration creates customer profile and requires verified email",
+      "result": "PASS"
+    },
+    {
+      "case": "Native refresh accepts local email verification and loads role navigation",
+      "result": "PASS"
+    },
+    {
+      "case": "Native reauthentication and change password succeed",
+      "result": "PASS"
+    },
+    {
+      "case": "Native login accepts changed password",
+      "result": "PASS"
+    },
+    {
+      "case": "Native reset email + local OOB handoff + login with reset password succeed",
+      "result": "PASS"
+    }
+  ]
+}

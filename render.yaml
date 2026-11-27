@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: foodordernext-api-staging
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci --omit=dev
+    startCommand: npm run api
+    healthCheckPath: /health
+    autoDeployTrigger: off
+    envVars:
+      - key: NODE_VERSION
+        value: "24.18.0"
+      - key: NODE_ENV
+        value: production
+      - key: API_BIND_HOST
+        value: 0.0.0.0
+      - key: FIREBASE_MODE
+        value: production
+      - key: ALLOW_PRODUCTION_FIREBASE
+        value: "true"
+      - key: FIREBASE_PROJECT_ID
+        value: foodordernext-staging
+      - key: FIREBASE_SERVICE_ACCOUNT_PATH
+        value: /etc/secrets/foodordernext-staging-service-account.json
+      - key: FCM_SEND_ENABLED
+        value: "false"
+      - key: AI_PROVIDER
+        value: disabled

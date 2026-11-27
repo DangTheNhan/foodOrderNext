@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "cases": [
+    {
+      "case": "Merchant creates a menu item through Express",
+      "result": "PASS"
+    },
+    {
+      "case": "Android selects, uploads and publishes a photo via Firebase Storage and Express",
+      "result": "PASS"
+    },
+    {
+      "case": "Merchant adds available portions and stock screen reads the committed value",
+      "result": "PASS"
+    },
+    {
+      "case": "Merchant accepts, assigns, prepares and marks a scoped order ready",
+      "result": "PASS"
+    },
+    {
+      "case": "Daily report shows exactly one delivered COD order and 65,000 VND for seed day",
+      "result": "PASS"
+    },
+    {
+      "case": "Admin changes role and active state, then approves the real driver for a selected shop",
+      "result": "PASS"
+    },
+    {
+      "case": "Customer sees the merchant item and updated available portions",
+      "result": "PASS"
+    }
+  ],
+  "atUtc": "2026-11-19T08:30:57.214053+00:00",
+  "environment": "Android Emulator + local Firebase + Express"
+}

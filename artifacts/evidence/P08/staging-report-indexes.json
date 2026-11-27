@@ -1,0 +1,30 @@
+{
+  "projectId": "foodordernext-staging",
+  "checkedAt": "2026-11-26T07:02:54.781Z",
+  "collectionGroup": "orders",
+  "reason": "FAILED_PRECONDITION from count and COD sum on the staging report",
+  "observedCreatingAt": "2026-11-26T07:01:06.190Z",
+  "indexes": [
+    {
+      "fields": [
+        "shopId",
+        "createdAt"
+      ],
+      "buildStartedAt": "2026-11-26T06:55:54.920575Z",
+      "state": "READY",
+      "indexId": "CICAgOi3kJAJ"
+    },
+    {
+      "fields": [
+        "paymentStatus",
+        "shopId",
+        "status",
+        "completedAt",
+        "codCollectedVnd"
+      ],
+      "buildStartedAt": "2026-11-26T06:55:55.069703Z",
+      "state": "READY",
+      "indexId": "CICAgNi47oML"
+    }
+  ]
+}

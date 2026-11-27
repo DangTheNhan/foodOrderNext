@@ -1,0 +1,40 @@
+{
+  "checkedOn": "2026-11-26",
+  "firebaseProject": "foodordernext-staging",
+  "sourcePath": "work/render-staging-i0UgMJ",
+  "branch": "DangTheNhan",
+  "commit": "c32dec0a28b39ef72b0c77d926598c08fafed0f5",
+  "trackedFiles": 37,
+  "verifiedAgainstProjectSource": true,
+  "secretPatternScan": "PASS",
+  "gitRemoteConfigured": true,
+  "gitHubRepository": "https://github.com/DangTheNhan/foodordernext-staging-api",
+  "gitHubPrivateBranchVerified": true,
+  "renderSession": "signed in",
+  "renderWebServiceSetupOpened": true,
+  "renderRepositoryAvailable": true,
+  "renderDraft": {
+    "name": "foodordernext-api-staging",
+    "region": "Singapore",
+    "plan": "Free",
+    "healthCheckPath": "/health",
+    "firebaseCredentialAdded": true
+  },
+  "firebaseServiceAccountSetup": {
+    "projectAccessVerified": true,
+    "serviceAccountId": "render-express-staging",
+    "created": true,
+    "grantedRoles": ["roles/datastore.user", "roles/firebaseauth.viewer"],
+    "jsonKeyCreated": true,
+    "localDownloadVerified": false,
+    "authorizationStatus": "approved"
+  },
+  "renderServiceCreated": true,
+  "renderService": {
+    "dashboardUrl": "https://dashboard.render.com/web/srv-dc3p73e1egvs73ebaj30",
+    "apiBaseUrl": "https://foodordernext-api-staging.onrender.com/api/v1",
+    "deployedCommit": "c32dec0a28b39ef72b0c77d926598c08fafed0f5",
+    "status": "Deployed",
+    "smokeEvidence": "artifacts/evidence/P09/render-staging-smoke.json"
+  }
+}

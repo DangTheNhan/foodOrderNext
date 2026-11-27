@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "cases": [
+    {
+      "case": "Android menu shows a real model result before any cart write",
+      "result": "PASS"
+    },
+    {
+      "case": "Explicit Android confirmation adds two portions through the normal cart API",
+      "result": "PASS"
+    },
+    {
+      "case": "Android merchant sees a model analysis of verified reviews",
+      "result": "PASS"
+    },
+    {
+      "case": "Android opens a real source review from its theme",
+      "result": "PASS"
+    }
+  ],
+  "environment": "One Android Emulator, Firebase Emulator and real local Ollama",
+  "atUtc": "2026-11-20T09:39:00.438235+00:00"
+}

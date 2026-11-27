@@ -1,0 +1,754 @@
+[
+  {
+    "path": "apps/mobile/android/app/build.gradle",
+    "sha256": "cf4175cd1148d190c9d82d0f44f296495ca229e37741a1e4f44a04695ad4e729"
+  },
+  {
+    "path": "apps/mobile/android/app/src/debug/AndroidManifest.xml",
+    "sha256": "181f266e3af4082bd0eeedbd9dbdfe484c0ba47ff91d1d397dff06e82f4eea4a"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/AndroidManifest.xml",
+    "sha256": "28ddce5e730fe4fa3c20ca58f5870bd2e387104bf0629119b814879ef45f909b"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/java/com/foodorderingapp/DeliveryLocationPackage.kt",
+    "sha256": "f42e2c224ad5d27d804a534bb2794c70628a2ef6307256b13adc3eb82ad501c2"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/java/com/foodorderingapp/MainActivity.kt",
+    "sha256": "6041b8a971ce41f9300930b14ca6362454d16db5048e22e72803a0fff6015978"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/java/com/foodorderingapp/MainApplication.kt",
+    "sha256": "25d5bfd45fac5c6a86b62f084c33f0a49734860a757ee553731840e5827c8b6e"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+    "sha256": "a0ffe99c6c5b933311be2b56a1769600dcdca909289cb4446e58cac2b6c27c7c"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "sha256": "21304a0c9b00da6a72cfa31c7229c9528fc17b6e5eb4e68a969bce08c01a2fee"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "sha256": "ded7aabf6a56b694e486e096efd89e2f0c9067d292b634663898e352c9491f10"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+    "sha256": "520d05f978a15ba0ccf23006a1a5691a054a02478c70cafc5ebafae76e600f0d"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "sha256": "eef20f25fb1477d8c9df15757e764811cc503fb0777f18d0f7fb2d19178b5bf6"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+    "sha256": "2846e1a703e519791fe22f41bcb243b82f908d12e5ebcb43f020ddf9982780b0"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "sha256": "e77c5045bfdb6f4bbe955b3a793bfed3baa369ce4811ae2a9103d5480637cfff"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+    "sha256": "363a569beb72e8b007bf046454612148d4c9f782b9391352059fe83179f18e30"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "sha256": "eb3a34b13632e0cb3b1c0f4273035866cbe81b1b17b7178ce29d19c78d394a5e"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "sha256": "5bacd97a1b41e4413c6092cdbd83f65112a9124e823cfaa3a219c65e2761647b"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "sha256": "9ff27328b6916b7f75b99ef36153f154bb4724946e5654635cba2e257352c69f"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/values/strings.xml",
+    "sha256": "4b38a19636fe70016dd13f3ede18d559434c8e60333ca1df29baa7da5ebd7e0c"
+  },
+  {
+    "path": "apps/mobile/android/app/src/main/res/values/styles.xml",
+    "sha256": "3f162a05aded30eefe69f1f420a598a0fecebdabfdb6c72e24bba2dff82f2e1c"
+  },
+  {
+    "path": "apps/mobile/android/build.gradle",
+    "sha256": "eee9b5cecbc2193b80334e55362a6a85b2b27c9317c7e286e7e0cf0a076c1cf3"
+  },
+  {
+    "path": "apps/mobile/package-lock.json",
+    "sha256": "5db3056e91370ce434bd51da4e3b3da12f897e696d8aa460f4fcceb6bc8ee354"
+  },
+  {
+    "path": "apps/mobile/src/api/axiosClient.js",
+    "sha256": "1aed9e10fdc23b05bdf986fae43d87f882d56549d5df8effd15628c7c6723953"
+  },
+  {
+    "path": "apps/mobile/src/api/clientCore.js",
+    "sha256": "6169de90cc4ce14c51bac4ef56d3be76cb080941f47df4fb07c2a6a0fd30cf3d"
+  },
+  {
+    "path": "apps/mobile/src/api/config.js.example",
+    "sha256": "36e909db1511605936ac260841995abd0c69699887e630f2c8e892bff7463995"
+  },
+  {
+    "path": "apps/mobile/src/api/mockDate.js",
+    "sha256": "9f408877eefcbbe131f30bfe00ccf04742f753946cd3c7345b80b9c90d017961"
+  },
+  {
+    "path": "apps/mobile/src/assets/images/onboarding/onboarding_1.jpg",
+    "sha256": "d4dc5c74b510925442fbfab53f9696ce769bd54e12fe3662dec1da24ba5c345d"
+  },
+  {
+    "path": "apps/mobile/src/assets/images/onboarding/onboarding_2.jpg",
+    "sha256": "60a1cac439c78810ea056ee03cbc02b67afeea1e90cecef4f8cfee3b846b50d3"
+  },
+  {
+    "path": "apps/mobile/src/assets/images/onboarding/onboarding_3.jpg",
+    "sha256": "0024d93f1236a73d06b42e76c6009a6ce5ec40072a6cdb2a674029fd212f035d"
+  },
+  {
+    "path": "apps/mobile/src/auth/privateState.js",
+    "sha256": "9d6dc1d75ab7f0221c055c4a14639cd346d1bb1958b8685c017a22b0670d6df6"
+  },
+  {
+    "path": "apps/mobile/src/auth/SessionContext.jsx",
+    "sha256": "5abd12cfe8ad7f2126c3359385e3719b592f2a3184c784630c19aba04e04ab90"
+  },
+  {
+    "path": "apps/mobile/src/auth/sessionController.js",
+    "sha256": "c1f610822c9e4ac8b2e0b09b870f5b19afcebf886f90a925ef26dd40faf7a056"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/CategoryChip.jsx",
+    "sha256": "59ce6b5d017206e3629f2fa592c9ce5e1953ef700c1c2c495b4c35d0f4adc9ea"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/OutlinedButton.jsx",
+    "sha256": "5ad82b0ff2f7b247e482d3e11ce5371827b1fdad06d90aa515201d495153ad40"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/PasswordInput.jsx",
+    "sha256": "bb4aa9415a4996ab950edb034f34728521296131569b614da549d4a95a066980"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/PriceTag.jsx",
+    "sha256": "083dcaf246d811ef0d7a57551b72ab8c058d0f60f5a90ee24c9dfc2dd4de5b28"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/PrimaryButton.jsx",
+    "sha256": "9108f6dcf2deea8ea4e230a006568bca7f49fd2a987c2242b89f4cecccd29d05"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/SearchBar.jsx",
+    "sha256": "f053adf7f72f7f48aa8abe7988e56aceb9e3797040a92b65cf448ba07dcbe357"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/SecondaryButton.jsx",
+    "sha256": "321ae430baf3e34a757d9f60c44daf546ca907b96e945abd8b9473d3790dd9a8"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/StatusBadge.jsx",
+    "sha256": "224708370e59557be013843e443ac9e8569dc55ae778addb29241c4551aac665"
+  },
+  {
+    "path": "apps/mobile/src/common/atoms/TextInput.jsx",
+    "sha256": "e94c78c44ceb6c555342e3f6c8a424ddf95df9b0f01ba1df3eef5035a408f163"
+  },
+  {
+    "path": "apps/mobile/src/common/index.js",
+    "sha256": "4f73f1c3af956cff60d6948bdcb70995cd0deafd1f021b1b9370bb3b7a2866b6"
+  },
+  {
+    "path": "apps/mobile/src/common/molecules/LoadingOverlay.jsx",
+    "sha256": "244f6471bef978fb5a7bc542f76788aa6dbdbb9d385ab2ae4ec47c538e05d14c"
+  },
+  {
+    "path": "apps/mobile/src/common/organisms/FoodCard.jsx",
+    "sha256": "9380007d1f8ef4e7fce18f5b5cbd31879f37f693134167e53b96f98a2b6a522b"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/AuthFooter.jsx",
+    "sha256": "dfa97d46a46205d9c993c893c613c83d2fbc422773c77778b6dd3f81022a99a9"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/AuthHeader.jsx",
+    "sha256": "cb9df594bb6fb32677cbc0d4942bad61f7a13a20cffec2e483a21c583cae26a9"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/AuthLayout.jsx",
+    "sha256": "714ce066a1713b373f3d003071adc52516c1f793dd94eb831855863fd75b9854"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/AuthSubtitle.jsx",
+    "sha256": "77410e712c1c2b764c87df9ce6fbe766d871f68de3608d5fa89a7258550394d2"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/AuthTitle.jsx",
+    "sha256": "375f88d484bb9845fc09cee88097b07e40f0f963051f71696072f491e175926d"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/BackButton.jsx",
+    "sha256": "3df019ee4572dee3f4f536d6cf1457072c82bfdb32f81ebf906584258c9c02e5"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/FormDivider.jsx",
+    "sha256": "64429bc65a2476ff996ff23ed61a2bc1124c852094ede163a15fe1d3f14bad7f"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/FormError.jsx",
+    "sha256": "9411c82410aa33cbeb2bda77d577ab0c653e277c4c6875058f05315321d6e75b"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/index.js",
+    "sha256": "f7d8278d4832171dfec18242f3287f0df9b05a1792512d43b1d32b5417e9a892"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/KeyboardAvoidingWrapper.jsx",
+    "sha256": "e77443850a6465328822083dcddf7a738df8a904335352bf8ed9c02f7db2c6c2"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/PasswordStrengthIndicator.jsx",
+    "sha256": "9a148e4d8e911296134aab13f21393db7fece29d083264cde5443c19d3fb774b"
+  },
+  {
+    "path": "apps/mobile/src/components/auth/SocialLoginSection.jsx",
+    "sha256": "66280da3892275bf28a7c03eda6f1b956207be2ffd61eb9b55aa8dc40c85346c"
+  },
+  {
+    "path": "apps/mobile/src/config/runtime.config.example.js",
+    "sha256": "7a68143f0262b7a42374b97fa7142225070d5390c5080312fefb08cb132b78eb"
+  },
+  {
+    "path": "apps/mobile/src/config/runtime.config.js",
+    "sha256": "c578a5d38b95656ec7fe391d5242a868de5d1f051570ea6ef07783afada14c5f"
+  },
+  {
+    "path": "apps/mobile/src/config/validateConfig.js",
+    "sha256": "022f5ca3977189eace254a2bcf0c28dc0318ace9ca885f335f61cb249ad660a8"
+  },
+  {
+    "path": "apps/mobile/src/constants/authConstants.js",
+    "sha256": "e874a20b2b2b33793a32bfab5e0fbfe17b02ed9ae81271363d2022ad9dda5be6"
+  },
+  {
+    "path": "apps/mobile/src/constants/authRoutes.js",
+    "sha256": "f8dc19874660e63bcbb3da63c1c2c9af748855f51ae1073f653c13d0022b7392"
+  },
+  {
+    "path": "apps/mobile/src/constants/cartConstants.js",
+    "sha256": "2efc046ea1a379992b07b6216ec1480091348bb1eedf965b890c595c444d5672"
+  },
+  {
+    "path": "apps/mobile/src/constants/onboardingData.js",
+    "sha256": "9338449b2c36194124d6b15d751c1c55f0124f2ff282ea4b019d872b05448af6"
+  },
+  {
+    "path": "apps/mobile/src/constants/paymentMethods.js",
+    "sha256": "d04b8417bed464ffc9794103e12ffa8219d62d07346b6027fff88d42a83cf6b4"
+  },
+  {
+    "path": "apps/mobile/src/constants/validationRules.js",
+    "sha256": "1bda754e6595be8128b30693aeefe4afe97dd63d15ccfae8d3ea7f6ec0ba8741"
+  },
+  {
+    "path": "apps/mobile/src/firebase/performanceTrace.js",
+    "sha256": "035b5cc19840ba418c3e694a0d295318ccb6fd817cf9ecfe2cbe95ca8079debf"
+  },
+  {
+    "path": "apps/mobile/src/firebase/runtime.js",
+    "sha256": "63105d0186da856ccad1436ffd7b0e5e805b5fae66f54a9192f81f9f88d0ce73"
+  },
+  {
+    "path": "apps/mobile/src/hooks/useCountdownTimer.js",
+    "sha256": "12b31050f11c7ad56d85c0132a80702ef005a33b0b2ab1b327e1c20eaa7654b3"
+  },
+  {
+    "path": "apps/mobile/src/hooks/useFormValidation.js",
+    "sha256": "6726e1f1b12a284635430b08dea525f149dc27d1e2822ecc20f22bcc16f29edd"
+  },
+  {
+    "path": "apps/mobile/src/hooks/useKeyboardStatus.js",
+    "sha256": "92bc4a56667540b5a4bd3405548b59688adf3d226b30ae58584b25c885f72cee"
+  },
+  {
+    "path": "apps/mobile/src/hooks/useOnboardingAnimation.js",
+    "sha256": "05caa2ef4faccdec4a18239c72aa1da57d5e0147dd35dc7c3785440504136faf"
+  },
+  {
+    "path": "apps/mobile/src/hooks/usePasswordVisibility.js",
+    "sha256": "cb6aed89764b6c9ce8ddb67b480018963c1d91debf09ac4fc1d4d0b9deadbd5f"
+  },
+  {
+    "path": "apps/mobile/src/mocks/mockAccounts.js",
+    "sha256": "f47ade17112c4aa7cdbf7a0d37c81babd00fb5319661c34f232df98cae6b4ca7"
+  },
+  {
+    "path": "apps/mobile/src/navigation/AuthStackNavigator.jsx",
+    "sha256": "b0e165ff73457870d56c48e57df175118695c0de0a325fb1b4f9f4cbfc56d87f"
+  },
+  {
+    "path": "apps/mobile/src/navigation/CartStackNavigator.jsx",
+    "sha256": "e3a2a1f1c2450f68ff2ccb446d15be789fc76da51c92a53d683e5a2162ecc413"
+  },
+  {
+    "path": "apps/mobile/src/navigation/HomeStackNavigator.jsx",
+    "sha256": "46498572e408093f2372c5bcea029536c78f630da53314660058719440942770"
+  },
+  {
+    "path": "apps/mobile/src/navigation/MainTabNavigator.jsx",
+    "sha256": "a44713464d15ce806b5b14bb101df239b95bd9a90ad2346d4bb9ca251ab2bd8e"
+  },
+  {
+    "path": "apps/mobile/src/navigation/navigationRef.js",
+    "sha256": "3725881a166bf5aa4a79ef712bbeec7c2b7cbb53864dfcd1c5ff00960d93e02d"
+  },
+  {
+    "path": "apps/mobile/src/navigation/OrderStackNavigator.jsx",
+    "sha256": "e38980f4ada413abac7f4974c9cab2ba499c1d0c275f4468f59fc045e1d48c97"
+  },
+  {
+    "path": "apps/mobile/src/navigation/PhaseOneNavigator.jsx",
+    "sha256": "e45cca7388b0483e908963191ef148d5230fde85fc3d9a2c5be873109dac4b26"
+  },
+  {
+    "path": "apps/mobile/src/navigation/ProfileStackNavigator.jsx",
+    "sha256": "e7c81ae789e9dc68678a76c9d9955783b74119efd6552743651d30bdde3bfc13"
+  },
+  {
+    "path": "apps/mobile/src/screens/Auth/EmailVerificationScreen.jsx",
+    "sha256": "c59c622c8c9f844ad4531a604e66b314ece4914f5a4415923b7e9b447cb96c2d"
+  },
+  {
+    "path": "apps/mobile/src/screens/Auth/LoginScreen.jsx",
+    "sha256": "9daf889c5af608ac1318326b569fe9769d39b61e2158435a8400bc4a70fb17a5"
+  },
+  {
+    "path": "apps/mobile/src/screens/Auth/OnboardingScreen.jsx",
+    "sha256": "2411e26e72eafacf2c7db7905fe50a9f0fc91158e1f15e8fa94b83929bc209e0"
+  },
+  {
+    "path": "apps/mobile/src/screens/Auth/RegisterScreen.jsx",
+    "sha256": "39baf320dfc8d41e0354fb602b84d334858faca97d20338b417684b2be5c274c"
+  },
+  {
+    "path": "apps/mobile/src/screens/Auth/SplashScreen.jsx",
+    "sha256": "6c37ac348f2bf194c3f996f7eb443eba8f9dffa57100073dfc18ba5603bd16aa"
+  },
+  {
+    "path": "apps/mobile/src/screens/Cart/CartScreen.jsx",
+    "sha256": "de031d62e5471b4a7e54ae12c208e1e3131f864c30fcae4bd910dd823bf30166"
+  },
+  {
+    "path": "apps/mobile/src/screens/Cart/CheckoutScreen.jsx",
+    "sha256": "eaec24444d681b988c973ebfe86e7ae337a949f25f431bc2e87414292df1e7b9"
+  },
+  {
+    "path": "apps/mobile/src/screens/Cart/OrderSuccessScreen.jsx",
+    "sha256": "73ea51733e8b887074823979f43b2e471298386ed017e2682418280b5c3fc56a"
+  },
+  {
+    "path": "apps/mobile/src/screens/Cart/PaymentScreen.jsx",
+    "sha256": "0e17f5e26f87463b5c16a420217388955a1daed19f0c650557aba323b2d66678"
+  },
+  {
+    "path": "apps/mobile/src/screens/Cart/TrackOrderScreen.jsx",
+    "sha256": "e5d38f222f4cda9d4b90474d098f9365c3d1473eb0dafca9ab3a6b1273156a90"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/FavoriteScreen.jsx",
+    "sha256": "590467b581ab0165a2981b48b083fa47990b3ae3ac65eccddfb336533fb480d1"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/FilterScreen.jsx",
+    "sha256": "6f22bc2e0aab8cc5365288fdfece55a0eb366375cbef336817d12700e4e21746"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/FlashSaleScreen.jsx",
+    "sha256": "5688dc49ca9c7835c8f4acb7abeb8940e1664eecbb0c810498cbc306c7b3d222"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/FoodDetailScreen.jsx",
+    "sha256": "6315e9d9ab285e978903c8210843ed93450f746a663393112dededfad6e252ef"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/HomeScreen.jsx",
+    "sha256": "daa0049f2555993b0c443f53bd80e585104ba0548f1f26452dd24fb7d32454a0"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/MenuScreen.jsx",
+    "sha256": "42ace60947d25fcfc81a743db02326e2731043d307a498397572215896a03a9d"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/PopularFoodsScreen.jsx",
+    "sha256": "5959baa3636b45551e9c86f64b9aaf61e70479e21ec32aa43881b946836ac304"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/RecommendedFoodsScreen.jsx",
+    "sha256": "f5e3a7255fbd1f5c7f6195cd46a49b51d9f612c2aa12fe5c9610f5b297aee52f"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/RestaurantDetailScreen.jsx",
+    "sha256": "f1fc59a9f15c07b0b36d48286bf8a2928edc4eac7118966e3ee26868d340c21b"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/RestaurantsScreen.jsx",
+    "sha256": "f548758aacd709bc37c5e926fa0525e6f13e0415782c34a1d27776d2795683cd"
+  },
+  {
+    "path": "apps/mobile/src/screens/Home/SearchScreen.jsx",
+    "sha256": "367a8e720bb8cc593ec1db0565a98ecd69a5b7f01f8d19014e48da01d41ceab6"
+  },
+  {
+    "path": "apps/mobile/src/screens/Order/OrderDetailScreen.jsx",
+    "sha256": "93ba7a4a9ea78ee7d6f4e88368ce66e69c3ea11e8e19ded4bf4393242680431b"
+  },
+  {
+    "path": "apps/mobile/src/screens/Order/OrderHistoryScreen.jsx",
+    "sha256": "57a68e6e41d34a1eac54752e3a688b254ceee643663f16f9e9836796392f1da2"
+  },
+  {
+    "path": "apps/mobile/src/screens/P01/SessionScreens.jsx",
+    "sha256": "157cee12ac6aa5ed18b9ad64bb13b29e67b317b22d964660bf69af10f67de9b5"
+  },
+  {
+    "path": "apps/mobile/src/screens/P02/AccountScreens.jsx",
+    "sha256": "9b9eba9054695dc9bac268cce3401bc47fb4554f9edee5aafb9bdc32d866f2fc"
+  },
+  {
+    "path": "apps/mobile/src/screens/P02/CartScreens.jsx",
+    "sha256": "ffe298d5fb5444cefaf4b1707f5c17079eff7517bbc23774009225fe5e05b253"
+  },
+  {
+    "path": "apps/mobile/src/screens/P02/CatalogScreens.jsx",
+    "sha256": "d886e05880beae6b198bfea644ec561e879780a2f9bcca001e9368b0c568878d"
+  },
+  {
+    "path": "apps/mobile/src/screens/P02/CustomerUI.jsx",
+    "sha256": "650d644967ec8436d57def201bf808a23e32eff9c6807c60931482b6050969db"
+  },
+  {
+    "path": "apps/mobile/src/screens/P03/CheckoutScreen.jsx",
+    "sha256": "4f0195111d7fe533e420cf86b13afef8018497155fba48f58d05be0e4d961f25"
+  },
+  {
+    "path": "apps/mobile/src/screens/P03/OrderScreens.jsx",
+    "sha256": "417fb03553232ca6a3f5817897bff570987a58adea2239194f3ebf7604e855c9"
+  },
+  {
+    "path": "apps/mobile/src/screens/P04/AdminScreens.jsx",
+    "sha256": "177548a74ff71bbd2fc28671ff1917ad0584ef06c5fe7d0e5b2bf4d0e7027a98"
+  },
+  {
+    "path": "apps/mobile/src/screens/P04/MenuScreens.jsx",
+    "sha256": "64ab98eb9b3e909a4dfa4d610e3b5343a7a0f43cad827c3731e6fceeba3ce540"
+  },
+  {
+    "path": "apps/mobile/src/screens/P04/OperationsUI.jsx",
+    "sha256": "ddc52fe7801859242cbbdad93c775f2a0c61e46aebd7448f06a29155fdb7e590"
+  },
+  {
+    "path": "apps/mobile/src/screens/P04/QueueScreens.jsx",
+    "sha256": "338332e1bea5379abe22d8205d00059548c842f3b9053adb44b9ccff8d37282b"
+  },
+  {
+    "path": "apps/mobile/src/screens/P04/ShopScreens.jsx",
+    "sha256": "76cc9894023b94d210635d2b964307bd03c9cff95384eff28175147ae2e29d78"
+  },
+  {
+    "path": "apps/mobile/src/screens/P05/ChatInboxScreens.jsx",
+    "sha256": "13eb928bffb6a02abdd2815b2eaa2fd14882f398419f04a9d89c48b8f9793f0f"
+  },
+  {
+    "path": "apps/mobile/src/screens/P05/DriverTrips.jsx",
+    "sha256": "3bbf6779c7207352305430688c24921a6cb0595447853199cdc1f7ce33ba4122"
+  },
+  {
+    "path": "apps/mobile/src/screens/P05/LiveRead.jsx",
+    "sha256": "67f4d3db4a07dedad8e0023e878986da96a6b17b258f182cf912bfb9a7ff3dec"
+  },
+  {
+    "path": "apps/mobile/src/screens/P05/PushScreens.jsx",
+    "sha256": "7b9145fad4abd71e981412b32b2bac5561a3ee1993c111aeb3e4331ccfaaa252"
+  },
+  {
+    "path": "apps/mobile/src/screens/P06/DeliveryTrackingScreen.jsx",
+    "sha256": "1aa6c0588451f8ced6cb77e0076442fee111d405fb3b030b419b1b47d3196c9b"
+  },
+  {
+    "path": "apps/mobile/src/screens/P06/DriverLocation.jsx",
+    "sha256": "272497791b3ec19e8e36a827511d2314468c4de98aa100e80dd5ef3325e803e3"
+  },
+  {
+    "path": "apps/mobile/src/screens/P07/AiStatus.jsx",
+    "sha256": "1908b0d311592d520069ca48b5dd37dda5f913e49e94f8abf497fd60dc174710"
+  },
+  {
+    "path": "apps/mobile/src/screens/P07/MenuAssistant.jsx",
+    "sha256": "2fd3ead1d5670e145975bb373e1fdbb03880373102fe1a7c8fc1ae83bf46371b"
+  },
+  {
+    "path": "apps/mobile/src/screens/P07/ReviewInsights.jsx",
+    "sha256": "6d33cbc6ba091628d34bd756ac1228f70789590d3f738064d8d99da6b4d228f2"
+  },
+  {
+    "path": "apps/mobile/src/screens/Profile/ChangePasswordScreen.jsx",
+    "sha256": "7bae1133f0f1f988a0a41e33068cfef85070ef963e81d5e55795c4c3295e54ae"
+  },
+  {
+    "path": "apps/mobile/src/screens/Profile/EditProfileScreen.jsx",
+    "sha256": "8c8b5c344b3e21829a290ba2bd26a6d4c4afb24db0ff9a1b5d5323663cc6129c"
+  },
+  {
+    "path": "apps/mobile/src/screens/Profile/ProfileScreen.jsx",
+    "sha256": "26e581f70113e2f8abb3b77f0961aeaf3a911a371797f349ff1dc6464ffdccbb"
+  },
+  {
+    "path": "apps/mobile/src/screens/Settings/SettingsScreen.jsx",
+    "sha256": "65447d72f978fa3c8908773d814c20709759819e52162df3f0d2cdc1d42c3196"
+  },
+  {
+    "path": "apps/mobile/src/services/aiData.js",
+    "sha256": "78734f993bb3ed8bf11ea4250393f4a7207f6515aab02123e7bc4cca96f72aec"
+  },
+  {
+    "path": "apps/mobile/src/services/AuthService.js",
+    "sha256": "b5fa5f7035c3655d2e47f0bd73707b81277a15c7a022eb31a9beb21b9b7719f1"
+  },
+  {
+    "path": "apps/mobile/src/services/coordinateInput.js",
+    "sha256": "f73444c851e662967647945645388b9b9a3ba433427347aa1712d66ba3384b7e"
+  },
+  {
+    "path": "apps/mobile/src/services/customerData.js",
+    "sha256": "fd55f0969339db6c6e8bc5417abce6ec2f9bd31ab300eac152adfbbb7be98e87"
+  },
+  {
+    "path": "apps/mobile/src/services/customerQueries.js",
+    "sha256": "61db535de1d76770b5f79ffa03fc9304a305af8433a774d18e89cab3f4715072"
+  },
+  {
+    "path": "apps/mobile/src/services/deliveryTracking.js",
+    "sha256": "4671790311c212b3b2fa7874550b9f3a47166031fcc4af04e6d50eda98e31743"
+  },
+  {
+    "path": "apps/mobile/src/services/FoodService.js",
+    "sha256": "ee57f1a51a5cd8a18436088d1cff442838aaf864a2601591f2e91db3bb6a2369"
+  },
+  {
+    "path": "apps/mobile/src/services/LoggingService.js",
+    "sha256": "da1f769a0060668ca8aa245635cb7a77a52f3ec03d3d9efbd4fce0199369c2d7"
+  },
+  {
+    "path": "apps/mobile/src/services/menuPhoto.js",
+    "sha256": "32b99f1c367d548667a03c79d626b0644b2fc46bf878c874f7cb7a8b56ab70d8"
+  },
+  {
+    "path": "apps/mobile/src/services/operationsData.js",
+    "sha256": "f8154296f7f36a9849ef1a243f3349c498a917b72da147f4d97d0cae770d81b9"
+  },
+  {
+    "path": "apps/mobile/src/services/orderData.js",
+    "sha256": "ed36adff59c4e64176805c9643888c6af3684380d8fd99ed4115f817255ef03b"
+  },
+  {
+    "path": "apps/mobile/src/services/OrderService.js",
+    "sha256": "755819f7b90ba5c774fea0a4455ffc1810d12ca4fdfddf2f9ca36c480f6e15e3"
+  },
+  {
+    "path": "apps/mobile/src/services/ProfileService.js",
+    "sha256": "a92e102fc6c77be69e301c66e399567ca3b74e090dd20912a21b2aa5585e2a9b"
+  },
+  {
+    "path": "apps/mobile/src/services/pushRegistration.js",
+    "sha256": "df299520af033d716ba5bee54f2a4bc868a7b75ef4d5284e0ceab639bcfc7c80"
+  },
+  {
+    "path": "apps/mobile/src/services/realtimeData.js",
+    "sha256": "7e9366b8445700364dac6775b9bafd5dea43a0710de5c83559a746423d1c79b2"
+  },
+  {
+    "path": "apps/mobile/src/services/realtimeQueries.js",
+    "sha256": "a8144d93b57ee37cf8bc91b8dc43c12577ce1034486674954f68d9f1130a2f82"
+  },
+  {
+    "path": "apps/mobile/src/stores/authStore.js",
+    "sha256": "bba70fac7839e15f55d78ea5b935e8f22d9f4a08a545105578b6256fc54c55c8"
+  },
+  {
+    "path": "apps/mobile/src/stores/cartStore.js",
+    "sha256": "fbd59ea9555405e7e87de8d4f8ce91dd40070c43a0f8f5c8da81b2ce4a54ae85"
+  },
+  {
+    "path": "apps/mobile/src/stores/favoriteStore.js",
+    "sha256": "3438592f44d1e6865b9e744484376681587bcdd3d5eff8dc1220bd3caf809d95"
+  },
+  {
+    "path": "apps/mobile/src/stores/filterStore.js",
+    "sha256": "35eb52f812fbd663ca67c01cc36256070f32a282c98e43771ddb84522961c1ec"
+  },
+  {
+    "path": "apps/mobile/src/theme/colors.js",
+    "sha256": "518d8a39d1aa0b5840e302303521a3cb5fe8b40efca038732299acce8562539c"
+  },
+  {
+    "path": "apps/mobile/src/theme/index.js",
+    "sha256": "0cc80001858957362ea9013293592eff4aefa8a0aed3e8ad030ba86fa17c7819"
+  },
+  {
+    "path": "apps/mobile/src/theme/spacing.js",
+    "sha256": "acc334790b49ce9f24022a5d71553db9706f444994528b208dde3bc06bc02c46"
+  },
+  {
+    "path": "apps/mobile/src/theme/typography.js",
+    "sha256": "226f175ebed218e9ed87d8bfd01b4440dd5d56d80b153496e709f4418ea9eea7"
+  },
+  {
+    "path": "firebase.json",
+    "sha256": "b3fc5c1e49245aaa8a01d5411d5db533f069f92e20660eb25079a7109fa75ec9"
+  },
+  {
+    "path": "firebase/firestore.indexes.json",
+    "sha256": "6c5bc43c4f43c0cef00ff1dcdd36ef67dbe7e105486b44b0e3d3b0da1c7f7680"
+  },
+  {
+    "path": "firebase/firestore.rules",
+    "sha256": "46cd707d78e5e66c2b583b2e43f5bf91f950249c0829af5ae9eb5e25ca7d4894"
+  },
+  {
+    "path": "firebase/README.md",
+    "sha256": "4d5ee8e9a8a6f25c1f8def78d5e26af3b7219ea453c31f7287c10c3d72974868"
+  },
+  {
+    "path": "firebase/storage.rules",
+    "sha256": "39b6e48d95f47d13bcb2fcc137b39f1cb40c63806e55dbad1333921e191ffe19"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "1047f2c1ca78aeb2af46838dfde767b1d97c04b53de14e470a015ea8f31b668c"
+  },
+  {
+    "path": "packages/contracts/src/index.js",
+    "sha256": "5359a52f1fe3e4ca1ed158d9181efd3a66b92e6bee07de64791c6e9ebd5de5bb"
+  },
+  {
+    "path": "services/api/src/adminOperations.js",
+    "sha256": "7e48c4d0e9d4e60293212b13fa5f80b1dc03ebc536ee68261280738392531967"
+  },
+  {
+    "path": "services/api/src/aiGateway.js",
+    "sha256": "00eba0cf589bf2b3745996b913e1dd7661fea5f5d605b1ed2cc8615f70939c26"
+  },
+  {
+    "path": "services/api/src/aiMenu.js",
+    "sha256": "1bf0783fbaf017c7d7906ea28479fba0528f8f45dd3247ead2d6192214538c8a"
+  },
+  {
+    "path": "services/api/src/aiRepository.js",
+    "sha256": "c607f2cf6b04676804d604ad04c6ac2ba48a325c19a6154d8f45b022cbd845ae"
+  },
+  {
+    "path": "services/api/src/aiReviews.js",
+    "sha256": "640ebb186fb6e37f4c27ba6b6b6788a6087515a3c34ba7b58b027fa149595bf4"
+  },
+  {
+    "path": "services/api/src/aiRoutes.js",
+    "sha256": "b38b2c228df8003e26bf624ae0a1575202b1f4459457e1a89aff37d261b8101f"
+  },
+  {
+    "path": "services/api/src/aiService.js",
+    "sha256": "8906417d6b37bfac3b4ee2c4f79782536284f3e3e82380b1e36ad9e9c9c5d3b9"
+  },
+  {
+    "path": "services/api/src/app.js",
+    "sha256": "5e3906ba91bfe7f32eb8779f230364605333f1261e941f9ddea0f17ac4987310"
+  },
+  {
+    "path": "services/api/src/auth.js",
+    "sha256": "65a91393d87813eca8b653fc25ead06e2647a37f850ec632c69677de4a172871"
+  },
+  {
+    "path": "services/api/src/catalogOperations.js",
+    "sha256": "85f994587bfe58cf562b3e0b0e4e37bfbba25960f84adf6b9c906089441d93e6"
+  },
+  {
+    "path": "services/api/src/config.js",
+    "sha256": "20a4990b22c841f5698370be677843dc3660777b7c5861cb66676fe0ed791343"
+  },
+  {
+    "path": "services/api/src/customer.js",
+    "sha256": "0f92f629dd6daf38a02718a2088459b4c356a2233bff179a09afaec095f4f51d"
+  },
+  {
+    "path": "services/api/src/customerRoutes.js",
+    "sha256": "c41d1d073778155f9c410b9b99f25ce3958e1f6c00e0760d99ce56bc33f3595b"
+  },
+  {
+    "path": "services/api/src/errors.js",
+    "sha256": "ac09c921d434e5350f92b152b4c47d73355ffef5e6fefcda2e0f912ef32c5ae2"
+  },
+  {
+    "path": "services/api/src/firebase.js",
+    "sha256": "1dc7ef2fdefeb63f840d9f216c7f4a4d7ae77693bb1f2ea73e87358958811c40"
+  },
+  {
+    "path": "services/api/src/locationTracking.js",
+    "sha256": "a6e58aa2ca839875e1ff4f415991be8e8185fe0d937ddf8ca05a34c0886c1ee2"
+  },
+  {
+    "path": "services/api/src/menuMedia.js",
+    "sha256": "fbf077eb28b774b5000e9c9a1a414cde6f6b3e57a0c307e3e51fe84581b6bd0e"
+  },
+  {
+    "path": "services/api/src/notificationDelivery.js",
+    "sha256": "20e2977bc830d4f5874728d759f73781dfed2a765bac144efec3b60a2572ab57"
+  },
+  {
+    "path": "services/api/src/notificationEvents.js",
+    "sha256": "32f408abf2c8c55e64494f0f2fe3936d88f1cd74581a15e186c8fc5ade98947a"
+  },
+  {
+    "path": "services/api/src/operationsRoutes.js",
+    "sha256": "3cdce37b90a90191731b586465306c322236693cf2dd446d78eda88500cd53ca"
+  },
+  {
+    "path": "services/api/src/operationsSupport.js",
+    "sha256": "6b120dd8c0531f2532ecf0cfc489761132d72891493c3dac3a942da52a1f332e"
+  },
+  {
+    "path": "services/api/src/orderChat.js",
+    "sha256": "f154b3c013edfe79bd1e6301de221c06c9c320b172425b25352cbd13db90f793"
+  },
+  {
+    "path": "services/api/src/orderPricing.js",
+    "sha256": "37214bf1a229c6e6c253899742bc12ba1f8057403cdd83142e4ae0992ae30000"
+  },
+  {
+    "path": "services/api/src/orderRoutes.js",
+    "sha256": "c59e6338ed463ea2463d78bd857e1fc7ed65e30626e3b467bdd709150e31c668"
+  },
+  {
+    "path": "services/api/src/orders.js",
+    "sha256": "56ce8de69fb7f4e7a80a9b0c10106444d6b611a08b1cd47c0fab08555092936e"
+  },
+  {
+    "path": "services/api/src/outboxWorker.js",
+    "sha256": "592ff9a6389c8a8ff494ac0044c78372e354af5117d8b7dec70bbdb451c6d83a"
+  },
+  {
+    "path": "services/api/src/realtimeRoutes.js",
+    "sha256": "75fb05996a861b7e42a0c22a23631fa1296195ff9728f0e81fe6482ac594801a"
+  },
+  {
+    "path": "services/api/src/server.js",
+    "sha256": "bce1bba8acdb79908bfcabf5b4d3e72281f26154c9238637fb2698340489acb2"
+  },
+  {
+    "path": "services/api/src/users.js",
+    "sha256": "f0b5e345495e6d636adfd76c23ae4a4217045e25e532749de96ddcd27c5bb496"
+  }
+]

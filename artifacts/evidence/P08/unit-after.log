@@ -1,0 +1,86 @@
+
+> foodordernext@0.1.0 test
+> node scripts/dev/run-unit-tests.mjs
+
+
+> @foodordernext/contracts@0.1.0 test
+> node --test test/*.test.js
+
+✔ domain statuses and assignment states have exact shared names (3.1143ms)
+✔ public profile input schemas cannot set authority fields (4.7168ms)
+✔ VND and portions reject fractions, negatives and unsafe values (1.079ms)
+✔ cart bounds and normalized line uniqueness are enforced (2.8259ms)
+✔ name key normalization supports Vietnamese prefix semantics (0.5052ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 357.9478
+
+> @foodordernext/api@0.1.0 test
+> node --test test/*.test.js
+
+✔ menu pricing enforces variants, stock, quantity and total using real catalog fields (9.4872ms)
+✔ review themes reject false evidence, preserve real IDs, identify conflicting ratings and redact common PII (4.6122ms)
+✔ loopback provider retries transient failure within attempt budget and parses structured format (22.0959ms)
+✔ provider stops on timeout and invalid output, cannot use remote or cloud models (512.9999ms)
+✔ health is public and returns envelope + generated trace ID (28.6257ms)
+✔ missing and invalid token fail closed (10.9048ms)
+✔ malformed authorization and malformed decoded UID cannot authenticate (7.9525ms)
+✔ profile missing can bootstrap but cannot GET protected profile (31.6012ms)
+✔ bootstrap retry and parallel requests preserve a single identity and role (11.0208ms)
+✔ bootstrap rejects protected input role (3.882ms)
+✔ bootstrap rejects protected input active (3.3247ms)
+✔ bootstrap rejects protected input uid (3.0867ms)
+✔ bootstrap rejects protected input displayName,role (3.3733ms)
+✔ inactive profile cannot read, patch or reactivate via bootstrap (8.628ms)
+✔ unverified identity may hydrate/bootstrap but cannot mutate profile (8.5246ms)
+✔ token spoofed role and persisted extra fields are not trusted or leaked (3.6016ms)
+✔ PATCH rejects unknown/protected/empty fields role (4.3017ms)
+✔ PATCH rejects unknown/protected/empty fields active (3.2171ms)
+✔ PATCH rejects unknown/protected/empty fields emailDisplay (4.687ms)
+✔ PATCH rejects unknown/protected/empty fields activeOrderCount (3.8404ms)
+✔ PATCH rejects unknown/protected/empty fields unexpected (4.1899ms)
+✔ PATCH rejects unknown/protected/empty fields empty (3.3036ms)
+✔ allowed patch is trimmed, remains customer, replay does not repeat write (21.1393ms)
+✔ PATCH requires idempotency key (5.2485ms)
+✔ avatar must belong to identity and pass storage validation (7.3452ms)
+✔ malformed JSON and unknown endpoint have safe error envelopes (6.7393ms)
+✔ repository errors are sanitized and auth dependency errors are distinguished (7.7414ms)
+✔ role and ownership helpers use active database authority (0.865ms)
+✔ default environment is a demo project and loopback emulators (2.4761ms)
+✔ emulator rejects unsafe FIREBASE_AUTH_EMULATOR_HOST (2.0332ms)
+✔ emulator rejects unsafe FIRESTORE_EMULATOR_HOST (0.334ms)
+✔ emulator rejects unsafe FIREBASE_STORAGE_EMULATOR_HOST (0.3068ms)
+✔ emulator rejects unsafe STORAGE_EMULATOR_HOST (0.2854ms)
+✔ emulator rejects unsafe GOOGLE_APPLICATION_CREDENTIALS (0.2139ms)
+✔ emulator rejects unsafe FIREBASE_PROJECT_ID (0.208ms)
+✔ emulator rejects unsafe FCM_SEND_ENABLED (0.2029ms)
+✔ cloud mode requires both explicit opt-in and selected credentials (0.65ms)
+✔ invalid ports, bucket URLs and modes fail before network initialization (0.411ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2076.7464
+✔ mapping inspection has zero writes and never declares import-ready (1.9322ms)
+✔ mapping reports duplicate orphan unconverted prices and legacy states (0.8977ms)
+✔ mapping rejects credential/personal fields instead of logging values (1.1237ms)
+✔ seed is deterministic, bounded and reconciles stock/participants for 1–3 shops (20.0957ms)
+✔ public review fixture contains no private link or credential (0.2968ms)
+✔ seeded profiles satisfy the API contract and reject an empty phone string (0.9459ms)
+✔ guard fails closed without explicit local emulators, on cloud host/project or credentials (0.449ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 364.6766

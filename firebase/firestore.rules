@@ -1,0 +1,96 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function active() {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.active == true
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role
+          in ['customer', 'merchant', 'driver', 'admin'];
+    }
+    function role(value) {
+      return active() && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == value;
+    }
+    function self(uid) { return active() && request.auth.uid == uid; }
+    function owner(shopId) {
+      return role('merchant')
+        && get(/databases/$(database)/documents/shops/$(shopId)).data.ownerUid == request.auth.uid;
+    }
+    function driver(order) {
+      // Backend assigns only approved drivers. Keep the LISTEN query driverUid-scoped;
+      // reading mutable approval documents here would require a shop-by-shop feed.
+      return role('driver') && order.driverUid == request.auth.uid;
+    }
+    function participant(order) {
+      return active() && (request.auth.uid == order.customerUid
+        || owner(order.shopId) || driver(order) || role('admin'));
+    }
+    function chatParticipant(order) {
+      return active() && ((role('customer') && request.auth.uid == order.customerUid) || owner(order.shopId)
+        || role('admin') || (driver(order) && order.assignmentStatus == 'ACCEPTED'
+          && driverApproved(order.shopId)));
+    }
+    function driverApproved(shopId) {
+      let path = /databases/$(database)/documents/shops/$(shopId)/drivers/$(request.auth.uid);
+      return exists(path) && get(path).data.approved == true && get(path).data.active == true
+        && get(path).data.get('authorityVersion', 0)
+          == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('driverAuthorityVersion', 0);
+    }
+    function orderData(orderId) {
+      return get(/databases/$(database)/documents/orders/$(orderId)).data;
+    }
+    // Queries must include the matching owner/customer/shop/driver scope.
+    // Rules do not remove fields: backend creates sanitized catalog/review documents.
+    match /users/{uid} {
+      allow get: if self(uid);
+      allow list, write: if false;
+      match /addresses/{id} { allow read: if self(uid); allow write: if false; }
+      match /favorites/{id} { allow read: if self(uid); allow write: if false; }
+      match /carts/{id} { allow read: if self(uid); allow write: if false; }
+      match /notifications/{id} { allow read: if self(uid); allow write: if false; }
+      // devices are intentionally NOT readable, including by their user/admin.
+    }
+    match /shops/{shopId} {
+      allow read: if resource.data.active == true || owner(shopId) || role('admin');
+      allow write: if false;
+      match /drivers/{uid} {
+        allow read: if owner(shopId) || role('admin');
+        allow write: if false;
+      }
+    }
+    match /categories/{id} {
+      allow read: if resource.data.active == true || role('admin');
+      allow write: if false;
+    }
+    match /menuItems/{id} {
+      allow read: if (resource.data.active == true
+          && get(/databases/$(database)/documents/shops/$(resource.data.shopId)).data.active == true)
+        || owner(resource.data.shopId) || role('admin');
+      allow write: if false;
+    }
+    match /orders/{orderId} {
+      allow read: if participant(resource.data);
+      allow write: if false;
+      match /events/{eventId} {
+        allow read: if participant(orderData(orderId));
+        allow write: if false;
+      }
+      match /messages/{messageId} {
+        allow read: if chatParticipant(orderData(orderId));
+        allow write: if false;
+      }
+      match /deliveryTracking/{id} {
+        allow get: if id == 'current' && orderData(orderId).status == 'DELIVERING'
+          && chatParticipant(orderData(orderId));
+        allow list, write: if false;
+      }
+    }
+    match /reviews/{reviewId} {
+      allow read: if resource.data.verifiedCompletedOrder == true;
+      allow write: if false;
+    }
+    // Vouchers/counters, operations, outbox, caches, registry, audits and seed
+    // manifests remain backend-only. Admin UI receives bounded DTOs via Express.
+    match /{document=**} { allow read, write: if false; }
+  }
+}

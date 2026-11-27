@@ -1,0 +1,5 @@
+
+> @foodordernext/mobile@0.0.1 lint:p01
+> eslint App.js src/auth src/api/clientCore.js src/api/axiosClient.js src/config src/firebase src/navigation/PhaseOneNavigator.jsx src/screens/P01 src/services/AuthService.js src/services/ProfileService.js __tests__
+
+Exit code: 0

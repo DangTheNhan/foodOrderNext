@@ -1,0 +1,37 @@
+{
+  "projectId": "foodordernext-staging",
+  "apiBase": "https://foodordernext-api-staging.onrender.com/api/v1",
+  "datasetId": "p09-staging-demo-v1",
+  "shopId": "p09-staging-demo-v1-shop",
+  "result": "PASS",
+  "checkedAt": "2026-11-26T02:40:09.733Z",
+  "checks": {
+    "guard": "PASS",
+    "firestoreAccess": "PASS",
+    "localDemoCredentials": "PASS",
+    "authAndFirestoreSeed": "PASS",
+    "roleProfiles": "PASS",
+    "quoteAndCreateOnlyOneOrder": "PASS",
+    "merchantAndDriverAssignment": "PASS",
+    "exactCodAndStock": "PASS",
+    "verifiedReview": "PASS"
+  },
+  "seed": {
+    "created": false,
+    "accounts": 3,
+    "categories": 2,
+    "dishes": 3,
+    "shops": 1
+  },
+  "orderId": "sGMAmBz2LC2YUeNqI8lz",
+  "order": {
+    "status": "COMPLETED",
+    "paymentStatus": "COD_CONFIRMED",
+    "codCollectedVnd": 35000,
+    "stock": {
+      "available": 48,
+      "reserved": 0,
+      "sold": 2
+    }
+  }
+}

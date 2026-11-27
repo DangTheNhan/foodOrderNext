@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "projectId": "foodordernext-staging",
+  "apiBaseUrl": "https://foodordernext-api-staging.onrender.com/api/v1",
+  "apkSha256": "cd1abcb00f4956d411c1c7713d19c806809a3bc56c36ab6109c0d909b084ff5f",
+  "emulator": {
+    "serial": "emulator-5562",
+    "androidApi": 37
+  },
+  "checkedAt": "2026-11-26T02:22:33.165Z",
+  "checks": {
+    "freshInstall": "PASS",
+    "prepareStagingAccount": "PASS",
+    "profileAbsentBeforeAndroidLogin": "PASS",
+    "nativeSignInRestartAndLogout": "PASS",
+    "expressProfileCreatedByAndroid": "PASS",
+    "firestoreProfileReadAsCustomer": "PASS",
+    "temporaryProfileRemoved": "PASS",
+    "temporaryAuthAccountRemoved": "PASS"
+  },
+  "authFixture": "Synthetic pre-verified account imported with Firebase CLI",
+  "nativeSteps": [
+    "PASS: native email/password login and customer profile",
+    "PASS: authenticated profile restored after restart",
+    "PASS: logout returned to login"
+  ]
+}

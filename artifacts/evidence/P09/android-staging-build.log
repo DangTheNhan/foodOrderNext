@@ -1,0 +1,944 @@
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :react-native-firebase_app
+:react-native-firebase_app package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\package.json
+:react-native-firebase_app:firebase.bom using default value: 34.18.0
+:react-native-firebase_app:play.play-services-auth using default value: 21.5.0
+:react-native-firebase_app package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\package.json
+:react-native-firebase_app:version set from package.json: 26.4.1 (26,4,1 - 26004001)
+:react-native-firebase_app:android.compileSdk using custom value: 36
+:react-native-firebase_app:android.targetSdk using custom value: 36
+:react-native-firebase_app:android.minSdk using custom value: 24
+:react-native-firebase_app:reactNativeAndroidDir C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native
+
+> Configure project :react-native-firebase_auth
+:react-native-firebase_auth package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\auth\package.json
+:react-native-firebase_app package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\package.json
+:react-native-firebase_auth:firebase.bom using default value: 34.18.0
+:react-native-firebase_auth package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\auth\package.json
+:react-native-firebase_auth:version set from package.json: 26.4.1 (26,4,1 - 26004001)
+:react-native-firebase_auth:android.compileSdk using custom value: 36
+:react-native-firebase_auth:android.targetSdk using custom value: 36
+:react-native-firebase_auth:android.minSdk using custom value: 24
+:react-native-firebase_auth:reactNativeAndroidDir C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native
+
+> Configure project :react-native-firebase_firestore
+:react-native-firebase_firestore package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\firestore\package.json
+:react-native-firebase_app package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\package.json
+:react-native-firebase_firestore:firebase.bom using default value: 34.18.0
+:react-native-firebase_firestore package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\firestore\package.json
+:react-native-firebase_firestore:version set from package.json: 26.4.1 (26,4,1 - 26004001)
+:react-native-firebase_firestore:android.compileSdk using custom value: 36
+:react-native-firebase_firestore:android.targetSdk using custom value: 36
+:react-native-firebase_firestore:android.minSdk using custom value: 24
+:react-native-firebase_firestore:reactNativeAndroidDir C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native
+
+> Configure project :react-native-firebase_messaging
+:react-native-firebase_messaging package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\messaging\package.json
+:react-native-firebase_app package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\package.json
+:react-native-firebase_messaging:firebase.bom using default value: 34.18.0
+:react-native-firebase_messaging package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\messaging\package.json
+:react-native-firebase_messaging:version set from package.json: 26.4.1 (26,4,1 - 26004001)
+:react-native-firebase_messaging:android.compileSdk using custom value: 36
+:react-native-firebase_messaging:android.targetSdk using custom value: 36
+:react-native-firebase_messaging:android.minSdk using custom value: 24
+:react-native-firebase_messaging:reactNativeAndroidDir C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native
+
+> Configure project :react-native-firebase_perf
+:react-native-firebase_perf package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\perf\package.json
+:react-native-firebase_app package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\package.json
+:react-native-firebase_perf:firebase.bom using default value: 34.18.0
+:react-native-firebase_perf package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\perf\package.json
+:react-native-firebase_perf:version set from package.json: 26.4.1 (26,4,1 - 26004001)
+:react-native-firebase_perf:android.compileSdk using custom value: 36
+:react-native-firebase_perf:android.targetSdk using custom value: 36
+:react-native-firebase_perf:android.minSdk using custom value: 24
+:react-native-firebase_perf:reactNativeAndroidDir C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native
+
+> Configure project :react-native-firebase_storage
+:react-native-firebase_storage package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\storage\package.json
+:react-native-firebase_app package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\package.json
+:react-native-firebase_storage:firebase.bom using default value: 34.18.0
+:react-native-firebase_storage package.json found at C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\storage\package.json
+:react-native-firebase_storage:version set from package.json: 26.4.1 (26,4,1 - 26004001)
+:react-native-firebase_storage:android.compileSdk using custom value: 36
+:react-native-firebase_storage:android.targetSdk using custom value: 36
+:react-native-firebase_storage:android.minSdk using custom value: 24
+:react-native-firebase_storage:reactNativeAndroidDir C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native
+
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preBuild UP-TO-DATE
+> Task :react-native-firebase_app:preBuild UP-TO-DATE
+> Task :react-native-firebase_auth:preBuild UP-TO-DATE
+> Task :react-native-firebase_firestore:preBuild UP-TO-DATE
+> Task :react-native-firebase_messaging:preBuild UP-TO-DATE
+> Task :react-native-firebase_perf:preBuild UP-TO-DATE
+> Task :react-native-firebase_storage:preBuild UP-TO-DATE
+> Task :react-native-google-signin_google-signin:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-google-signin_google-signin:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-google-signin_google-signin:preBuild UP-TO-DATE
+> Task :react-native-image-picker:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-image-picker:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-image-picker:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-screens:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-screens:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-vector-icons:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-vector-icons:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-vector-icons:preBuild UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+
+> Task :app:configureCMakeRelWithDebInfo[x86_64]
+[CXX5304] This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+[CXX5304] This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+
+> Task :app:buildCMakeRelWithDebInfo[x86_64]
+> Task :app:mergeReleaseJniLibFolders
+> Task :react-native-async-storage_async-storage:preReleaseBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeReleaseJniLibFolders
+> Task :react-native-async-storage_async-storage:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-firebase_app:preReleaseBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectOnly
+> Task :react-native-firebase_app:mergeReleaseJniLibFolders
+> Task :react-native-firebase_app:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-firebase_auth:preReleaseBuild UP-TO-DATE
+> Task :react-native-firebase_app:copyReleaseJniLibsProjectOnly
+> Task :react-native-firebase_auth:mergeReleaseJniLibFolders
+> Task :react-native-firebase_auth:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-firebase_firestore:preReleaseBuild UP-TO-DATE
+> Task :react-native-firebase_auth:copyReleaseJniLibsProjectOnly
+> Task :react-native-firebase_firestore:mergeReleaseJniLibFolders
+> Task :react-native-firebase_firestore:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-firebase_messaging:preReleaseBuild UP-TO-DATE
+> Task :react-native-firebase_firestore:copyReleaseJniLibsProjectOnly
+> Task :react-native-firebase_messaging:mergeReleaseJniLibFolders
+> Task :react-native-firebase_messaging:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-firebase_perf:preReleaseBuild UP-TO-DATE
+> Task :react-native-firebase_messaging:copyReleaseJniLibsProjectOnly
+> Task :react-native-firebase_perf:mergeReleaseJniLibFolders
+> Task :react-native-firebase_perf:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-firebase_storage:preReleaseBuild UP-TO-DATE
+> Task :react-native-firebase_perf:copyReleaseJniLibsProjectOnly
+> Task :react-native-firebase_storage:mergeReleaseJniLibFolders
+> Task :react-native-firebase_storage:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-google-signin_google-signin:preReleaseBuild UP-TO-DATE
+> Task :react-native-firebase_storage:copyReleaseJniLibsProjectOnly
+> Task :react-native-google-signin_google-signin:mergeReleaseJniLibFolders
+> Task :react-native-google-signin_google-signin:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-image-picker:preReleaseBuild UP-TO-DATE
+> Task :react-native-google-signin_google-signin:copyReleaseJniLibsProjectOnly
+> Task :react-native-image-picker:mergeReleaseJniLibFolders
+> Task :react-native-image-picker:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-safe-area-context:preReleaseBuild UP-TO-DATE
+> Task :react-native-image-picker:copyReleaseJniLibsProjectOnly
+> Task :react-native-safe-area-context:mergeReleaseJniLibFolders
+> Task :react-native-safe-area-context:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-screens:preReleaseBuild UP-TO-DATE
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectOnly
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86_64]
+> Task :react-native-screens:mergeReleaseJniLibFolders
+> Task :react-native-vector-icons:preReleaseBuild UP-TO-DATE
+> Task :react-native-vector-icons:mergeReleaseJniLibFolders
+> Task :react-native-vector-icons:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-async-storage_async-storage:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-vector-icons:copyReleaseJniLibsProjectOnly
+> Task :react-native-screens:mergeReleaseNativeLibs
+> Task :react-native-async-storage_async-storage:generateReleaseBuildConfig
+> Task :react-native-async-storage_async-storage:generateReleaseResValues
+> Task :react-native-screens:copyReleaseJniLibsProjectOnly
+> Task :react-native-async-storage_async-storage:generateReleaseResources
+> Task :react-native-async-storage_async-storage:packageReleaseResources
+> Task :react-native-async-storage_async-storage:parseReleaseLocalResources
+> Task :react-native-async-storage_async-storage:javaPreCompileRelease
+> Task :react-native-google-signin_google-signin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-google-signin_google-signin:generateReleaseBuildConfig
+> Task :react-native-google-signin_google-signin:generateReleaseResValues
+> Task :react-native-async-storage_async-storage:generateReleaseRFile
+> Task :react-native-google-signin_google-signin:generateReleaseResources
+> Task :app:mergeReleaseNativeLibs
+> Task :react-native-google-signin_google-signin:packageReleaseResources
+> Task :react-native-google-signin_google-signin:parseReleaseLocalResources
+> Task :react-native-google-signin_google-signin:generateReleaseRFile
+> Task :app:stripReleaseDebugSymbols
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeReleaseNativeDebugMetadata
+> Task :react-native-google-signin_google-signin:javaPreCompileRelease
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-safe-area-context:generateReleaseBuildConfig
+> Task :react-native-safe-area-context:generateReleaseResValues
+> Task :react-native-safe-area-context:generateReleaseResources
+> Task :react-native-safe-area-context:packageReleaseResources
+> Task :react-native-safe-area-context:parseReleaseLocalResources
+> Task :react-native-safe-area-context:generateReleaseRFile
+> Task :react-native-async-storage_async-storage:kspReleaseKotlin
+
+> Task :react-native-google-signin_google-signin:compileReleaseKotlin
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/@react-native-google-signin/google-signin/android/src/main/java/com/reactnativegooglesignin/ErrorDto.kt:3:8 'class GoogleSignInStatusCodes : CommonStatusCodes' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/@react-native-google-signin/google-signin/android/src/main/java/com/reactnativegooglesignin/ErrorDto.kt:23:31 Condition is always 'true'.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/@react-native-google-signin/google-signin/android/src/main/java/com/reactnativegooglesignin/ErrorDto.kt:24:16 'class GoogleSignInStatusCodes : CommonStatusCodes' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/@react-native-google-signin/google-signin/android/src/main/java/com/reactnativegooglesignin/ErrorDto.kt:29:33 'class GoogleSignInStatusCodes : CommonStatusCodes' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/@react-native-google-signin/google-signin/android/src/main/java/com/reactnativegooglesignin/ErrorDto.kt:30:38 'class GoogleSignInStatusCodes : CommonStatusCodes' is deprecated. Deprecated in Java.
+
+> Task :react-native-safe-area-context:compileReleaseKotlin
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaProviderManager.kt:39:19 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:8:8 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:45:54 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewShadowNode.kt:9:32 'class LayoutShadowNode : ReactShadowNodeImpl' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewShadowNode.kt:110:61 'class NativeViewHierarchyOptimizer : Any' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+
+> Task :react-native-async-storage_async-storage:compileReleaseKotlin
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/@react-native-async-storage/async-storage/android/src/main/kotlin/org/asyncstorage/legacy_storage/LegacyStorageSupplier.kt:63:69 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/@react-native-async-storage/async-storage/android/src/main/kotlin/org/asyncstorage/legacy_storage/LegacyStorageSupplier.kt:91:26 The corresponding parameter in the supertype 'Migration' is named 'db'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/@react-native-async-storage/async-storage/android/src/main/kotlin/org/asyncstorage/legacy_storage/LegacyStorageSupplier.kt:202:17 Unchecked cast of 'ArrayList<Any?>' to 'List<String>'.
+
+> Task :react-native-google-signin_google-signin:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-google-signin\google-signin\android\src\main\java\com\reactnativegooglesignin\RNGoogleSigninModule.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-async-storage_async-storage:compileReleaseJavaWithJavac
+> Task :react-native-safe-area-context:javaPreCompileRelease
+> Task :react-native-google-signin_google-signin:bundleLibRuntimeToJarRelease
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToJarRelease
+> Task :react-native-safe-area-context:compileReleaseJavaWithJavac
+> Task :react-native-safe-area-context:bundleLibRuntimeToJarRelease
+> Task :react-native-screens:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-screens:generateReleaseBuildConfig
+> Task :react-native-screens:generateReleaseResValues
+> Task :react-native-screens:generateReleaseResources
+> Task :react-native-screens:packageReleaseResources
+> Task :react-native-screens:javaPreCompileRelease
+> Task :react-native-firebase_app:generateReleaseBuildConfig
+> Task :react-native-screens:parseReleaseLocalResources
+> Task :react-native-firebase_app:generateReleaseResValues
+> Task :react-native-firebase_app:generateReleaseResources
+> Task :react-native-screens:generateReleaseRFile
+> Task :react-native-firebase_app:packageReleaseResources
+> Task :react-native-firebase_app:javaPreCompileRelease
+> Task :react-native-firebase_app:parseReleaseLocalResources
+> Task :react-native-firebase_auth:generateReleaseBuildConfig
+> Task :react-native-firebase_auth:generateReleaseResValues
+> Task :react-native-firebase_app:generateReleaseRFile
+> Task :react-native-firebase_auth:generateReleaseResources
+
+> Task :react-native-firebase_app:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-firebase_auth:packageReleaseResources
+> Task :react-native-firebase_app:bundleLibCompileToJarRelease
+> Task :react-native-firebase_auth:parseReleaseLocalResources
+> Task :react-native-firebase_auth:javaPreCompileRelease
+> Task :react-native-firebase_auth:generateReleaseRFile
+> Task :react-native-firebase_app:bundleLibRuntimeToJarRelease
+
+> Task :react-native-firebase_auth:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\auth\android\src\main\java\io\invertase\firebase\auth\NativeRNFBTurboAuth.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-firebase_auth:bundleLibRuntimeToJarRelease
+> Task :react-native-firebase_firestore:generateReleaseBuildConfig
+> Task :react-native-firebase_firestore:generateReleaseResValues
+> Task :react-native-firebase_firestore:generateReleaseResources
+> Task :react-native-firebase_firestore:packageReleaseResources
+> Task :react-native-firebase_firestore:parseReleaseLocalResources
+> Task :react-native-firebase_firestore:generateReleaseRFile
+> Task :react-native-firebase_firestore:javaPreCompileRelease
+
+> Task :react-native-firebase_firestore:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-firebase_messaging:generateReleaseBuildConfig
+> Task :react-native-firebase_messaging:generateReleaseResValues
+> Task :react-native-firebase_messaging:generateReleaseResources
+> Task :react-native-firebase_messaging:packageReleaseResources
+> Task :react-native-firebase_messaging:parseReleaseLocalResources
+> Task :react-native-firebase_firestore:bundleLibRuntimeToJarRelease
+> Task :react-native-firebase_messaging:generateReleaseRFile
+> Task :react-native-firebase_messaging:javaPreCompileRelease
+
+> Task :react-native-firebase_messaging:compileReleaseJavaWithJavac
+
+> Task :react-native-firebase_messaging:bundleLibRuntimeToJarRelease
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+> Task :react-native-firebase_perf:generateReleaseBuildConfig
+> Task :react-native-firebase_perf:generateReleaseResValues
+> Task :react-native-firebase_perf:generateReleaseResources
+> Task :react-native-firebase_perf:packageReleaseResources
+> Task :react-native-firebase_perf:parseReleaseLocalResources
+> Task :react-native-firebase_perf:generateReleaseRFile
+> Task :react-native-firebase_perf:javaPreCompileRelease
+
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+> Task :react-native-firebase_perf:compileReleaseJavaWithJavac
+
+> Task :react-native-firebase_perf:bundleLibRuntimeToJarRelease
+> Task :react-native-firebase_storage:generateReleaseBuildConfig
+> Task :react-native-firebase_storage:generateReleaseResValues
+> Task :react-native-firebase_storage:generateReleaseResources
+> Task :react-native-firebase_storage:packageReleaseResources
+> Task :react-native-firebase_storage:parseReleaseLocalResources
+> Task :react-native-firebase_storage:generateReleaseRFile
+> Task :react-native-firebase_storage:javaPreCompileRelease
+
+> Task :react-native-firebase_storage:compileReleaseJavaWithJavac
+Note: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\storage\android\src\main\java\io\invertase\firebase\storage\ReactNativeFirebaseStoragePackage.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-image-picker:generateReleaseBuildConfig
+> Task :react-native-firebase_storage:bundleLibRuntimeToJarRelease
+> Task :react-native-image-picker:generateReleaseResValues
+> Task :react-native-image-picker:generateReleaseResources
+> Task :react-native-image-picker:packageReleaseResources
+> Task :react-native-image-picker:parseReleaseLocalResources
+> Task :react-native-image-picker:generateReleaseRFile
+> Task :react-native-image-picker:javaPreCompileRelease
+
+> Task :react-native-image-picker:compileReleaseJavaWithJavac
+Note: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native-image-picker\android\src\main\java\com\imagepicker\ImagePickerPackage.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-image-picker:bundleLibRuntimeToJarRelease
+> Task :react-native-vector-icons:generateReleaseBuildConfig
+> Task :react-native-vector-icons:generateReleaseResValues
+> Task :react-native-vector-icons:generateReleaseResources
+> Task :react-native-vector-icons:packageReleaseResources
+> Task :react-native-vector-icons:parseReleaseLocalResources
+> Task :react-native-vector-icons:generateReleaseRFile
+> Task :react-native-vector-icons:javaPreCompileRelease
+
+> Task :react-native-vector-icons:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-vector-icons:bundleLibRuntimeToJarRelease
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateReleaseBuildConfig
+> Task :react-native-firebase_app:writeReleaseAarMetadata
+> Task :react-native-async-storage_async-storage:writeReleaseAarMetadata
+> Task :react-native-firebase_auth:writeReleaseAarMetadata
+> Task :react-native-firebase_firestore:writeReleaseAarMetadata
+> Task :react-native-firebase_messaging:writeReleaseAarMetadata
+> Task :react-native-firebase_perf:writeReleaseAarMetadata
+> Task :react-native-firebase_storage:writeReleaseAarMetadata
+> Task :react-native-google-signin_google-signin:writeReleaseAarMetadata
+> Task :react-native-image-picker:writeReleaseAarMetadata
+> Task :react-native-safe-area-context:writeReleaseAarMetadata
+> Task :react-native-screens:writeReleaseAarMetadata
+> Task :react-native-vector-icons:writeReleaseAarMetadata
+> Task :app:checkReleaseAarMetadata
+
+> Task :react-native-screens:compileReleaseKotlin
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:70:9 The corresponding parameter in the supertype 'BaseReactPackage' is named 'name'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:71:9 The corresponding parameter in the supertype 'BaseReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:83:17 'constructor(name: String, className: String, canOverrideExistingModule: Boolean, needsEagerInit: Boolean, hasConstants: Boolean, isCxxModule: Boolean, isTurboModule: Boolean): ReactModuleInfo' is deprecated. This constructor is deprecated and will be removed in the future. Use ReactModuleInfo(String, String, boolean, boolean, boolean, boolean)].
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:54:77 Unchecked cast of '(CoordinatorLayout.Behavior<View!>?..CoordinatorLayout.Behavior<*>?)' to 'BottomSheetBehavior<Screen>'.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:59:33 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:532:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainer.kt:250:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainer.kt:260:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:225:37 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:242:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:258:22 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:327:22 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenModalFragment.kt:180:22 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStack.kt:120:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:179:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:236:31 'var targetElevation: Float' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:239:13 'fun setHasOptionsMenu(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:450:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:457:22 'fun onPrepareOptionsMenu(p0: Menu): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:460:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:465:22 'fun onCreateOptionsMenu(p0: Menu, p1: MenuInflater): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.kt:199:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.kt:209:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:48:42 'fun replaceSystemWindowInsets(p0: Int, p1: Int, p2: Int, p3: Int): @NonNull() WindowInsetsCompat' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:49:39 'val systemWindowInsetLeft: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:51:39 'val systemWindowInsetRight: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:52:39 'val systemWindowInsetBottom: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreensModule.kt:100:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchBarView.kt:137:29 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:7:8 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:25:13 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:32:9 The corresponding parameter in the supertype 'ReactViewGroup' is named 'left'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:33:9 The corresponding parameter in the supertype 'ReactViewGroup' is named 'top'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:34:9 The corresponding parameter in the supertype 'ReactViewGroup' is named 'right'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:35:9 The corresponding parameter in the supertype 'ReactViewGroup' is named 'bottom'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:71:9 The corresponding parameter in the supertype 'RootView' is named 'childView'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:72:9 The corresponding parameter in the supertype 'RootView' is named 'ev'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:79:46 The corresponding parameter in the supertype 'RootView' is named 'ev'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:83:9 The corresponding parameter in the supertype 'RootView' is named 'childView'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:84:9 The corresponding parameter in the supertype 'RootView' is named 'ev'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:95:34 The corresponding parameter in the supertype 'RootView' is named 't'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:64:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchX'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:65:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchY'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:69:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchX'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:70:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchY'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/common/event/BaseEventEmitter.kt:12:38 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:64:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchX'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:65:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchY'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:69:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchX'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:70:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchY'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:11:8 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:39:33 'fun getEventDispatcher(context: ReactContext, uiManagerType: Int): EventDispatcher?' is deprecated. UIManagerType is no longer needed.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:44:13 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetHostViewManager.kt:38:9 The corresponding parameter in the supertype 'FormSheetHostViewManager' is named 'view'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/tabs/host/TabsHostViewManager.kt:44:9 The corresponding parameter in the supertype 'TabsHostViewManager' is named 'view'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/safearea/SafeAreaView.kt:143:45 'fun consumeDisplayCutout(): @NonNull() WindowInsetsCompat' is deprecated. Deprecated in Java.
+
+> Task :app:createBundleReleaseJsAndAssets
+
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+
+ WARN  the transform cache was reset.
+                Welcome to Metro v0.84.4
+              Fast - Scalable - Integrated
+
+
+transform[stderr]: (node:15840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:11864) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:21340) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:12160) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:3748) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:3280) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:17740) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:18572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:21576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:16320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:21608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+transform[stderr]: (node:22200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+transform[stderr]: (Use `node --trace-warnings ...` to show where the warning was created)
+LOG:Writing bundle output to: android\app\build\generated\assets\react\release\index.android.bundle
+LOG:Writing sourcemap output to: android\app\build\intermediates\sourcemaps\react\release\index.android.bundle.packager.map
+LOG:Done writing bundle output
+LOG:Done writing sourcemap output
+Copying 19 asset files
+Done copying assets
+
+> Task :react-native-screens:compileReleaseJavaWithJavac
+> Task :app:generateReleaseResValues
+> Task :app:processReleaseGoogleServices UP-TO-DATE
+> Task :react-native-screens:bundleLibRuntimeToJarRelease
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:parseReleaseLocalResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :react-native-async-storage_async-storage:extractDeepLinksRelease
+> Task :react-native-firebase_app:extractDeepLinksRelease
+> Task :app:mergeReleaseResources
+> Task :react-native-firebase_auth:extractDeepLinksRelease
+> Task :react-native-async-storage_async-storage:processReleaseManifest
+
+> Task :react-native-firebase_auth:processReleaseManifest
+package="io.invertase.firebase.auth" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\auth\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.invertase.firebase.auth" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\auth\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-firebase_app:processReleaseManifest
+package="io.invertase.firebase" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.invertase.firebase" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\app\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-firebase_firestore:extractDeepLinksRelease
+> Task :react-native-firebase_messaging:extractDeepLinksRelease
+
+> Task :react-native-firebase_firestore:processReleaseManifest
+package="io.invertase.firebase.firestore" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\firestore\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.invertase.firebase.firestore" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\firestore\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-firebase_perf:extractDeepLinksRelease
+
+> Task :react-native-firebase_messaging:processReleaseManifest
+package="io.invertase.firebase.messaging" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\messaging\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.invertase.firebase.messaging" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\messaging\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-firebase_storage:extractDeepLinksRelease
+
+> Task :react-native-firebase_perf:processReleaseManifest
+package="io.invertase.firebase.perf" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\perf\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.invertase.firebase.perf" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\perf\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-google-signin_google-signin:extractDeepLinksRelease
+
+> Task :react-native-firebase_storage:processReleaseManifest
+package="io.invertase.firebase.storage" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\storage\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.invertase.firebase.storage" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-firebase\storage\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-image-picker:extractDeepLinksRelease
+
+> Task :react-native-google-signin_google-signin:processReleaseManifest
+package="com.reactnativegooglesignin" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-google-signin\google-signin\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativegooglesignin" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\@react-native-google-signin\google-signin\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-safe-area-context:extractDeepLinksRelease
+
+> Task :react-native-image-picker:processReleaseManifest
+package="com.imagepicker" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native-image-picker\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.imagepicker" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native-image-picker\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-screens:extractDeepLinksRelease
+
+> Task :react-native-safe-area-context:processReleaseManifest
+package="com.th3rdwave.safeareacontext" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.th3rdwave.safeareacontext" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-vector-icons:extractDeepLinksRelease
+> Task :react-native-screens:processReleaseManifest
+
+> Task :react-native-vector-icons:processReleaseManifest
+package="com.oblador.vectoricons" found in source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native-vector-icons\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.oblador.vectoricons" from the source AndroidManifest.xml: C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\node_modules\react-native-vector-icons\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-async-storage_async-storage:compileReleaseLibraryResources
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :react-native-firebase_app:compileReleaseLibraryResources
+> Task :app:processReleaseManifestForPackage
+> Task :react-native-firebase_auth:compileReleaseLibraryResources
+> Task :react-native-firebase_firestore:compileReleaseLibraryResources
+> Task :react-native-firebase_messaging:compileReleaseLibraryResources
+> Task :react-native-firebase_perf:compileReleaseLibraryResources
+> Task :react-native-firebase_storage:compileReleaseLibraryResources
+> Task :react-native-google-signin_google-signin:compileReleaseLibraryResources
+> Task :react-native-image-picker:compileReleaseLibraryResources
+> Task :react-native-safe-area-context:compileReleaseLibraryResources
+> Task :react-native-vector-icons:compileReleaseLibraryResources
+> Task :react-native-firebase_auth:bundleLibCompileToJarRelease
+> Task :react-native-screens:compileReleaseLibraryResources
+> Task :react-native-async-storage_async-storage:bundleLibCompileToJarRelease
+> Task :react-native-firebase_firestore:bundleLibCompileToJarRelease
+> Task :react-native-firebase_perf:bundleLibCompileToJarRelease
+> Task :react-native-firebase_messaging:bundleLibCompileToJarRelease
+> Task :react-native-firebase_storage:bundleLibCompileToJarRelease
+> Task :react-native-google-signin_google-signin:bundleLibCompileToJarRelease
+> Task :react-native-image-picker:bundleLibCompileToJarRelease
+> Task :react-native-safe-area-context:bundleLibCompileToJarRelease
+> Task :react-native-vector-icons:bundleLibCompileToJarRelease
+> Task :app:javaPreCompileRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseStartupProfile
+> Task :react-native-screens:bundleLibCompileToJarRelease
+
+> Task :app:mergeExtDexRelease
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbd, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbo, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.signin.zbb, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 7: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbv, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 7: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbv, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 7: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbi, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 7: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbi, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbp, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbs, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 10: invokespecial Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.zba, but was com.google.android.gms.common.api.Api$AbstractClientBuilder.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbl, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbn, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbu, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbq, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 6: invokespecial Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.internal.auth-api.zbae, but was com.google.android.gms.common.api.Api$AbstractClientBuilder.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbh, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbg, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbm, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbk, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 17: invokespecial Lcom/google/android/gms/auth/api/signin/internal/zbl;<init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.signin.internal.zbi, but was com.google.android.gms.auth.api.signin.internal.zbl.<init>(com.google.android.gms.common.api.GoogleApiClient).
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 20: invokespecial Lcom/google/android/gms/auth/api/signin/internal/zbl;<init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.signin.internal.zbk, but was com.google.android.gms.auth.api.signin.internal.zbl.<init>(com.google.android.gms.common.api.GoogleApiClient).
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbw, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbc, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbe, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbj, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbr, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.internal.auth-api.zbay, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 6: invokespecial Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.internal.auth-api.zbak, but was com.google.android.gms.common.api.Api$AbstractClientBuilder.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbt, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.signin.internal.zbu, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 2: invokespecial Ljava/lang/Object;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.auth.api.identity.zbb, but was java.lang.Object.<init>().
+WARNING: C:\Users\dangt\.gradle\caches\9.3.1\transforms\1a7a6c0e507c60bd0aa3f15b76da6a7b\workspace\transformed\play-services-auth-21.5.0-runtime.jar: D8: Invalid stack map table at instruction index 6: invokespecial Lcom/google/android/gms/common/api/Api$AbstractClientBuilder;<init>()V, error: Constructor mismatch, expected constructor from com.google.android.gms.internal.auth-api.zbw, but was com.google.android.gms.common.api.Api$AbstractClientBuilder.<init>().
+
+> Task :app:processReleaseResources
+> Task :react-native-async-storage_async-storage:prepareReleaseArtProfile
+> Task :react-native-firebase_app:prepareReleaseArtProfile
+> Task :react-native-firebase_auth:prepareReleaseArtProfile
+> Task :react-native-firebase_firestore:prepareReleaseArtProfile
+> Task :react-native-firebase_messaging:prepareReleaseArtProfile
+> Task :react-native-firebase_perf:prepareReleaseArtProfile
+> Task :react-native-firebase_storage:prepareReleaseArtProfile
+> Task :react-native-google-signin_google-signin:prepareReleaseArtProfile
+> Task :react-native-image-picker:prepareReleaseArtProfile
+> Task :react-native-safe-area-context:prepareReleaseArtProfile
+> Task :react-native-screens:prepareReleaseArtProfile
+> Task :react-native-vector-icons:prepareReleaseArtProfile
+> Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:copyReactNativeVectorIconFonts UP-TO-DATE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeReleaseShaders
+> Task :react-native-async-storage_async-storage:compileReleaseShaders NO-SOURCE
+> Task :react-native-async-storage_async-storage:generateReleaseAssets UP-TO-DATE
+
+> Task :app:compileReleaseKotlin
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/android/app/src/main/java/com/foodorderingapp/DeliveryLocationPackage.kt:24:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/android/app/src/main/java/com/foodorderingapp/DeliveryLocationPackage.kt:24:36 The corresponding parameter in the supertype 'ReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/android/app/src/main/java/com/foodorderingapp/DeliveryLocationPackage.kt:27:35 The corresponding parameter in the supertype 'ReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/android/app/src/main/java/com/foodorderingapp/RuntimeConfigPackage.kt:10:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/android/app/src/main/java/com/foodorderingapp/RuntimeConfigPackage.kt:10:36 The corresponding parameter in the supertype 'ReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+w: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/android/app/src/main/java/com/foodorderingapp/RuntimeConfigPackage.kt:13:35 The corresponding parameter in the supertype 'ReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+
+> Task :react-native-async-storage_async-storage:mergeReleaseAssets
+> Task :app:compileReleaseJavaWithJavac
+> Task :react-native-firebase_app:mergeReleaseShaders
+> Task :react-native-firebase_app:compileReleaseShaders NO-SOURCE
+> Task :react-native-firebase_app:generateReleaseAssets UP-TO-DATE
+> Task :react-native-firebase_app:mergeReleaseAssets
+> Task :react-native-firebase_auth:mergeReleaseShaders
+> Task :react-native-firebase_auth:compileReleaseShaders NO-SOURCE
+> Task :react-native-firebase_auth:generateReleaseAssets UP-TO-DATE
+> Task :react-native-firebase_auth:mergeReleaseAssets
+> Task :react-native-firebase_firestore:mergeReleaseShaders
+> Task :react-native-firebase_firestore:compileReleaseShaders NO-SOURCE
+> Task :react-native-firebase_firestore:generateReleaseAssets UP-TO-DATE
+> Task :react-native-firebase_firestore:mergeReleaseAssets
+> Task :react-native-firebase_messaging:mergeReleaseShaders
+> Task :react-native-firebase_messaging:compileReleaseShaders NO-SOURCE
+> Task :react-native-firebase_messaging:generateReleaseAssets UP-TO-DATE
+> Task :react-native-firebase_messaging:mergeReleaseAssets
+> Task :react-native-firebase_perf:mergeReleaseShaders
+> Task :react-native-firebase_perf:compileReleaseShaders NO-SOURCE
+> Task :react-native-firebase_perf:generateReleaseAssets UP-TO-DATE
+> Task :react-native-firebase_perf:mergeReleaseAssets
+> Task :react-native-firebase_storage:mergeReleaseShaders
+> Task :react-native-firebase_storage:compileReleaseShaders NO-SOURCE
+> Task :react-native-firebase_storage:generateReleaseAssets UP-TO-DATE
+> Task :react-native-firebase_storage:mergeReleaseAssets
+> Task :react-native-google-signin_google-signin:mergeReleaseShaders
+> Task :react-native-google-signin_google-signin:compileReleaseShaders NO-SOURCE
+> Task :react-native-google-signin_google-signin:generateReleaseAssets UP-TO-DATE
+> Task :react-native-google-signin_google-signin:mergeReleaseAssets
+> Task :react-native-image-picker:mergeReleaseShaders
+> Task :react-native-image-picker:compileReleaseShaders NO-SOURCE
+> Task :react-native-image-picker:generateReleaseAssets UP-TO-DATE
+> Task :react-native-image-picker:mergeReleaseAssets
+> Task :react-native-safe-area-context:mergeReleaseShaders
+> Task :react-native-safe-area-context:compileReleaseShaders NO-SOURCE
+> Task :react-native-safe-area-context:generateReleaseAssets UP-TO-DATE
+> Task :react-native-safe-area-context:mergeReleaseAssets
+> Task :react-native-screens:mergeReleaseShaders
+> Task :react-native-screens:compileReleaseShaders NO-SOURCE
+> Task :react-native-screens:generateReleaseAssets UP-TO-DATE
+> Task :react-native-screens:mergeReleaseAssets
+> Task :react-native-vector-icons:mergeReleaseShaders
+> Task :react-native-vector-icons:compileReleaseShaders NO-SOURCE
+> Task :react-native-vector-icons:generateReleaseAssets UP-TO-DATE
+> Task :react-native-vector-icons:mergeReleaseAssets
+> Task :app:transformReleaseClassesWithAsm
+> Task :app:mergeReleaseAssets
+> Task :app:dexBuilderRelease
+> Task :app:mergeReleaseGlobalSynthetics
+> Task :app:compressReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:extractProguardFiles
+> Task :react-native-async-storage_async-storage:processReleaseJavaRes
+> Task :react-native-async-storage_async-storage:createFullJarRelease
+> Task :react-native-async-storage_async-storage:extractProguardFiles
+> Task :app:mergeDexRelease
+> Task :react-native-async-storage_async-storage:generateReleaseLintModel
+> Task :react-native-firebase_app:processReleaseJavaRes NO-SOURCE
+> Task :react-native-async-storage_async-storage:prepareLintJarForPublish
+> Task :react-native-firebase_app:createFullJarRelease
+> Task :react-native-firebase_app:extractProguardFiles
+> Task :app:compileReleaseArtProfile
+> Task :react-native-firebase_app:generateReleaseLintModel
+> Task :react-native-firebase_app:prepareLintJarForPublish
+> Task :react-native-firebase_auth:processReleaseJavaRes NO-SOURCE
+> Task :react-native-firebase_auth:createFullJarRelease
+> Task :react-native-firebase_auth:extractProguardFiles
+> Task :react-native-firebase_auth:generateReleaseLintModel
+> Task :react-native-firebase_auth:prepareLintJarForPublish
+> Task :react-native-firebase_firestore:processReleaseJavaRes NO-SOURCE
+> Task :react-native-firebase_firestore:createFullJarRelease
+> Task :react-native-firebase_firestore:extractProguardFiles
+> Task :react-native-firebase_firestore:generateReleaseLintModel
+> Task :react-native-firebase_firestore:prepareLintJarForPublish
+> Task :react-native-firebase_messaging:processReleaseJavaRes NO-SOURCE
+> Task :react-native-firebase_messaging:createFullJarRelease
+> Task :react-native-firebase_messaging:extractProguardFiles
+> Task :react-native-firebase_messaging:generateReleaseLintModel
+> Task :react-native-firebase_messaging:prepareLintJarForPublish
+> Task :react-native-firebase_perf:processReleaseJavaRes NO-SOURCE
+> Task :react-native-firebase_perf:createFullJarRelease
+> Task :react-native-firebase_perf:extractProguardFiles
+> Task :react-native-firebase_perf:generateReleaseLintModel
+> Task :react-native-firebase_perf:prepareLintJarForPublish
+> Task :react-native-firebase_storage:processReleaseJavaRes NO-SOURCE
+> Task :react-native-firebase_storage:createFullJarRelease
+> Task :react-native-firebase_storage:extractProguardFiles
+> Task :react-native-firebase_storage:generateReleaseLintModel
+> Task :react-native-firebase_storage:prepareLintJarForPublish
+> Task :react-native-google-signin_google-signin:processReleaseJavaRes
+> Task :react-native-google-signin_google-signin:createFullJarRelease
+> Task :react-native-google-signin_google-signin:extractProguardFiles
+> Task :react-native-google-signin_google-signin:generateReleaseLintModel
+> Task :react-native-google-signin_google-signin:prepareLintJarForPublish
+> Task :react-native-image-picker:processReleaseJavaRes NO-SOURCE
+> Task :react-native-image-picker:createFullJarRelease
+> Task :react-native-image-picker:extractProguardFiles
+> Task :react-native-image-picker:generateReleaseLintModel
+> Task :react-native-image-picker:prepareLintJarForPublish
+> Task :react-native-safe-area-context:processReleaseJavaRes
+> Task :react-native-safe-area-context:createFullJarRelease
+> Task :react-native-safe-area-context:extractProguardFiles
+> Task :react-native-safe-area-context:generateReleaseLintModel
+> Task :react-native-safe-area-context:prepareLintJarForPublish
+> Task :react-native-screens:processReleaseJavaRes
+> Task :react-native-screens:createFullJarRelease
+> Task :react-native-screens:extractProguardFiles
+> Task :react-native-screens:generateReleaseLintModel
+> Task :react-native-screens:prepareLintJarForPublish
+> Task :react-native-vector-icons:processReleaseJavaRes NO-SOURCE
+> Task :react-native-vector-icons:createFullJarRelease
+> Task :react-native-vector-icons:extractProguardFiles
+> Task :react-native-vector-icons:generateReleaseLintModel
+> Task :react-native-vector-icons:prepareLintJarForPublish
+> Task :react-native-async-storage_async-storage:stripReleaseDebugSymbols NO-SOURCE
+> Task :app:generateReleaseLintVitalReportModel
+> Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-async-storage_async-storage:extractDeepLinksForAarRelease
+> Task :react-native-async-storage_async-storage:extractReleaseAnnotations
+> Task :react-native-async-storage_async-storage:mergeReleaseGeneratedProguardFiles
+> Task :react-native-async-storage_async-storage:mergeReleaseConsumerProguardFiles
+> Task :react-native-google-signin_google-signin:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-google-signin_google-signin:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-google-signin_google-signin:extractDeepLinksForAarRelease
+> Task :react-native-google-signin_google-signin:extractReleaseAnnotations
+> Task :react-native-google-signin_google-signin:mergeReleaseGeneratedProguardFiles
+> Task :react-native-google-signin_google-signin:mergeReleaseConsumerProguardFiles
+> Task :react-native-safe-area-context:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-safe-area-context:extractDeepLinksForAarRelease
+> Task :react-native-safe-area-context:extractReleaseAnnotations
+> Task :react-native-safe-area-context:mergeReleaseGeneratedProguardFiles
+> Task :react-native-safe-area-context:mergeReleaseConsumerProguardFiles
+> Task :react-native-safe-area-context:mergeReleaseJavaResource
+> Task :react-native-google-signin_google-signin:mergeReleaseJavaResource
+> Task :react-native-async-storage_async-storage:mergeReleaseJavaResource
+> Task :react-native-async-storage_async-storage:syncReleaseLibJars
+> Task :react-native-async-storage_async-storage:bundleReleaseLocalLintAar
+> Task :react-native-google-signin_google-signin:syncReleaseLibJars
+> Task :react-native-google-signin_google-signin:bundleReleaseLocalLintAar
+> Task :react-native-safe-area-context:syncReleaseLibJars
+> Task :react-native-safe-area-context:bundleReleaseLocalLintAar
+> Task :react-native-screens:extractDeepLinksForAarRelease
+> Task :react-native-screens:extractReleaseAnnotations
+> Task :react-native-screens:mergeReleaseGeneratedProguardFiles
+> Task :react-native-screens:mergeReleaseConsumerProguardFiles
+> Task :react-native-firebase_auth:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-firebase_auth:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-screens:mergeReleaseJavaResource
+> Task :react-native-firebase_auth:extractDeepLinksForAarRelease
+> Task :react-native-screens:stripReleaseDebugSymbols
+> Task :react-native-screens:syncReleaseLibJars
+> Task :react-native-screens:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-firebase_auth:extractReleaseAnnotations
+> Task :react-native-screens:bundleReleaseLocalLintAar
+> Task :react-native-firebase_auth:mergeReleaseGeneratedProguardFiles
+> Task :react-native-firebase_auth:mergeReleaseConsumerProguardFiles
+> Task :react-native-firebase_auth:mergeReleaseJavaResource
+> Task :react-native-firebase_auth:syncReleaseLibJars
+> Task :react-native-firebase_auth:bundleReleaseLocalLintAar
+> Task :react-native-firebase_firestore:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-firebase_firestore:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-firebase_firestore:extractDeepLinksForAarRelease
+> Task :react-native-firebase_firestore:extractReleaseAnnotations
+> Task :react-native-firebase_firestore:mergeReleaseGeneratedProguardFiles
+> Task :react-native-firebase_firestore:mergeReleaseConsumerProguardFiles
+> Task :react-native-firebase_messaging:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-firebase_firestore:mergeReleaseJavaResource
+> Task :react-native-firebase_messaging:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-firebase_firestore:syncReleaseLibJars
+> Task :react-native-firebase_firestore:bundleReleaseLocalLintAar
+> Task :react-native-firebase_messaging:extractDeepLinksForAarRelease
+> Task :react-native-firebase_messaging:extractReleaseAnnotations
+> Task :react-native-firebase_messaging:mergeReleaseGeneratedProguardFiles
+> Task :react-native-firebase_messaging:mergeReleaseConsumerProguardFiles
+> Task :react-native-firebase_perf:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-firebase_perf:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-firebase_messaging:mergeReleaseJavaResource
+> Task :react-native-firebase_perf:extractDeepLinksForAarRelease
+> Task :react-native-firebase_messaging:syncReleaseLibJars
+> Task :react-native-firebase_messaging:bundleReleaseLocalLintAar
+> Task :react-native-firebase_perf:extractReleaseAnnotations
+> Task :react-native-firebase_perf:mergeReleaseGeneratedProguardFiles
+> Task :react-native-firebase_perf:mergeReleaseConsumerProguardFiles
+> Task :react-native-firebase_storage:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-firebase_storage:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-firebase_perf:mergeReleaseJavaResource
+> Task :react-native-firebase_storage:extractDeepLinksForAarRelease
+> Task :react-native-firebase_perf:syncReleaseLibJars
+> Task :react-native-firebase_perf:bundleReleaseLocalLintAar
+> Task :react-native-firebase_storage:extractReleaseAnnotations
+> Task :react-native-firebase_storage:mergeReleaseGeneratedProguardFiles
+> Task :react-native-firebase_storage:mergeReleaseConsumerProguardFiles
+> Task :react-native-firebase_app:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-firebase_app:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-firebase_storage:mergeReleaseJavaResource
+> Task :react-native-firebase_app:extractDeepLinksForAarRelease
+> Task :react-native-firebase_storage:syncReleaseLibJars
+> Task :react-native-firebase_storage:bundleReleaseLocalLintAar
+> Task :react-native-firebase_app:extractReleaseAnnotations
+> Task :react-native-firebase_app:mergeReleaseGeneratedProguardFiles
+> Task :react-native-firebase_app:mergeReleaseConsumerProguardFiles
+> Task :react-native-image-picker:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-firebase_app:mergeReleaseJavaResource
+> Task :react-native-image-picker:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-image-picker:extractDeepLinksForAarRelease
+> Task :react-native-firebase_app:syncReleaseLibJars
+> Task :react-native-firebase_app:bundleReleaseLocalLintAar
+> Task :react-native-image-picker:extractReleaseAnnotations
+> Task :react-native-image-picker:mergeReleaseGeneratedProguardFiles
+> Task :react-native-image-picker:mergeReleaseConsumerProguardFiles
+> Task :react-native-vector-icons:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-vector-icons:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-image-picker:mergeReleaseJavaResource
+> Task :react-native-vector-icons:extractDeepLinksForAarRelease
+> Task :react-native-image-picker:syncReleaseLibJars
+> Task :react-native-image-picker:bundleReleaseLocalLintAar
+> Task :react-native-vector-icons:extractReleaseAnnotations
+> Task :react-native-vector-icons:mergeReleaseGeneratedProguardFiles
+> Task :react-native-vector-icons:mergeReleaseConsumerProguardFiles
+> Task :react-native-vector-icons:mergeReleaseJavaResource
+> Task :react-native-vector-icons:syncReleaseLibJars
+> Task :react-native-vector-icons:bundleReleaseLocalLintAar
+> Task :react-native-async-storage_async-storage:writeReleaseLintModelMetadata
+> Task :react-native-firebase_app:writeReleaseLintModelMetadata
+> Task :react-native-firebase_auth:lintVitalAnalyzeRelease
+> Task :react-native-firebase_app:lintVitalAnalyzeRelease
+> Task :react-native-firebase_auth:writeReleaseLintModelMetadata
+> Task :react-native-firebase_firestore:writeReleaseLintModelMetadata
+> Task :react-native-firebase_messaging:lintVitalAnalyzeRelease
+> Task :react-native-firebase_messaging:writeReleaseLintModelMetadata
+> Task :react-native-firebase_firestore:lintVitalAnalyzeRelease
+> Task :react-native-firebase_perf:writeReleaseLintModelMetadata
+> Task :react-native-firebase_perf:lintVitalAnalyzeRelease
+> Task :react-native-firebase_storage:writeReleaseLintModelMetadata
+> Task :react-native-firebase_storage:lintVitalAnalyzeRelease
+> Task :react-native-google-signin_google-signin:writeReleaseLintModelMetadata
+> Task :react-native-image-picker:lintVitalAnalyzeRelease
+> Task :react-native-image-picker:writeReleaseLintModelMetadata
+> Task :react-native-google-signin_google-signin:lintVitalAnalyzeRelease
+> Task :react-native-safe-area-context:writeReleaseLintModelMetadata
+> Task :react-native-safe-area-context:lintVitalAnalyzeRelease
+> Task :react-native-async-storage_async-storage:lintVitalAnalyzeRelease
+> Task :react-native-screens:writeReleaseLintModelMetadata
+> Task :react-native-vector-icons:writeReleaseLintModelMetadata
+> Task :react-native-async-storage_async-storage:generateReleaseLintVitalModel
+> Task :react-native-firebase_app:generateReleaseLintVitalModel
+> Task :react-native-firebase_auth:generateReleaseLintVitalModel
+> Task :react-native-firebase_firestore:generateReleaseLintVitalModel
+> Task :react-native-firebase_messaging:generateReleaseLintVitalModel
+> Task :react-native-firebase_perf:generateReleaseLintVitalModel
+> Task :react-native-firebase_storage:generateReleaseLintVitalModel
+> Task :react-native-google-signin_google-signin:generateReleaseLintVitalModel
+> Task :react-native-image-picker:generateReleaseLintVitalModel
+> Task :react-native-safe-area-context:generateReleaseLintVitalModel
+> Task :react-native-screens:generateReleaseLintVitalModel
+> Task :react-native-vector-icons:generateReleaseLintVitalModel
+> Task :app:processReleaseJavaRes
+> Task :react-native-vector-icons:lintVitalAnalyzeRelease
+> Task :app:optimizeReleaseResources
+> Task :app:mergeReleaseJavaResource
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :react-native-screens:lintVitalAnalyzeRelease
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:lintVitalReportRelease
+> Task :app:lintVitalRelease
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:assembleRelease
+
+[Incubating] Problems report is available at: file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 7m 41s
+503 actionable tasks: 476 executed, 27 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html

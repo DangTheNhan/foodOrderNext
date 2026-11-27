@@ -1,0 +1,5 @@
+export const AuthConstants = {
+  RESEND_CODE_TIMEOUT_SECONDS: 60,
+  PASSWORD_MIN_LENGTH: 8,
+  OTP_LENGTH: 6,
+};

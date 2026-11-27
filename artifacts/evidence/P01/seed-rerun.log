@@ -1,0 +1,51 @@
+{
+  "projectId": "demo-foodordernext",
+  "datasetId": "foodordernext-seed-v1",
+  "mode": "APPLY",
+  "fake": true,
+  "accounts": [
+    {
+      "uid": "demo-customer",
+      "role": "customer",
+      "active": true
+    },
+    {
+      "uid": "demo-customer-2",
+      "role": "customer",
+      "active": true
+    },
+    {
+      "uid": "demo-driver",
+      "role": "driver",
+      "active": true
+    },
+    {
+      "uid": "demo-admin",
+      "role": "admin",
+      "active": true
+    },
+    {
+      "uid": "demo-locked",
+      "role": "customer",
+      "active": false
+    },
+    {
+      "uid": "demo-merchant-1",
+      "role": "merchant",
+      "active": true
+    },
+    {
+      "uid": "demo-merchant-2",
+      "role": "merchant",
+      "active": true
+    },
+    {
+      "uid": "demo-merchant-3",
+      "role": "merchant",
+      "active": true
+    }
+  ],
+  "documentCount": 40,
+  "result": "PRESERVED_EXISTING_DATASET",
+  "created": 0
+}

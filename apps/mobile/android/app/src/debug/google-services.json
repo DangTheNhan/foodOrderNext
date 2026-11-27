@@ -1,0 +1,16 @@
+{
+  "project_info": {
+    "project_number": "1234567890",
+    "project_id": "demo-foodordernext",
+    "storage_bucket": "demo-foodordernext.appspot.com"
+  },
+  "client": [{
+    "client_info": {
+      "mobilesdk_app_id": "1:1234567890:android:0123456789abcdef012345",
+      "android_client_info": { "package_name": "com.foodordernext.app" }
+    },
+    "api_key": [{ "current_key": "AIzaSyEmulatorOnlyNotARealFirebaseApiKey00" }],
+    "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
+  }],
+  "configuration_version": "1"
+}

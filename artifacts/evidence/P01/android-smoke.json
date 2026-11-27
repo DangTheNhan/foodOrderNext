@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "atUtc": "2026-11-07T04:54:13.968063+00:00",
+  "environment": "LOCAL demo-foodordernext, synthetic seed, Android emulator",
+  "device": "emulator-5556",
+  "cases": [
+    {
+      "case": "Native Firebase login and customer role from Express/Firestore",
+      "result": "PASS"
+    },
+    {
+      "case": "Profile update persisted through authenticated Express API",
+      "result": "PASS"
+    },
+    {
+      "case": "Native Firebase session restored after application process restart",
+      "result": "PASS"
+    },
+    {
+      "case": "Logout returned to login without prior profile",
+      "result": "PASS"
+    },
+    {
+      "case": "Native role navigation: merchant",
+      "result": "PASS"
+    },
+    {
+      "case": "Native role navigation: driver",
+      "result": "PASS"
+    },
+    {
+      "case": "Native role navigation: admin",
+      "result": "PASS"
+    }
+  ]
+}

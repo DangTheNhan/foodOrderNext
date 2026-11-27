@@ -1,0 +1,59 @@
+{
+  "projectId": "foodordernext-staging",
+  "apiBase": "https://foodordernext-api-staging.onrender.com/api/v1",
+  "datasetId": "p09-staging-demo-v1",
+  "shopId": "p09-staging-demo-v1-shop",
+  "result": "PASS",
+  "checkedAt": "2026-11-26T02:55:27.316Z",
+  "checks": {
+    "guard": "PASS",
+    "firestoreAccess": "PASS",
+    "localDemoCredentials": "PASS",
+    "authAndFirestoreSeed": "PASS",
+    "roleFeedsReady": "PASS",
+    "newOrderAppearsForCustomerAndMerchant": "PASS",
+    "assignmentUpdatesRoleFeedsAndGatesChat": "PASS",
+    "threeRoleChatAndRetry": "PASS",
+    "merchantReconnectReceivesMissedDriverMessage": "PASS",
+    "deliveryAndCodReachAllThreeRoles": "PASS"
+  },
+  "seed": {
+    "created": false,
+    "accounts": 3,
+    "categories": 2,
+    "dishes": 3,
+    "shops": 1
+  },
+  "realtime": {
+    "roles": [
+      "customer",
+      "merchant",
+      "driver"
+    ],
+    "environment": "Three authenticated Firebase JS clients on the same Windows host",
+    "timing": "Milliseconds from API response parsed to server-backed snapshot, measured on the same host. A negative delta means the listener arrived first.",
+    "measurements": {
+      "createOrder": {
+        "customer": 59,
+        "merchant": 64
+      },
+      "assignDriver": {
+        "driver": -433
+      },
+      "customerMessage": {
+        "customer": 0,
+        "merchant": 0,
+        "driver": 0
+      },
+      "merchantReconnectMs": 188,
+      "completeCod": {
+        "customer": 30,
+        "merchant": 81,
+        "driver": 91
+      }
+    },
+    "chatMessages": 3,
+    "chatOutboxJobs": 3
+  },
+  "orderId": "7p1y6i6cGArIP3iVh9xo"
+}

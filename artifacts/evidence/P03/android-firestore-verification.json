@@ -1,0 +1,54 @@
+{
+  "result": "PASS",
+  "environment": "LOCAL demo-foodordernext",
+  "checkedAt": "2026-11-19T07:57:44.420Z",
+  "orders": [
+    {
+      "id": "J9Vn2rcilYM2WcZbGGeF",
+      "status": "COMPLETED",
+      "statusVersion": 6,
+      "assignmentStatus": "ACCEPTED",
+      "assignmentVersion": 2,
+      "subtotalVnd": 30000,
+      "discountVnd": 10000,
+      "deliveryFeeVnd": 5000,
+      "amountDueVnd": 25000,
+      "paymentStatus": "COD_CONFIRMED",
+      "codCollectedVnd": 25000,
+      "stockReservation": "CONSUMED",
+      "voucherReservation": "REDEEMED",
+      "eventCount": 8,
+      "outboxCount": 8,
+      "hasReview": true
+    },
+    {
+      "id": "IZOSvTHBlKqR1QDQAW3s",
+      "status": "CANCELLED",
+      "statusVersion": 2,
+      "assignmentStatus": "UNASSIGNED",
+      "assignmentVersion": 0,
+      "subtotalVnd": 30000,
+      "discountVnd": 10000,
+      "deliveryFeeVnd": 5000,
+      "amountDueVnd": 25000,
+      "paymentStatus": "UNPAID",
+      "codCollectedVnd": null,
+      "stockReservation": "RELEASED",
+      "voucherReservation": "RELEASED",
+      "eventCount": 2,
+      "outboxCount": 2,
+      "hasReview": false
+    }
+  ],
+  "stock": {
+    "available": 47,
+    "reserved": 0,
+    "sold": 3
+  },
+  "usage": {
+    "reserved": 0,
+    "redeemed": 1,
+    "reservedByCustomer": 0,
+    "redeemedByCustomer": 1
+  }
+}

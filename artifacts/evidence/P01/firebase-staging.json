@@ -1,0 +1,44 @@
+{
+  "checkedOn": "2026-11-25",
+  "verifiedVia": "Firebase Console",
+  "projectId": "foodordernext-staging",
+  "plan": "Spark",
+  "android": {
+    "packageName": "com.foodordernext.app",
+    "appId": "1:201222548655:android:5b7a1135f131e25d7cf85a",
+    "releaseConfigSaved": true,
+    "releaseConfigPath": "apps/mobile/android/app/src/release/google-services.json",
+    "releaseConfigSource": "Firebase CLI",
+    "releaseConfigIdentityVerified": true
+  },
+  "auth": {
+    "emailPasswordEnabled": true,
+    "console": "https://console.firebase.google.com/project/foodordernext-staging/authentication/providers"
+  },
+  "firestore": {
+    "databaseId": "(default)",
+    "edition": "Standard",
+    "location": "asia-southeast1",
+    "rules": {
+      "status": "published",
+      "source": "firebase/firestore.rules",
+      "sourceSha256": "46cd707d78e5e66c2b583b2e43f5bf91f950249c0829af5ae9eb5e25ca7d4894",
+      "console": "https://console.firebase.google.com/project/foodordernext-staging/firestore/databases/-default-/security/rules",
+      "playground": { "method": "get", "path": "orders/staging-rules-probe", "authenticated": false, "result": "denied" }
+    },
+    "indexes": {
+      "source": "firebase/firestore.indexes.json",
+      "sourceSha256": "6c5bc43c4f43c0cef00ff1dcdd36ef67dbe7e105486b44b0e3d3b0da1c7f7680",
+      "console": "https://console.firebase.google.com/project/foodordernext-staging/firestore/databases/-default-/indexes",
+      "compositeStatus": "Enabled",
+      "compositeIdsInSourceOrder": [
+        "CICAgOjXh4EK", "CICAgOjXh4EJ", "CICAgJiUpoMK", "CICAgOi3kJAK", "CICAgJim14AK",
+        "CICAgJjF9oIK", "CICAgJj7z4EK", "CICAgJiUpoMJ", "CICAgJim14AJ", "CICAgJiUpoML",
+        "CICAgJj7z4EJ", "CICAgJiUpsMI", "CICAgNi47oMK", "CICAgNiav4AK", "CICAgNjpgYIK",
+        "CICAgJiUpsMK", "CICAgJiUpsMJ", "CICAgOjXh4EL", "CICAgNi47oMJ"
+      ],
+      "expiresAtExemptionCollections": ["aiMenuCache", "aiInsightCache", "aiRequestLimits", "aiBudgets"],
+      "ttlEnabled": false
+    }
+  }
+}

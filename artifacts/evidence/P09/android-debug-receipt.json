@@ -1,0 +1,14 @@
+{
+  "package": "com.foodordernext.app",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "variant": "debug",
+  "abi": "x86_64",
+  "artifact": "artifacts/releases/FoodOrderNext-v1.8-local-x86_64-debug.apk",
+  "sha256": "8aae3e58069eafc4500c7e770190bf0752474bdd1927291391060593405615d9",
+  "bytes": 57962414,
+  "signedAndVerified": true,
+  "installEnvironment": "Android Emulator, Metro and demo-foodordernext",
+  "sourceTrace": "workspace file manifest; this project folder has no Git revision",
+  "manifestSha256": "1cf0df705cc16c18bea684e2bf2ba6db7d4bf826244c933a4d239620ab13dd64"
+}

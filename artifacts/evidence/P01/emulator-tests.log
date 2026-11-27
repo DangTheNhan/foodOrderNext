@@ -1,0 +1,98 @@
+
+> foodordernext@0.1.0 test:emulator
+> node scripts/dev/run-emulator-tests.mjs
+
+i  emulators: Starting emulators: auth, firestore, storage
+i  emulators: Detected demo project ID "demo-foodordernext", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
++  firestore: Firestore Emulator was started in standard edition.
++  firestore: Firestore Emulator UI websocket is running on 9150.
+i  Running script: node scripts/dev/check-emulators.mjs
+▶ real Firebase Auth + Firestore P01 API integration
+  ✔ real verifier blocks missing/forged token and missing profile (2723.4492ms)
+  ✔ parallel bootstrap uses a real Firestore transaction and preserves authority (3623.2039ms)
+  ✔ email verification is enforced before protected mutation (85.443ms)
+  ✔ profile patch replay is atomic and different payload conflicts (10102.7093ms)
+  ✔ database role and active changes are effective without trusting token claims (141.5524ms)
+✔ real Firebase Auth + Firestore P01 API integration (17340.4776ms)
+✔ anonymous sees active catalog and sanitized verified reviews only (2004.4826ms)
+✔ catalog queries require active and shop scope, not rules-as-filters (406.7658ms)
+✔ own private profile and allowlisted children; device tokens never client-readable (636.94ms)
+✔ missing or inactive current authority fails closed even with forged claims (393.4905ms)
+✔ order participants read scoped detail and events; unrelated accounts cannot (590.8616ms)
+✔ customer and merchant order queries are scoped; driver has no public jobs feed (327.8731ms)
+✔ driver reads assigned detail but chat only after assignment ACCEPTED (345.1174ms)
+✔ current active and role authority immediately remove driver access (218.1077ms)
+✔ tracking is current-document only while DELIVERING for participants (376.4573ms)
+✔ merchant can inspect own hidden menu/approvals, never other shop private data (278.8186ms)
+✔ even active admin cannot read backend-only operations/tokens/counters (438.9965ms)
+[2026-11-07T04:37:09.906Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947637 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L40, false for 'create' @ L87, false for 'update' @ L40, false for 'update' @ L87
+[2026-11-07T04:37:09.919Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947638 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L39, false for 'update' @ L87
+[2026-11-07T04:37:09.931Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947639 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L66, false for 'create' @ L87, false for 'update' @ L66, false for 'update' @ L87
+[2026-11-07T04:37:09.942Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x4394763a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L73, false for 'create' @ L87, false for 'update' @ L73, false for 'update' @ L87
+[2026-11-07T04:37:09.951Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x4394763b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L83, false for 'delete' @ L87
+[2026-11-07T04:37:09.981Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x4394763c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L40, false for 'create' @ L87, false for 'update' @ L40, false for 'update' @ L87
+[2026-11-07T04:37:09.993Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x4394763d error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L39, false for 'update' @ L87
+[2026-11-07T04:37:10.002Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x4394763e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L66, false for 'create' @ L87, false for 'update' @ L66, false for 'update' @ L87
+[2026-11-07T04:37:10.024Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x4394763f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L73, false for 'create' @ L87, false for 'update' @ L73, false for 'update' @ L87
+[2026-11-07T04:37:10.033Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947640 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L83, false for 'delete' @ L87
+[2026-11-07T04:37:10.061Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947641 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L40, false for 'create' @ L87, false for 'update' @ L40, false for 'update' @ L87
+[2026-11-07T04:37:10.071Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947642 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L39, false for 'update' @ L87
+[2026-11-07T04:37:10.080Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947643 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L66, false for 'create' @ L87, false for 'update' @ L66, false for 'update' @ L87
+[2026-11-07T04:37:10.089Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947644 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L73, false for 'create' @ L87, false for 'update' @ L73, false for 'update' @ L87
+[2026-11-07T04:37:10.102Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947645 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L83, false for 'delete' @ L87
+[2026-11-07T04:37:10.135Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947646 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L40, false for 'create' @ L87, false for 'update' @ L40, false for 'update' @ L87
+[2026-11-07T04:37:10.150Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947647 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L39, false for 'update' @ L87
+[2026-11-07T04:37:10.166Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947648 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L66, false for 'create' @ L87, false for 'update' @ L66, false for 'update' @ L87
+[2026-11-07T04:37:10.177Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x43947649 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L73, false for 'create' @ L87, false for 'update' @ L73, false for 'update' @ L87
+[2026-11-07T04:37:10.185Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x4394764a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L83, false for 'delete' @ L87
+✔ ALL client creates updates deletes are denied, including self and admin (400.5808ms)
+✔ active verified owner creates private pending avatar; other user cannot read (1261.2622ms)
+✔ rejects anonymous inactive unverified or wrong owner uploads (510.2476ms)
+✔ rejects MIME size published state and unexpected application metadata (772.6334ms)
+✔ client cannot overwrite or publish an uploaded object (210.1206ms)
+✔ merchant upload requires current shop ownership and stays private (309.4577ms)
+✔ public menu image requires backend published metadata and exact active Firestore attach (299.1209ms)
+✔ review pending upload requires own COMPLETED COD-confirmed order (328.7901ms)
+✔ public review image requires exact verified review attach; no pending folder leak (278.3158ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 36417.2041
++  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  firestore: Stopping Firestore Emulator
+!  Firestore Emulator has exited upon receiving signal: SIGINT
+i  auth: Stopping Authentication Emulator
+i  storage: Stopping Storage Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator
+!  Unexpected rules runtime error: Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "line" is null
+	at com.google.firebase.rules.tools.local.server.Server.processRequestsFromInputStream(Server.java:75)
+	at com.google.firebase.rules.tools.local.server.Server.start(Server.java:57)
+	at com.google.firebase.rules.tools.local.FirebaseRulesTooling.main(FirebaseRulesTooling.java:81)
+

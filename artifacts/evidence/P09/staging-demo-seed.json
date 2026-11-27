@@ -1,0 +1,21 @@
+{
+  "projectId": "foodordernext-staging",
+  "apiBase": "https://foodordernext-api-staging.onrender.com/api/v1",
+  "datasetId": "p09-staging-demo-v1",
+  "shopId": "p09-staging-demo-v1-shop",
+  "result": "PASS",
+  "checkedAt": "2026-11-26T02:37:28.408Z",
+  "checks": {
+    "guard": "PASS",
+    "firestoreAccess": "PASS",
+    "localDemoCredentials": "PASS",
+    "authAndFirestoreSeed": "PASS"
+  },
+  "seed": {
+    "created": true,
+    "accounts": 3,
+    "categories": 2,
+    "dishes": 3,
+    "shops": 1
+  }
+}

@@ -1,0 +1,131 @@
+
+> foodordernext@0.1.0 test:emulator
+> node scripts/dev/run-emulator-tests.mjs
+
+i  emulators: Starting emulators: auth, firestore, storage
+i  emulators: Detected demo project ID "demo-foodordernext", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
++  firestore: Firestore Emulator was started in standard edition.
++  firestore: Firestore Emulator UI websocket is running on 9150.
+i  Running script: node scripts/dev/check-emulators.mjs
+▶ real Firebase Auth + Firestore P01 API integration
+  ✔ real verifier blocks missing/forged token and missing profile (1726.2418ms)
+  ✔ parallel bootstrap uses a real Firestore transaction and preserves authority (6910.0719ms)
+  ✔ email verification is enforced before protected mutation (46.1466ms)
+  ✔ profile patch replay is atomic and different payload conflicts (3321.2206ms)
+  ✔ database role and active changes are effective without trusting token claims (90.3106ms)
+✔ real Firebase Auth + Firestore P01 API integration (12266.4066ms)
+(node:25004) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/src/services/customerQueries.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ P02 scoped catalog queries use the actual Firestore Rules and stable cursors (1148.2196ms)
+▶ P02 customer writes commit safely in Firestore
+  ✔ cart normalizes options and rejects duplicates, 21 lines, stale and cross-shop writes (4122.0076ms)
+  ✔ address ownership, replay, defaults and coordinate validation (443.6961ms)
+  ✔ favorites are deduplicated and private, including after catalog deactivation (352.1691ms)
+✔ P02 customer writes commit safely in Firestore (5370.3786ms)
+▶ P04 operations scope, audit, media and daily report
+  ✔ shop scopes and strict menu mutations preserve reservation and record audit (821.7047ms)
+  ✔ published media must be owner-uploaded and exact current attach (695.7897ms)
+  ✔ approval is admin-only and authority changes invalidate old approvals (882.43ms)
+  ✔ admin DTO filters and concurrent authority updates preserve one active admin (3817.461ms)
+  ✔ day boundary separates created count and settled COD, independent of page size (216.9609ms)
+✔ P04 operations scope, audit, media and daily report (7386.1099ms)
+▶ P03 order engine commits state, stock, voucher and COD atomically
+  ✔ quote reads real data, validates own address and rejects stale price without reserving (320.0446ms)
+  ✔ retry and competing request keys consume one cart version and preserve item snapshot (3550.9338ms)
+  ✔ two customers race for the last portion without overselling (3645.2098ms)
+  ✔ voucher quota contention and simultaneous cancel/reject release each reservation once (6197.4139ms)
+  ✔ ownership, assignment versions, exact COD and review enforced through a full lifecycle (4825.314ms)
+✔ P03 order engine commits state, stock, voucher and COD atomically (19244.943ms)
+(node:15188) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/dangt/Documents/Codex/FoodOrderNext/apps/mobile/src/services/realtimeQueries.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\dangt\Documents\Codex\FoodOrderNext\apps\mobile\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ P05 three signed-in clients observe scoped order and chat, including reconnect
+  ✔ customer and shop subscribe, assigned driver receives trip and pending cancellation leaves queue (1411.5887ms)
+  ✔ three role listeners see chat, retry is unique, ownership and inbox are private (1033.0117ms)
+  ✔ chat cursor preserves order at tied timestamps and driver approval is checked again (291.1882ms)
+✔ P05 three signed-in clients observe scoped order and chat, including reconnect (3546.6305ms)
+▶ P05 outbox lease, retry, token rotation and failures using injected transport
+  ✔ device API moves binding on account switch and unlink only affects caller (304.0729ms)
+  ✔ retries remember delivered tokens and invalid token cleanup preserves a newer binding (462.4271ms)
+  ✔ expired lease is reclaimed, stale worker cannot finish, permanent and disabled paths are explicit (639.9018ms)
+✔ P05 outbox lease, retry, token rotation and failures using injected transport (1846.4698ms)
+✔ anonymous sees active catalog and sanitized verified reviews only (652.3721ms)
+✔ catalog queries require active and shop scope, not rules-as-filters (196.9992ms)
+✔ own private profile and allowlisted children; device tokens never client-readable (315.8697ms)
+✔ missing or inactive current authority fails closed even with forged claims (232.9022ms)
+✔ order participants read scoped detail and events; unrelated accounts cannot (418.2096ms)
+✔ customer and merchant order queries are scoped; driver has no public jobs feed (200.9009ms)
+✔ driver reads assigned detail but chat only after assignment ACCEPTED (243.3651ms)
+✔ current active and role authority immediately remove driver access (184.067ms)
+✔ tracking is current-document only while DELIVERING for participants (291.6184ms)
+✔ merchant can inspect own hidden menu/approvals, never other shop private data (233.027ms)
+✔ even active admin cannot read backend-only operations/tokens/counters (375.9857ms)
+[2026-11-19T09:34:35.057Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b55 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L47, false for 'create' @ L94, false for 'update' @ L47, false for 'update' @ L94
+[2026-11-19T09:34:35.081Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b56 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L46, false for 'update' @ L94
+[2026-11-19T09:34:35.087Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b57 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L73, false for 'create' @ L94, false for 'update' @ L73, false for 'update' @ L94
+[2026-11-19T09:34:35.095Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b58 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L80, false for 'create' @ L94, false for 'update' @ L80, false for 'update' @ L94
+[2026-11-19T09:34:35.110Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b59 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L90, false for 'delete' @ L94
+[2026-11-19T09:34:35.135Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b5a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L47, false for 'create' @ L94, false for 'update' @ L47, false for 'update' @ L94
+[2026-11-19T09:34:35.157Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b5b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L46, false for 'update' @ L94
+[2026-11-19T09:34:35.172Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b5c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L73, false for 'create' @ L94, false for 'update' @ L73, false for 'update' @ L94
+[2026-11-19T09:34:35.189Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b5d error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L80, false for 'create' @ L94, false for 'update' @ L80, false for 'update' @ L94
+[2026-11-19T09:34:35.197Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b5e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L90, false for 'delete' @ L94
+[2026-11-19T09:34:35.223Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b5f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L47, false for 'create' @ L94, false for 'update' @ L47, false for 'update' @ L94
+[2026-11-19T09:34:35.236Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b60 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L46, false for 'update' @ L94
+[2026-11-19T09:34:35.251Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b61 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L73, false for 'create' @ L94, false for 'update' @ L73, false for 'update' @ L94
+[2026-11-19T09:34:35.269Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b62 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L80, false for 'create' @ L94, false for 'update' @ L80, false for 'update' @ L94
+[2026-11-19T09:34:35.283Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b63 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L90, false for 'delete' @ L94
+[2026-11-19T09:34:35.310Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b64 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L47, false for 'create' @ L94, false for 'update' @ L47, false for 'update' @ L94
+[2026-11-19T09:34:35.332Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b65 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L46, false for 'update' @ L94
+[2026-11-19T09:34:35.346Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b66 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L73, false for 'create' @ L94, false for 'update' @ L73, false for 'update' @ L94
+[2026-11-19T09:34:35.362Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b67 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L80, false for 'create' @ L94, false for 'update' @ L80, false for 'update' @ L94
+[2026-11-19T09:34:35.378Z]  @firebase/firestore: Firestore (13.2.0): GrpcConnection RPC 'Write' stream 0x55dc8b68 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L90, false for 'delete' @ L94
+✔ ALL client creates updates deletes are denied, including self and admin (411.7807ms)
+✔ active verified owner creates private pending avatar; other user cannot read (745.0201ms)
+✔ rejects anonymous inactive unverified or wrong owner uploads (316.7312ms)
+✔ rejects MIME size published state and unexpected application metadata (373.2711ms)
+✔ client cannot overwrite or publish an uploaded object (170.7333ms)
+✔ merchant upload requires current shop ownership and stays private (238.9463ms)
+✔ public menu image requires backend published metadata and exact active Firestore attach (263.069ms)
+✔ review pending upload requires own COMPLETED COD-confirmed order (324.2402ms)
+✔ public review image requires exact verified review attach; no pending folder leak (213.2111ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 51
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 65882.3501
++  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  firestore: Stopping Firestore Emulator
+!  Firestore Emulator has exited upon receiving signal: SIGINT
+i  auth: Stopping Authentication Emulator
+i  storage: Stopping Storage Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

@@ -1,0 +1,23 @@
+{
+  "name": "foodordernext",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.11.0" },
+  "workspaces": ["packages/contracts", "services/api"],
+  "scripts": {
+    "api": "npm run start --workspace @foodordernext/api",
+    "dev:api": "npm run dev --workspace @foodordernext/api",
+    "test": "node scripts/dev/run-unit-tests.mjs",
+    "test:emulator": "node scripts/dev/run-emulator-tests.mjs",
+    "benchmark:local": "node scripts/dev/run-emulator-tests.mjs --benchmark",
+    "emulators": "firebase emulators:start --project demo-foodordernext",
+    "doctor": "node scripts/dev/doctor.mjs"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "6.0.0",
+    "firebase": "13.2.0",
+    "firebase-admin": "14.5.0",
+    "firebase-tools": "15.34.2"
+  }
+}

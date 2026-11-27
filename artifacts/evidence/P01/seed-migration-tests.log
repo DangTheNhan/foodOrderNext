@@ -1,0 +1,15 @@
+✔ mapping inspection has zero writes and never declares import-ready (2.2885ms)
+✔ mapping reports duplicate orphan unconverted prices and legacy states (0.4737ms)
+✔ mapping rejects credential/personal fields instead of logging values (1.0894ms)
+✔ seed is deterministic, bounded and reconciles stock/participants for 1–3 shops (26.2683ms)
+✔ public review fixture contains no private link or credential (0.3867ms)
+✔ seeded profiles satisfy the API contract and reject an empty phone string (1.2258ms)
+✔ guard fails closed without explicit local emulators, on cloud host/project or credentials (0.7586ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 632.8921

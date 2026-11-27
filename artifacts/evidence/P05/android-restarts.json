@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "environment": "Android Emulator, previously authenticated driver, local Firebase",
+  "coldRestarts": [
+    {
+      "attempt": 1,
+      "result": "PASS"
+    },
+    {
+      "attempt": 2,
+      "result": "PASS"
+    },
+    {
+      "attempt": 3,
+      "result": "PASS"
+    }
+  ]
+}

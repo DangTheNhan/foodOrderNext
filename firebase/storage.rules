@@ -1,0 +1,67 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function active() {
+      return request.auth != null
+        && firestore.exists(/databases/(default)/documents/users/$(request.auth.uid))
+        && firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.active == true
+        && firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role
+          in ['customer', 'merchant', 'driver', 'admin'];
+    }
+    function ownsShop(shopId) {
+      return active()
+        && firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'merchant'
+        && firestore.get(/databases/(default)/documents/shops/$(shopId)).data.ownerUid == request.auth.uid;
+    }
+    function validPendingImage() {
+      return resource == null && active() && request.auth.token.email_verified == true
+        && request.resource.size > 0 && request.resource.size <= 5 * 1024 * 1024
+        && request.resource.contentType in ['image/jpeg', 'image/png', 'image/webp']
+        && request.resource.metadata.keys().hasOnly(['ownerUid', 'state'])
+        && request.resource.metadata.ownerUid == request.auth.uid
+        && request.resource.metadata.state == 'pending';
+    }
+    function pendingOwner() {
+      return resource.metadata.state == 'pending' && active()
+        && resource.metadata.ownerUid == request.auth.uid;
+    }
+    function published() { return resource.metadata.state == 'published'; }
+    function completedOwner(uid, orderId) {
+      return active() && request.auth.uid == uid
+        && firestore.get(/databases/(default)/documents/orders/$(orderId)).data.customerUid == uid
+        && firestore.get(/databases/(default)/documents/orders/$(orderId)).data.status == 'COMPLETED'
+        && firestore.get(/databases/(default)/documents/orders/$(orderId)).data.paymentStatus == 'COD_CONFIRMED';
+    }
+    match /users/{uid}/avatars/{assetId} {
+      allow create: if request.auth.uid == uid && validPendingImage();
+      allow get: if pendingOwner() || (active() && request.auth.uid == uid && published()
+        && firestore.get(/databases/(default)/documents/users/$(uid)).data.avatarPath
+          == 'users/' + uid + '/avatars/' + assetId);
+      allow list, update, delete: if false;
+    }
+    match /shops/{shopId}/menu/{assetId} {
+      // Compatibility for earlier published paths. P04 publishes into
+      // menuPublished, covered by the default deny and served through Express.
+      allow create: if ownsShop(shopId) && validPendingImage();
+      allow get: if pendingOwner() || (published()
+        && resource.metadata.keys().hasAll(['foodId'])
+        && firestore.get(/databases/(default)/documents/menuItems/$(resource.metadata.foodId)).data.shopId == shopId
+        && firestore.get(/databases/(default)/documents/menuItems/$(resource.metadata.foodId)).data.active == true
+        && firestore.get(/databases/(default)/documents/menuItems/$(resource.metadata.foodId)).data.imagePath
+          == 'shops/' + shopId + '/menu/' + assetId
+        && firestore.get(/databases/(default)/documents/shops/$(shopId)).data.active == true);
+      allow list, update, delete: if false;
+    }
+    match /reviews/{uid}/{orderId}/{assetId} {
+      allow create: if completedOwner(uid, orderId) && validPendingImage();
+      allow get: if pendingOwner() || (published()
+        && resource.metadata.keys().hasAll(['reviewId'])
+        && firestore.get(/databases/(default)/documents/orders/$(orderId)).data.reviewId == resource.metadata.reviewId
+        && firestore.get(/databases/(default)/documents/reviews/$(resource.metadata.reviewId)).data.verifiedCompletedOrder == true
+        && ('reviews/' + uid + '/' + orderId + '/' + assetId)
+          in firestore.get(/databases/(default)/documents/reviews/$(resource.metadata.reviewId)).data.imagePaths);
+      allow list, update, delete: if false;
+    }
+    match /{allPaths=**} { allow read, write: if false; }
+  }
+}

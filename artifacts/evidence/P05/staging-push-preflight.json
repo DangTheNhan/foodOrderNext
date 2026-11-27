@@ -1,0 +1,28 @@
+{
+  "projectId": "foodordernext-staging",
+  "sourceOrderId": "7p1y6i6cGArIP3iVh9xo",
+  "checkedAt": "2026-11-26T06:45:15.396Z",
+  "fcmHttpV1": {
+    "httpStatus": 200,
+    "state": "ENABLED"
+  },
+  "jobsByStatus": {
+    "SKIPPED:FCM_DISABLED": 11
+  },
+  "testedDeviceDelivery": false,
+  "renderServiceAccountIam": {
+    "serviceAccountId": "render-express-staging",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-26T06:46:58.315Z",
+    "directProjectRoles": [
+      {
+        "role": "roles/datastore.user",
+        "conditional": false
+      },
+      {
+        "role": "roles/firebaseauth.viewer",
+        "conditional": false
+      }
+    ]
+  }
+}

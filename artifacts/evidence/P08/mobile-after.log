@@ -1,0 +1,17 @@
+
+> @foodordernext/mobile@0.0.1 test
+> jest --runInBand
+
+PASS __tests__/ShopReport.test.jsx (5.04 s)
+PASS __tests__/AiScreens.test.jsx
+PASS __tests__/privateState.test.js
+PASS __tests__/config.test.js
+PASS __tests__/clientCore.test.js
+PASS __tests__/AuthService.test.js
+PASS __tests__/sessionController.test.js
+
+Test Suites: 7 passed, 7 total
+Tests:       43 passed, 43 total
+Snapshots:   0 total
+Time:        7.108 s, estimated 9 s
+Ran all test suites.

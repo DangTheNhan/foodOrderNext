@@ -1,0 +1,39 @@
+{
+  "projectId": "foodordernext-staging",
+  "datasetId": "p09-staging-demo-v1",
+  "serial": "emulator-5562",
+  "checkedAt": "2026-11-26T02:41:17.157965+00:00",
+  "result": "PASS",
+  "cases": [
+    {
+      "case": "Khách đặt đơn COD 35.000 đồng từ thực đơn staging",
+      "result": "PASS"
+    },
+    {
+      "case": "Quán nhận đơn, phân công tài xế và báo món đã sẵn sàng",
+      "result": "PASS"
+    },
+    {
+      "case": "Tài xế nhận chuyến, xác nhận lấy món và thu COD",
+      "result": "PASS"
+    },
+    {
+      "case": "Khách mở lại đơn đã thu COD và gửi đánh giá sau giao",
+      "result": "PASS"
+    }
+  ],
+  "apkSha256": "cd1abcb00f4956d411c1c7713d19c806809a3bc56c36ab6109c0d909b084ff5f",
+  "orderId": "AW1BpN9HzblyZu3BAaqG",
+  "firestore": {
+    "status": "COMPLETED",
+    "paymentStatus": "COD_CONFIRMED",
+    "codCollectedVnd": 35000,
+    "verifiedReview": true,
+    "trackingDocumentAbsent": true,
+    "stockAfterThreeTestOrders": {
+      "available": 47,
+      "reserved": 0,
+      "sold": 3
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "atUtc": "2026-11-19T07:21:39.423949+00:00",
+  "environment": "Android Emulator with demo-foodordernext",
+  "cases": [
+    {
+      "case": "Read real shop/menu/item, save favorite and update persistent cart",
+      "result": "PASS"
+    },
+    {
+      "case": "Checkout preview shows own address, COD and estimated prices",
+      "result": "PASS"
+    },
+    {
+      "case": "Cart and favorite survive a native process restart",
+      "result": "PASS"
+    },
+    {
+      "case": "Switching shops requires explicit choice and replaces the cart",
+      "result": "PASS"
+    },
+    {
+      "case": "Manual address saved without location permission",
+      "result": "PASS"
+    },
+    {
+      "case": "Second account sees its own cart, favorites and addresses",
+      "result": "PASS"
+    },
+    {
+      "case": "In-app help and Android application settings open",
+      "result": "PASS"
+    }
+  ]
+}

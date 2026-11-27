@@ -1,0 +1,5 @@
+Android Metro debug bundle SHA-256: 0069F76D373F8824169F021A6713A7BBA3D597F575172443C02D06515A52687B
+Files checked: 202 project source/config and scripts, 5 test/build logs, 1 Android JS bundle.
+Files matching selected private-key, OAuth token, or JWT signatures: 0.
+Bundle files matching backend-only configuration names: 0.
+This targeted scan checks selected patterns in the listed local artifacts.

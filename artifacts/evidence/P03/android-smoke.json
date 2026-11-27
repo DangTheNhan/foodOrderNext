@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "cases": [
+    {
+      "case": "Android creates a real order after server quote with voucher and COD",
+      "result": "PASS"
+    },
+    {
+      "case": "Customer cancels pending order and Firestore records CANCELLED",
+      "result": "PASS"
+    },
+    {
+      "case": "History survives restart and cancelled voucher can be used again",
+      "result": "PASS"
+    },
+    {
+      "case": "Merchant and assigned driver commands complete COD and live view updates",
+      "result": "PASS"
+    },
+    {
+      "case": "Customer submits one verified review after completed COD",
+      "result": "PASS"
+    }
+  ],
+  "atUtc": "2026-11-19T07:56:52.474271+00:00",
+  "environment": "Android Emulator + Firebase Emulator + local Express"
+}

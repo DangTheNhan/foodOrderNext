@@ -1,0 +1,15 @@
+{
+  "variant": "release",
+  "testOnly": true,
+  "abi": "x86_64",
+  "package": "com.foodordernext.app",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "firebaseProject": "foodordernext-staging",
+  "apiBaseUrl": "https://foodordernext-api-staging.onrender.com/api/v1",
+  "artifact": "artifacts/releases/FoodOrderNext-v1.8-staging-x86_64-test.apk",
+  "sha256": "cd1abcb00f4956d411c1c7713d19c806809a3bc56c36ab6109c0d909b084ff5f",
+  "bytes": 33388215,
+  "signingCertificateSha256": "1bfe0c0d4c4feffc06f77287e095c3875e2d5e6d8f2189a9c27e88c886eafdab",
+  "signedAndVerified": true
+}

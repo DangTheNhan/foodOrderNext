@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "environment": "Android smoke on demo-foodordernext Firebase Emulator",
+  "cancelledOrderStatus": "CANCELLED",
+  "customerAndMerchantChatDocuments": 2,
+  "acceptedDriverChatDocuments": 1,
+  "inboxMarkedRead": true,
+  "pushJobsSkippedWithoutCloudFcm": 3
+}

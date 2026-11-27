@@ -1,0 +1,17 @@
+{
+  "atDate": "2026-11-20",
+  "result": "PASS",
+  "backlogTasks": 84,
+  "taskStatuses": {
+    "DONE": 55,
+    "IN_PROGRESS": 2,
+    "NOT_STARTED": 19,
+    "IN_REVIEW": 8
+  },
+  "phase": "P07",
+  "phaseStatus": "DONE",
+  "modelResult": "PASS",
+  "androidCasesPassed": 4,
+  "androidResult": "PASS",
+  "relativeLinksChecked": 228
+}

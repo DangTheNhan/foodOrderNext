@@ -1,0 +1,66 @@
+{
+  "projectId": "foodordernext-staging",
+  "androidPackage": "com.foodordernext.app",
+  "checkedOn": "2026-11-26",
+  "result": "PASS",
+  "device": "Android Emulator API 37 x86_64",
+  "diagnosticApk": {
+    "testSignature": true,
+    "logcatEnabled": true,
+    "sha256": "d83f5746a932cb006e3fbfc98da594e70f6e92493027aefdc9acfd7e5ffecccc"
+  },
+  "checks": {
+    "catalogAndQuote": "PASS",
+    "dailyReportFirstAndNextPage": "PASS",
+    "performanceConsoleReceivedAllFourTraces": "PASS",
+    "apiErrorRequestIdCorrelation": "PASS"
+  },
+  "console": {
+    "url": "https://console.firebase.google.com/project/foodordernext-staging/performance/app/android:com.foodordernext.app/trends?time=7d",
+    "tab": "Custom traces",
+    "percentile": 90,
+    "range": "Last 7 days",
+    "traces": {
+      "catalog_menu_page": {
+        "samples": 1,
+        "durationMs": 330
+      },
+      "order_quote": {
+        "samples": 1,
+        "durationMs": 448
+      },
+      "daily_report_first": {
+        "samples": 3,
+        "durationMs": 735
+      },
+      "daily_report_next": {
+        "samples": 1,
+        "durationMs": 684
+      }
+    }
+  },
+  "sdk": {
+    "catalogMenuPageMs": 330.364,
+    "orderQuoteMs": 447.561,
+    "fixtureSelectedDayFirstPageMs": 431.447,
+    "fixtureNextPageMs": 683.888
+  },
+  "reportFixtureEvidence": "artifacts/evidence/P08/staging-report-fixture.json",
+  "reportIndexEvidence": "artifacts/evidence/P08/staging-report-indexes.json",
+  "notes": [
+    "The console includes three first-page samples, including one earlier failed request before the report indexes were ready.",
+    "The report verification after the index fix used 21 synthetic historical rows on an inactive, dedicated staging shop. Both pages succeeded on the API and APK.",
+    "The emulator samples verify instrumentation and ingestion. Use the paired local benchmark for the before/after performance comparison."
+  ],
+  "apiErrorCorrelation": {
+    "environment": "Isolated Express local test",
+    "status": 500,
+    "header": "X-Request-ID",
+    "matchedResponseAndLog": true,
+    "errorDetailsRedacted": true
+  },
+  "pairedLocalBenchmarkEvidence": [
+    "artifacts/evidence/P08/benchmark-baseline.json",
+    "artifacts/evidence/P08/benchmark-after.json"
+  ]
+}

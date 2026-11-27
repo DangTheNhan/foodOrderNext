@@ -1,0 +1,26 @@
+{
+  "projectId": "foodordernext-staging",
+  "appId": "1:201222548655:android:5b7a1135f131e25d7cf85a",
+  "checkedAt": "2026-11-27T09:09:46.258Z",
+  "machineRole": "second-member-verification",
+  "apiBaseUrl": "https://foodordernext-api-staging.onrender.com/api/v1",
+  "checks": {
+    "androidConfig": "PASS",
+    "apiHealth": "PASS",
+    "apiRejectsMissingToken": "PASS",
+    "anonymousOrderReadDenied": "PASS",
+    "categoriesCompoundRead": {
+      "status": "PASS",
+      "documentsReturned": 1
+    },
+    "shopsCompoundRead": {
+      "status": "PASS",
+      "documentsReturned": 1
+    },
+    "emailPasswordSignup": "PASS",
+    "emailPasswordSignin": "PASS",
+    "orderReadDeniedWithoutProfile": "PASS",
+    "apiVerifiesTokenAndReadsProfile": "PASS",
+    "temporaryAuthAccountDeleted": "PASS"
+  }
+}

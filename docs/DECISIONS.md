@@ -55,6 +55,7 @@ Ngày khởi tạo: 2026-11-03. `CONFIRMED_USER` là yêu cầu/xác nhận từ
 | D49 | IMPLEMENTED_LOCAL | Bản local giới hạn tối đa 20 món ứng viên và 40 đánh giá mới nhất mỗi yêu cầu | Mẫu ít hơn 3 đánh giá trả INSUFFICIENT_DATA. Mô hình gọi từ máy chạy server |
 | D50 | IMPLEMENTED_LOCAL | Trang báo cáo theo ngày có thể chỉ tải danh sách đơn khi đã có cursor | App giữ tổng lấy ở trang đầu. API mặc định vẫn trả tổng cho client cũ. P08 đo và kiểm thử cả hai chế độ |
 | D51 | CONFIRMED_USER | Giữ Firebase Spark và triển khai Express staging trên hosting miễn phí | Chọn Render Free tại Singapore. Đã chuẩn bị cấu hình deploy riêng. Kiểm chứng API sau khi kết nối repo và danh tính staging |
+| D52 | CONFIRMED_USER | 2026-11-27: Chạy kiểm thử và demo đa thiết bị bằng 3 Android Emulator (`Pixel_9`, `Pixel_9_2`, `Pixel_9_3`, API 37 + Google Play Services), không dùng máy vật lý | Xác nhận của người dùng cho phạm vi kiểm thử/diễn tập trên máy hiện tại. Mọi biên bản và video vẫn ghi nhãn trung thực môi trường máy ảo và tọa độ GPS mô phỏng (`adb emu geo fix`) |
 
 ## Quy tắc thay đổi
 

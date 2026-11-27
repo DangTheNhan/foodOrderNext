@@ -1,6 +1,6 @@
 # P02 — Khách hàng, catalog và giỏ hàng
 
-**Trạng thái:** IN_REVIEW  
+**Trạng thái:** DONE  
 **Chủ trì:** A  
 **Phụ thuộc:** P02 local dùng nền [P01](P01-auth-data.md) theo D34. Checkout chính thức cần API [P03](P03-order-engine.md).  
 **Nguồn thống nhất:** [MASTER_PLAN](../MASTER_PLAN.md).
@@ -19,7 +19,7 @@ Hoàn thành trải nghiệm khách có dữ liệu thật, lỗi và phục h�
 - [x] **P02-T06** — **[A]** Làm yêu thích có lưu trữ, thêm/xóa không trùng, mở được món thật; xử lý món bị ẩn/hết bán. Cache gắn uid và không lộ dữ liệu khi đổi tài khoản.
 - [x] **P02-T07** — **[A]** Chuẩn bị form checkout chọn địa chỉ/ghi chú/voucher/COD và service contract quote/create cho P03. Xác định payload, idempotency key và UX khi giá/tồn đổi; chưa cho báo thành công khi engine chưa có. Việc nối API thật và nghiệm thu đặt đơn thuộc P03, không tạo phụ thuộc vòng P02 ↔ P03.
 - [x] **P02-T08** — **[A]** Làm settings và support/about có tác dụng thật: quyền thông báo, đăng xuất, phiên bản, hướng dẫn đặt/hủy/nhận hàng và kênh hỗ trợ đã chọn. Không giữ control không có hành vi để tăng số màn hình.
-- [ ] **P02-T09** — **[ALL]** Kiểm tra Android về cuộn, bàn phím, ảnh lỗi, mạng chậm/phân trang và đổi tài khoản. B/C review hợp đồng giỏ/địa chỉ; cập nhật danh mục màn hình có trạng thái triển khai đúng thực tế.
+- [x] **P02-T09** — **[ALL]** Kiểm tra Android về cuộn, bàn phím, ảnh lỗi, mạng chậm/phân trang và đổi tài khoản. B/C review hợp đồng giỏ/địa chỉ; cập nhật danh mục màn hình có trạng thái triển khai đúng thực tế. *(Hoàn tất với review chéo + 3 máy ảo staging theo D52.)*
 
 ## Sản phẩm bàn giao
 

@@ -1,6 +1,6 @@
 # Kết quả P08
 
-Cập nhật **2026-11-26** · Kế hoạch **v1.8**.
+Cập nhật **2026-11-27** · Kế hoạch **v1.8**.
 
 ## Dữ liệu và cách đo
 
@@ -55,3 +55,12 @@ Mốc nội bộ cho lần đo lại với cùng fixture và máy gồm p95 tron
 - Firestore đã thêm hai chỉ mục cho phép đếm đơn tạo và cộng COD. Cả API và APK dùng được hai trang báo cáo với bộ mẫu 21 bản ghi. API trả 20 rồi 1 dòng, tổng hợp đúng 1.365.000 đồng COD. [Hai chỉ mục](../artifacts/evidence/P08/staging-report-indexes.json) · [Kết quả API](../artifacts/evidence/P08/staging-report-fixture.json)
 - APK chẩn đoán trên Android Emulator API 37 ghi bốn trace. Firebase Performance Console nhận đủ `catalog_menu_page`, `order_quote`, `daily_report_first` và `daily_report_next`. Bảng Console có ít mẫu và gồm một lượt báo cáo lỗi trước khi bổ sung chỉ mục. Bảng p95 local ở trên dùng các lượt đo trước và sau cùng môi trường. [Biên bản Performance](../artifacts/evidence/P08/staging-performance.json)
 - Express local đã kiểm tra HTTP 500 dùng cùng `X-Request-ID` trong header, JSON phản hồi và log. Log chỉ giữ mã lỗi và mã yêu cầu. [Kết quả đối chiếu](../artifacts/evidence/P08/staging-performance.json)
+
+## Xác nhận trên máy thành viên thứ hai ngày 2026-11-27
+
+- Dựng sạch từ gói bàn giao trên máy Windows thứ hai (Node 22.20.0, JDK 21.0.7, Android SDK, Firebase CLI 15.34.2): `npm ci`, `apps/mobile npm ci`, `npm run doctor` OK, `seed --dry-run` (đạt với local env, từ chối khi thiếu biến emulator).
+- Hồi quy tự động đạt **50/50 unit API/contracts/seed**, **46/46 React Native Jest**, **ESLint P01/P02 exit 0** và **56/56 Firebase Emulator & Rules**.
+- Benchmark tái lập **10.003 đơn** (`p08-benchmark-v1`) trên máy thứ hai: thực đơn 2 trang p95 **62,74 ms**, lịch sử khách p95 **199,17 ms**, hàng đợi quán p95 **158,35 ms**, đánh giá công khai p95 **37,15 ms**, báo cáo trang đầu p95 **138,32 ms**, báo cáo trang tiếp kèm tổng p95 **131,69 ms**, báo cáo trang tiếp chỉ danh sách đơn p95 **119,15 ms**, snapshot realtime p95 **20,05 ms**. Toàn bộ nằm dưới ngưỡng nội bộ.
+- Rà soát chéo Rules (`firestore.rules`, `storage.rules`) và các mô-đun API (`auth`, `customer`, `orders`, `orderPricing`, `adminOperations`, `catalogOperations`, `orderChat`, `outboxWorker`, `notificationDelivery`, `locationTracking`) không phát hiện lỗi chặn. [Biên bản tổng hợp](../artifacts/evidence/P08/second-machine/summary.json) · [Benchmark máy thứ hai](../artifacts/evidence/P08/second-machine/benchmark.json)
+- Đo số lượt đọc tính phí thực tế trên Firestore staging (`foodordernext-staging`, `asia-southeast1`) bằng `explainOptions.analyze=true` cho 7 nhóm truy vấn: `shops` (1 doc / 1 readOp), `menuItems` (3 / 3), `orders` lịch sử khách (5 / 5), `orders` hàng đợi quán (5 / 5), `orders` chuyến tài xế (0 / 1 readOp tối thiểu), `reviews` công khai (3 / 3) và báo cáo ngày `p08-staging-report-v1` (21 đơn): trang đầu kèm 2 aggregation tốn **23 readOps** (`21 + 1 + 1`), trang tiếp theo với `includeTotals=false` tốn **1 readOp** thay vì **3 readOps** (bỏ 2 truy vấn tổng hợp mỗi trang). [Biên bản lượt đọc staging](../artifacts/evidence/P08/staging-read-counts.json)
+- **Tổng hợp defect & giới hạn đã ghi nhận (P08-T09):** không còn lỗi chặn luồng/quyền/tiền/tồn sau hồi quy 2 máy, 3 máy ảo đồng thời (kèm ngắt/nối mạng `2,55s`) và 3/3 ca FCM thật trên staging. Giới hạn ghi nhận rõ: (1) kiểm thử dùng 3 Android Emulator API 37 + `EMULATED_GPS_ADB_GEO_FIX` theo quyết định D52; (2) trên Android 17 khi app nằm nền bị OS đóng băng mạng (`NetworkPolicyManager`), `openInboxEvent` nên có retry nhẹ ở bản sau nếu người dùng bấm push đúng thời điểm OS chưa kịp mở lại DNS (đã xác minh hoạt động bình thường khi miễn chế độ hạn chế nền); (3) Render Free ngủ sau 15 phút không có request. [Biên bản 3 máy ảo](../artifacts/evidence/P09/three-device/three-device-staging-result.json) · [Biên bản FCM thật](../artifacts/evidence/P05/live-fcm/staging-fcm-live.json)

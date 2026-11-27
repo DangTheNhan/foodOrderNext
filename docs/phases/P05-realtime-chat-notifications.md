@@ -1,6 +1,6 @@
 # P05 — Realtime, chat theo đơn và thông báo
 
-**Trạng thái:** IN_REVIEW  
+**Trạng thái:** DONE  
 **Chủ trì:** C; A/B tích hợp màn hình theo vai trò  
 **Phụ thuộc:** [P03](P03-order-engine.md), [P04](P04-merchant-admin.md); bản thử native từ P00.  
 **Nguồn thống nhất:** [MASTER_PLAN](../MASTER_PLAN.md).
@@ -15,14 +15,13 @@ Kết nối tương tác hai chiều: người dùng gửi command qua Express, 
 - [x] **P05-T02** — **[A]** Tích hợp listener vào chi tiết/lịch sử đơn khách, có loading/error/offline/stale và refresh sau reconnect. Không ghi trạng thái local vượt server; xử lý response command đến sau event mà không làm UI quay về trạng thái cũ.
 - [x] **P05-T03** — **[B]** Tích hợp queue merchant và nhiệm vụ driver nhận dữ liệu realtime theo quyền. Kiểm tra quán đổi trạng thái thì khách/driver thấy cập nhật; khách hủy PENDING thì quán thấy đơn kết thúc mà không cần tải toàn bộ queue.
 - [x] **P05-T04** — **[C]** Làm chat theo order với server xác minh participant và trạng thái được gửi; POST message có clientMessageId/idempotency. Ghi message và outbox trong cùng transaction; Firestore listener đọc chat scoped, pagination lịch sử, chống gửi trùng và hiển thị gửi lỗi/retry rõ.
-- [ ] **P05-T05** — **[C]** Quản lý device token theo uid/thiết bị, quyền notification, token refresh và logout. Cấu hình FCM payload mở đúng order sau kiểm tra quyền; tránh đưa địa chỉ, số điện thoại hoặc nội dung nhạy cảm vào notification ngoài màn hình khóa.
-  - FCM HTTP v1 đã bật trên staging. Worker đang bỏ qua việc gửi và service account Render chưa có vai trò gửi FCM trực tiếp. [Kiểm tra cấu hình staging](../../artifacts/evidence/P05/staging-push-preflight.json)
-  - Android Emulator đã qua từ chối/cấp quyền, gỡ đăng ký khi tắt hoặc đăng xuất và đăng ký lại cùng cài đặt. Còn kiểm thử nhận và bấm mở push. [Biên bản Android](../../artifacts/evidence/P05/staging-push-device.json)
+- [x] **P05-T05** — **[C]** Quản lý device token theo uid/thiết bị, quyền notification, token refresh và logout. Cấu hình FCM payload mở đúng order sau kiểm tra quyền; tránh đưa địa chỉ, số điện thoại hoặc nội dung nhạy cảm vào notification ngoài màn hình khóa.
+  - Đã bật `roles/firebasecloudmessaging.admin` cho `render-express-staging` và `FCM_SEND_ENABLED=true` trên Render; kiểm thử thực tế trên `Pixel_9` đạt cả 3 ca foreground (Alert mở đơn), background (nội dung chung không lộ PII, bấm mở chat) và cold start từ Recents (mở đơn), 3/3 job outbox `SENT`. [Biên bản FCM thật](../../artifacts/evidence/P05/live-fcm/staging-fcm-live.json) · [Vòng đời đăng ký](../../artifacts/evidence/P05/staging-push-device.json)
 - [x] **P05-T06** — **[C]** Làm worker outbox trong kiến trúc backend Express duy nhất: claim/lock tác vụ, retry có backoff, giới hạn lần thử, lưu lỗi cuối và đường xử lý lỗi vĩnh viễn. Gửi FCM sau commit; eventId giúp chống hiển thị trùng, không tuyên bố gửi exactly-once khi provider có thể nhận lại.
 - [x] **P05-T07** — **[A]** Làm inbox thông báo/read-unread có dữ liệu thật, mở đúng đơn/chat và kiểm tra lại quyền hiện tại. Mất push không làm mất trạng thái: mở app vẫn truy vấn/subscribe dữ liệu chính; push cũ không được ghi đè state mới.
-- [ ] **P05-T08** — **[ALL]** Kiểm thử ba thiết bị, chat hai phía, reconnect, ứng dụng background, FCM lỗi/token invalid và worker restart. Đo thời gian từ command commit đến UI nhận trên cùng môi trường; lưu kết quả thật, kiểm tra message/event/outbox không bị nhân đôi bởi retry.
+- [x] **P05-T08** — **[ALL]** Kiểm thử ba thiết bị, chat hai phía, reconnect, ứng dụng background, FCM lỗi/token invalid và worker restart. Đo thời gian từ command commit đến UI nhận trên cùng môi trường; lưu kết quả thật, kiểm tra message/event/outbox không bị nhân đôi bởi retry.
 
-Staging đã chạy ba phiên SDK đồng thời, kiểm hàng đợi, phân công, chat, hộp thư, gửi lặp, kết nối lại và kết quả COD. Thời gian đo từ phản hồi Express đến callback SDK. Còn test UI đồng thời trên nhiều thiết bị và FCM. [Biên bản P05 staging](../../artifacts/evidence/P05/staging-realtime.json)
+Đã hoàn tất 3 máy ảo đồng thời (`Pixel_9`, `Pixel_9_2`, `Pixel_9_3` theo D52), chat 3 bên live, ngắt/nối mạng (`2,55s`), 3/3 ca FCM thật trên staging và bộ kiểm thử worker/outbox. [Biên bản 3 máy ảo](../../artifacts/evidence/P09/three-device/three-device-staging-result.json) · [Biên bản FCM thật](../../artifacts/evidence/P05/live-fcm/staging-fcm-live.json) · [Biên bản 3 phiên SDK](../../artifacts/evidence/P05/staging-realtime.json)
 
 ## Sản phẩm bàn giao
 

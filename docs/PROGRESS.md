@@ -1,6 +1,6 @@
 # Tiến độ và điểm tiếp tục
 
-Cập nhật **2026-11-26** · Plan **v1.8**.
+Cập nhật **2026-11-27** · Plan **v1.8**.
 
 ## Hiện tại
 
@@ -21,7 +21,10 @@ Cập nhật **2026-11-26** · Plan **v1.8**.
 - APK chẩn đoán đã tải thành công cả hai trang báo cáo. Firebase Performance Console có đủ bốn trace Android cho thực đơn, báo giá, trang đầu và trang sau của báo cáo. [Biên bản Performance](../artifacts/evidence/P08/staging-performance.json)
 - FCM HTTP v1 đang bật trên Firebase. Kiểm tra stage cho thấy worker bỏ qua lần gửi vì `FCM_SEND_ENABLED` và tài khoản Render còn cần quyền gửi FCM. [Điều kiện chạy push](../artifacts/evidence/P05/staging-push-preflight.json)
 - APK staging trên Android Emulator API 37 đã qua kiểm tra quyền thông báo và vòng đời đăng ký. Từ chối quyền không sinh đăng ký, cấp quyền tạo đăng ký Android, tắt thông báo và đăng xuất gỡ đăng ký. Tài khoản demo đã về tùy chọn tắt. [Kiểm thử đăng ký thiết bị](../artifacts/evidence/P05/staging-push-device.json)
-- Backlog **62/84 task DONE**. Xem [hồ sơ bàn giao P09](PHASE09_REPORT.md) để lấy APK, slide và video.
+- Ngày **2026-11-27**, máy thành viên thứ hai (Windows, Node 22.20.0, JDK 21.0.7, Android SDK) đã dựng lại từ gói bàn giao (`npm ci`, `apps/mobile npm ci`, `npm run doctor` OK, `seed --dry-run` đạt và chặn seed cloud khi thiếu biến emulator), chạy đạt **50/50 unit**, **46/46 mobile Jest**, **ESLint P01/P02 exit 0**, **56/56 Firebase Emulator & Rules**, và tái lập benchmark **10.003 đơn** (`dailyReportNextRowsOnly` p95 **119,15 ms** vs `dailyReportNext` **131,69 ms**; realtime snapshot p95 **20,05 ms**). Đã tải `google-services.json` bản release qua Firebase CLI, chạy smoke `foodordernext-staging` + Render HTTPS đạt **11/11 ca**, đo số lượt đọc Firestore thực tế bằng `explainOptions.analyze=true` trên staging (báo cáo trang 1: 23 readOps; trang 2 `includeTotals=false`: 1 readOp vs 3 readOps), build và ký xác minh **APK ứng viên release (`arm64-v8a` + `x86_64`)** từ commit `cd3bf4d`, và chạy đạt **10/10 ca đồng thời trên 2 máy ảo `Pixel_9` + `Pixel_9_2`** (đơn COD 35.000đ, hàng đợi live, chat 2 chiều live, phân công, đổi tài khoản sau `pm clear`, quyền vị trí + GPS mô phỏng gắn nhãn, thu COD live, đánh giá và từ chối quyền thông báo; dọn sạch 3 tài khoản và 37 docs tạm). Kiểm tra IAM xác nhận `render-express-staging` vẫn chưa có quyền gửi FCM và 30 job outbox gần nhất vẫn là `SKIPPED:FCM_DISABLED`. [Biên bản máy thứ hai](../artifacts/evidence/P08/second-machine/summary.json) · [Lượt đọc staging](../artifacts/evidence/P08/staging-read-counts.json) · [Phiếu APK ứng viên](../artifacts/evidence/P09/android-staging-candidate-receipt.json) · [Biên bản 2 máy ảo](../artifacts/evidence/P09/second-machine/two-device/two-device-staging-result.json) · [Kiểm tra IAM/FCM](../artifacts/evidence/P08/second-machine/staging-iam-fcm-check.json)
+- Ngày **2026-11-27 (chiều)**, theo quyết định **`D52`** (chạy 3 máy ảo Android, không dùng máy vật lý): đã cấp thành công **`roles/firebasecloudmessaging.admin`** (HTTP 200) cho `render-express-staging@foodordernext-staging.iam.gserviceaccount.com`, tạo & khởi động máy ảo thứ 3 (`Pixel_9_3`), và chạy đạt **9/9 ca đồng thời trên 3 máy ảo (`Pixel_9` khách, `Pixel_9_2` quán, `Pixel_9_3` tài xế)** trên `foodordernext-staging` + Render HTTPS: đăng nhập đồng thời, bật thông báo/đăng ký token FCM, đặt COD `35.000 đ`, đồng bộ đơn/phân công live (`2,20–2,28s`), **chat 3 bên đồng thời**, GPS mô phỏng gắn nhãn `EMULATED_GPS_ADB_GEO_FIX`, **ngắt mạng & kết nối lại (`2,55s`)** khi thu COD, đánh giá 5 sao và quay xong **video toàn luồng 3 máy ảo** (`FoodOrderNext-3Device-Staging-Demo.mp4`, `3,34 MB`). Toàn bộ 3 tài khoản và 43 docs thử tạm đã được dọn sạch. Probe `notificationOutbox` xác nhận Render vẫn đang đặt `FCM_SEND_ENABLED=false` (`SKIPPED:FCM_DISABLED`). [Biên bản 3 máy ảo](../artifacts/evidence/P09/three-device/three-device-staging-result.json)
+- Ngày **2026-11-27 (tối)**, sau khi bật `FCM_SEND_ENABLED=true` trên Render (`foodordernext-api-staging`): đã nghiệm thu đạt **3/3 ca FCM thật** trên `Pixel_9` (API 37 + Google Play Services): (1) **foreground** hiện Alert và bấm `MỞ` vào đúng `Chi tiết đơn`, (2) **background** về thanh thông báo Android với nội dung bảo mật chung (không lộ tin nhắn/PII) và bấm mở thẳng vào `OrderChat`, (3) **cold start** sau khi vuốt đóng app từ Recents (`pidof = NONE`) nhận push và chạm mở lạnh thẳng vào `Chi tiết đơn` (`Đang chuẩn bị`). Cả 3 job `notificationOutbox` đều đạt `status: SENT`, `deliveredCount: 1`; toàn bộ 4 outbox job, 3 tài khoản và 19 docs tạm đã được dọn sạch. [Biên bản FCM thật](../artifacts/evidence/P05/live-fcm/staging-fcm-live.json)
+- Backlog **82/84 task DONE** (**9/10 phase DONE**: P00–P08). Chỉ còn 2 đầu việc nhân sự ở P09 (diễn tập trình bày 3 thành viên và ký xác nhận chéo cuối). Xem [hồ sơ bàn giao P09](PHASE09_REPORT.md) để lấy APK, slide và video.
 
 ## Bằng chứng kiểm tra
 
@@ -39,22 +42,21 @@ Cập nhật **2026-11-26** · Plan **v1.8**.
 
 | Phase | Trạng thái | Ghi chú |
 |---|---|---|
-| P00 | IN_PROGRESS | Import, build, Auth và AI đã có; còn FCM, Performance và realtime đa thiết bị |
-| P01 | IN_REVIEW | P01-T01 đã xác nhận cấu hình Android, Express và Firebase staging. P01-T09 còn rà soát ca quyền và tái hiện setup trên máy thành viên khác. |
-| P02 | IN_REVIEW | Catalog, giỏ, địa chỉ, yêu thích và chuẩn bị COD chạy local |
-| P03 | IN_REVIEW | Luồng COD, chặn đặt trùng, tồn và đánh giá đã chạy staging. Còn review chéo các ca transaction. |
-| P04 | IN_REVIEW | Quán đã xử lý trạng thái và giao việc trên staging. Còn review chéo quyền, quản lý món và đối soát. |
-| P05 | IN_REVIEW | Realtime ba phiên và vòng đời đăng ký Android đã đạt trên staging. Còn nhận push FCM và UI đồng thời trên nhiều thiết bị. |
-| P06 | IN_REVIEW | Đã thử giao, thu COD và gửi tọa độ tổng hợp qua staging. Chờ nghiệm thu GPS thực. |
+| P00 | DONE | Đủ import, build APK ứng viên (D52), Auth, realtime 3 máy ảo, AI, 4 trace Performance Console và 3/3 ca FCM thật. |
+| P01 | DONE | Đã xác nhận Android, Express, Firebase staging và dựng lại + review chéo trên máy thành viên thứ hai. |
+| P02 | DONE | Catalog, giỏ, địa chỉ, yêu thích, review chéo và kiểm thử staging trên máy ảo theo D52 đã hoàn tất. |
+| P03 | DONE | Luồng COD, chống đặt trùng, tồn và đánh giá đã chạy staging; đã review chéo và chạy lại toàn bộ ca transaction trên máy thứ hai. |
+| P04 | DONE | Quán xử lý trạng thái, giao việc và báo cáo ngày 21 đơn đạt staging; đã review chéo quyền admin/quán và chạy lại trên máy thứ hai. |
+| P05 | DONE | Đạt 3 máy ảo đồng thời, chat 3 bên, ngắt/nối mạng (`2,55s`), 3/3 ca FCM thật (foreground/background/cold start, không lộ PII) và outbox worker. |
+| P06 | DONE | Đã kiểm thử trọn ca quyền vị trí, GPS mô phỏng gắn nhãn `EMULATED_GPS` giữa `Pixel_9_3` và `Pixel_9`, ngắt/nối mạng và thu COD trên staging theo D52. |
 | P07 | DONE | Hai luồng AI hỗ trợ khách và quán. Xem báo cáo P07 |
-| P08 | IN_PROGRESS | P08-T06 đã hoàn tất. Báo cáo staging đã qua kiểm thử API và APK. Còn số lượt đọc Firestore trên staging và review chéo. |
-| P09 | IN_PROGRESS | APK staging đã chạy một đơn qua cả ba vai trò trên một máy ảo. Còn bản ứng viên ký bằng khóa nhóm và nghiệm thu đồng thời trên ba thiết bị. |
+| P08 | DONE | Đủ benchmark 10.003 đơn, lượt đọc Firestore staging, 4 trace Performance Console, hồi quy 2 máy, 3 máy ảo và FCM thật; không còn lỗi chặn. |
+| P09 | IN_PROGRESS | 6/8 task DONE (`T01`–`T06`): APK ứng viên, cài sạch 3 máy ảo, tài liệu/README, demo 3 máy ảo + video toàn luồng 3,34 MB, case chiều sâu và 12 slide. Chỉ còn `T07` (diễn tập 3 thành viên & nhật ký đóng góp) và `T08` (ký xác nhận chéo cuối). |
 
 ## Tiếp tục từ đâu
 
-1. **Nghiệm thu FCM trên staging.** Sau khi nhóm xác nhận quyền gửi cho tài khoản Render, kiểm FCM foreground/background/cold start. Bổ sung UI đồng thời trên ba thiết bị, GPS thực và số lượt đọc Firestore trên staging theo checklist. [Checklist P09](phases/P09-release-demo.md#công-việc)
-2. Đối chiếu cài máy thứ hai và chạy lại các ca cần review chéo dành cho P01–P08.
-3. Build bản Android ứng viên bằng khóa ký của nhóm. Thành viên khác cài mới, ghi video toàn luồng ba vai trò và xác nhận checklist trong [hồ sơ P09](PHASE09_REPORT.md).
+1. **Diễn tập bảo vệ 3 thành viên (`P09-T07`).** Cả 3 thành viên diễn tập theo [kịch bản 10 phút](PHASE09_REPORT.md#kịch-bản-trình-bày) (dùng 3 máy ảo `Pixel_9`/`Pixel_9_2`/`Pixel_9_3` hoặc video dự phòng `FoodOrderNext-3Device-Staging-Demo.mp4` + 2 video AI P07) và điền nhật ký đóng góp cá nhân.
+2. **Chốt ký xác nhận chéo & dọn gói bàn giao cũ (`P09-T08`).** Di chuyển thư mục bản sao `FoodOrderNext-BanGiao-2026-11-27-v2/` ra khỏi repo trước khi commit/push, kiểm tra lại link/file/slide cuối và ký xác nhận chéo để đóng P09.
 
 Xem [thứ tự triển khai trong kế hoạch chính](MASTER_PLAN.md#10-thứ-tự-triển-khai-từ-hiện-tại) và [checklist P08](phases/P08-hardening-performance.md).
 

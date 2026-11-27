@@ -1,0 +1,96 @@
+{
+  "projectId": "foodordernext-staging",
+  "runId": "p09qa2d-a76f7839",
+  "checkedAt": "2026-11-27T12:15:12.923463+00:00",
+  "apk": "artifacts/releases/FoodOrderNext-v1.8-staging-arm64-x86_64-candidate.apk",
+  "apkSha256": "d2a0d5959181f41b48f03fcf0bee3187205f7226e7b269c52321f99be8ce3042",
+  "decisionRef": "D52",
+  "environmentNote": "Three simultaneous Android Emulators (API 37, Google Play Services) per user decision D52; GPS coordinates injected via adb emu geo fix are explicitly labeled EMULATED_GPS.",
+  "devices": {
+    "customer": {
+      "avd": "Pixel_9",
+      "serial": "emulator-5554",
+      "apiLevel": 37,
+      "emulator": true
+    },
+    "merchant": {
+      "avd": "Pixel_9_2",
+      "serial": "emulator-5556",
+      "apiLevel": 37,
+      "emulator": true
+    },
+    "driver": {
+      "avd": "Pixel_9_3",
+      "serial": "emulator-5558",
+      "apiLevel": 37,
+      "emulator": true
+    }
+  },
+  "gpsMode": "EMULATED_GPS_ADB_GEO_FIX",
+  "result": "PASS",
+  "cases": [
+    {
+      "case": "Simultaneous login across 3 emulators: Pixel_9 (Customer), Pixel_9_2 (Merchant), Pixel_9_3 (Driver)",
+      "status": "PASS"
+    },
+    {
+      "case": "Customer enabled Android push notifications and registered FCM device token on Pixel_9",
+      "status": "PASS"
+    },
+    {
+      "case": "Customer placed COD order 35.000 VND on Pixel_9",
+      "status": "PASS",
+      "orderId": "3tACmScyBAXYeox5pz3f"
+    },
+    {
+      "case": "3-device live sync: Merchant accepted & assigned; Customer and Driver emulators updated LIVE without refresh",
+      "status": "PASS"
+    },
+    {
+      "case": "3-party live order chat simultaneously across Pixel_9, Pixel_9_2, and Pixel_9_3",
+      "status": "PASS"
+    },
+    {
+      "case": "Driver shared foreground EMULATED_GPS on Pixel_9_3; Customer saw live map & timestamp on Pixel_9",
+      "status": "PASS"
+    },
+    {
+      "case": "Offline disconnect & reconnect: Pixel_9 caught up to COMPLETED+COD_CONFIRMED automatically after network restored",
+      "status": "PASS"
+    },
+    {
+      "case": "Customer submitted verified 5-star review on Pixel_9",
+      "status": "PASS"
+    },
+    {
+      "case": "Recorded full-flow 3-device staging demo MP4 video",
+      "status": "PASS",
+      "bytes": 3335746
+    }
+  ],
+  "measurements": {
+    "newOrderToMerchantQueueUiPollMs": 2203,
+    "merchantAcceptToCustomerUiPollMs": 2265,
+    "assignToDriverUiPollMs": 2282,
+    "customerChatToMerchantAndDriverUiPollMs": 4360,
+    "merchantAndDriverChatToCustomerUiPollMs": 4453,
+    "offlineReconnectCodCatchupUiPollMs": 2547
+  },
+  "screenshots": [
+    "01-merchant-queue-pixel9_2.png",
+    "02-driver-live-assigned-pixel9_3.png",
+    "03-chat-3party-customer-pixel9.png",
+    "04-chat-3party-merchant-pixel9_2.png",
+    "05-chat-3party-driver-pixel9_3.png",
+    "06-tracking-customer-pixel9.png",
+    "07-tracking-driver-pixel9_3.png",
+    "08-driver-cod-completed-pixel9_3.png",
+    "09-customer-reviewed-pixel9.png"
+  ],
+  "video": {
+    "path": "artifacts/releases/FoodOrderNext-3Device-Staging-Demo.mp4",
+    "bytes": 3335746,
+    "recordedOn": "Pixel_9 (Customer view during 3-emulator simultaneous staging run)"
+  },
+  "orderId": "3tACmScyBAXYeox5pz3f"
+}

@@ -24,6 +24,6 @@ services:
       - key: FIREBASE_SERVICE_ACCOUNT_PATH
         value: /etc/secrets/foodordernext-staging-service-account.json
       - key: FCM_SEND_ENABLED
-        value: "false"
+        value: "true"
       - key: AI_PROVIDER
         value: disabled

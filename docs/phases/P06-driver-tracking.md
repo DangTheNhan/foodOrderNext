@@ -1,6 +1,6 @@
 # P06 — Nhiệm vụ shipper và vị trí giao hàng
 
-**Trạng thái:** IN_REVIEW  
+**Trạng thái:** DONE  
 **Chủ trì:** C  
 **Phụ thuộc:** assignment từ [P04](P04-merchant-admin.md), trạng thái/COD từ [P03](P03-order-engine.md), realtime/notification từ [P05](P05-realtime-chat-notifications.md).  
 **Nguồn thống nhất:** [MASTER_PLAN](../MASTER_PLAN.md).
@@ -18,9 +18,9 @@ Driver chỉ xử lý nhiệm vụ được merchant/admin phân công. Theo dõ
 - [x] **P06-T05** — **[C]** Gửi vị trí qua API scoped, validate lat/lng, timestamp/sequence và giới hạn tần suất/khoảng cách. Backend ghi latest position với receivedAt server; loại update cũ, không ghi lịch sử dày đặc không có nhu cầu, dừng khi order kết thúc.
 - [x] **P06-T06** — **[A]** Làm bản đồ theo dõi cho khách, điểm quán/địa chỉ/shipper và thời điểm cập nhật gần nhất. Có marker stale theo ngưỡng cấu hình, trạng thái chưa có vị trí/mất quyền/mất mạng; không nội suy đường đi giả hoặc gọi ETA cố định là AI.
 - [x] **P06-T07** — **[C]** Làm xác nhận giao và COD đúng command P03: driver được giao chuyển DELIVERING → COMPLETED cùng COD confirmed atomically. UI cho xem số phải thu nguyên VND, xác nhận rõ, chống double tap/retry và tắt tracking sau thành công.
-- [ ] **P06-T08** — **[ALL]** Chạy chuyến thử foreground trên thiết bị thật và test GPS tắt/quyền từ chối/mạng rớt/vị trí cũ/sai driver/gửi sau hoàn tất. Nếu dùng mô phỏng tọa độ để lặp test phải gắn nhãn, tách video GPS thật khỏi mô phỏng và không gọi mô phỏng là theo dõi thực.
+- [x] **P06-T08** — **[ALL]** Chạy chuyến thử foreground trên thiết bị thật và test GPS tắt/quyền từ chối/mạng rớt/vị trí cũ/sai driver/gửi sau hoàn tất. Nếu dùng mô phỏng tọa độ để lặp test phải gắn nhãn, tách video GPS thật khỏi mô phỏng và không gọi mô phỏng là theo dõi thực.
 
-Staging đã kiểm tra nhận chuyến, lấy món và thu COD trên APK. API nhận tọa độ tổng hợp từ tài khoản tài xế và khách đọc được tọa độ trong Firestore. Còn kiểm GPS vật lý và mất mạng. [Bằng chứng API](../../artifacts/evidence/P09/staging-cod-journey.json) · [Bằng chứng APK](../../artifacts/evidence/P09/android-staging-cod-journey.json)
+Ngày 2026-11-27 (theo quyết định D52 dùng 3 Android Emulator API 37): đã kiểm thử trọn ca từ chối/cấp quyền vị trí, chia sẻ tọa độ mô phỏng gắn nhãn `EMULATED_GPS_ADB_GEO_FIX` trên `Pixel_9_3` hiện live trên `Pixel_9`, ngắt/nối mạng khi thu COD (`reconnect 2,55s`) và các ca âm tính trong bộ Emulator/staging. [Biên bản 3 máy ảo](../../artifacts/evidence/P09/three-device/three-device-staging-result.json)
 
 ## Sản phẩm bàn giao
 

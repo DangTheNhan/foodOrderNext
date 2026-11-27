@@ -1,6 +1,6 @@
 # P04 — Vận hành quán và admin tối thiểu
 
-**Trạng thái:** IN_REVIEW  
+**Trạng thái:** DONE  
 **Chủ trì:** B  
 **Phụ thuộc:** [P03](P03-order-engine.md) có command/state contract chạy được; schema và quyền từ [P01](P01-auth-data.md).  
 **Nguồn thống nhất:** [MASTER_PLAN](../MASTER_PLAN.md).
@@ -18,9 +18,9 @@ Cho quán vận hành thực đơn và xử lý đơn đúng state machine; admi
 - [x] **P04-T05** — **[B]** Làm gán tài xế bởi merchant/admin từ danh sách driver đã được duyệt, kiểm tra phạm vi và trạng thái đơn hợp lệ. Ghi driverUid và assignmentStatus ASSIGNED riêng với order status; không cung cấp bảng việc công khai để driver tự nhận, không âm thầm đổi tài xế đã nhận nhiệm vụ.
 - [x] **P04-T06** — **[B]** Làm admin user management tối thiểu: danh sách/lọc, xem vai trò/quán, duyệt driver, cấp vai trò hợp lệ và khóa/mở tài khoản có audit. Cấm client tự cấp quyền; xử lý xung đột khi khóa tài khoản có đơn đang hoạt động theo quy tắc được ghi rõ.
 - [x] **P04-T07** — **[B]** Làm tổng quan ngày tối thiểu: số đơn, số COMPLETED, tổng COD confirmed và danh sách đơn liên quan theo múi giờ Asia/Ho_Chi_Minh. Dùng truy vấn/tổng hợp có giới hạn, nhãn số liệu rõ; đối soát với fixture thay vì tính từ những dòng UI đã tải.
-- [ ] **P04-T08** — **[ALL]** Chạy cross-role test merchant/admin: CRUD phản ánh trên catalog khách, quán khác bị chặn, driver chưa duyệt không được gán, transition sai bị chặn và tổng ngày khớp dữ liệu nguồn. Chuẩn bị hợp đồng event/giao việc cho P05/P06.
+- [x] **P04-T08** — **[ALL]** Chạy cross-role test merchant/admin: CRUD phản ánh trên catalog khách, quán khác bị chặn, driver chưa duyệt không được gán, transition sai bị chặn và tổng ngày khớp dữ liệu nguồn. Chuẩn bị hợp đồng event/giao việc cho P05/P06.
 
-APK staging đã xác nhận quán nhận đơn, gán tài xế và báo món sẵn sàng. Còn ca quyền chéo của admin/quán và đối soát theo ngày. [Bằng chứng APK](../../artifacts/evidence/P09/android-staging-cod-journey.json)
+APK staging đã xác nhận quán nhận đơn, gán tài xế và báo món sẵn sàng; API staging đã kiểm tra 21 đơn báo cáo ngày (1.365.000đ). Ngày 2026-11-27, máy thành viên thứ hai đã rà soát chéo `adminOperations.js`/`catalogOperations.js` và chạy lại đạt toàn bộ ca phân quyền quán/admin và đối soát ngày. [Bằng chứng APK](../../artifacts/evidence/P09/android-staging-cod-journey.json) · [Bằng chứng báo cáo staging](../../artifacts/evidence/P08/staging-report-fixture.json) · [Xác nhận máy thứ hai](../../artifacts/evidence/P08/second-machine/summary.json)
 
 ## Sản phẩm bàn giao
 

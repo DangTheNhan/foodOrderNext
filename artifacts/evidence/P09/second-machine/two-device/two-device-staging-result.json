@@ -1,0 +1,83 @@
+{
+  "projectId": "foodordernext-staging",
+  "runId": "p09qa2d-42818b4e",
+  "checkedAt": "2026-11-27T10:08:20.651546+00:00",
+  "apk": "artifacts/releases/FoodOrderNext-v1.8-staging-arm64-x86_64-candidate.apk",
+  "apkSha256": "d2a0d5959181f41b48f03fcf0bee3187205f7226e7b269c52321f99be8ce3042",
+  "devices": {
+    "customer": {
+      "avd": "Pixel_9",
+      "serial": "emulator-5554",
+      "apiLevel": 37,
+      "emulator": true
+    },
+    "merchantAndDriver": {
+      "avd": "Pixel_9_2",
+      "serial": "emulator-5556",
+      "apiLevel": 37,
+      "emulator": true
+    }
+  },
+  "gpsMode": "EMULATED_GPS_ADB_GEO_FIX",
+  "result": "PASS",
+  "cases": [
+    {
+      "case": "Clean install candidate APK (arm64+x86_64) on both Pixel_9 and Pixel_9_2",
+      "status": "PASS"
+    },
+    {
+      "case": "Concurrent login: Customer on Pixel_9 and Merchant on Pixel_9_2",
+      "status": "PASS"
+    },
+    {
+      "case": "Customer created COD order 35.000 VND on Pixel_9",
+      "status": "PASS",
+      "orderId": "ZqciRxpep2XNyRf5mZAm"
+    },
+    {
+      "case": "Merchant queue on Pixel_9_2 received new order LIVE via Firestore listener",
+      "status": "PASS"
+    },
+    {
+      "case": "Customer Order Detail on Pixel_9 updated to ACCEPTED LIVE without refresh",
+      "status": "PASS"
+    },
+    {
+      "case": "Concurrent 2-way order chat live between Pixel_9 and Pixel_9_2",
+      "status": "PASS"
+    },
+    {
+      "case": "Merchant assigned driver and marked READY_FOR_PICKUP; Pixel_9 updated LIVE",
+      "status": "PASS"
+    },
+    {
+      "case": "Driver foreground location (DENY then ALLOW + EMULATED_GPS) received live on Pixel_9",
+      "status": "PASS"
+    },
+    {
+      "case": "Driver confirmed COD on Pixel_9_2; Customer on Pixel_9 saw COMPLETED+COD live and posted verified review",
+      "status": "PASS"
+    },
+    {
+      "case": "Customer denied Android notification permission cleanly on Pixel_9",
+      "status": "PASS"
+    }
+  ],
+  "measurements": {
+    "newOrderToMerchantQueueUiPollMs": 2156,
+    "merchantAcceptToCustomerUiPollMs": 2141,
+    "customerChatToMerchantUiPollMs": 19360,
+    "merchantChatToCustomerUiPollMs": 2187,
+    "codCompleteToCustomerUiPollMs": 2187
+  },
+  "screenshots": [
+    "01-merchant-live-queue-pixel9_2.png",
+    "02-two-way-chat-customer-pixel9.png",
+    "03-two-way-chat-merchant-pixel9_2.png",
+    "04-live-tracking-emulated-gps-pixel9.png",
+    "05-driver-sharing-emulated-gps-pixel9_2.png",
+    "06-customer-completed-reviewed-pixel9.png",
+    "07-notification-denied-pixel9.png"
+  ],
+  "orderId": "ZqciRxpep2XNyRf5mZAm"
+}

@@ -1,6 +1,6 @@
 # P03 — Bộ máy đơn hàng, giá, tồn món và COD
 
-**Trạng thái:** IN_REVIEW  
+**Trạng thái:** DONE  
 **Chủ trì:** A; B/C review transaction và quyền  
 **Phụ thuộc:** [P01](P01-auth-data.md), cart contract từ [P02](P02-customer.md).  
 **Nguồn thống nhất:** [MASTER_PLAN](../MASTER_PLAN.md).
@@ -19,9 +19,9 @@
 - [x] **P03-T06** — **[C]** Làm transition command kiểm tra role/restaurant/assigned driver và trạng thái hiện hành; ghi event cùng transaction. assignmentStatus ASSIGNED → ACCEPTED là field riêng; pickup READY_FOR_PICKUP → DELIVERING và ghi pickedUpAt, không thêm PICKED_UP.
 - [x] **P03-T07** — **[C]** Xác nhận giao và thu COD atomically bởi driver được giao/đã nhận nhiệm vụ. DELIVERING → COMPLETED cùng số tiền COD đúng tổng phải thu, actor và timestamp; retry không ghi nhận thu tiền lần hai.
 - [x] **P03-T08** — **[A]** Làm lịch sử/chi tiết/hủy đơn và review sau COMPLETED; chỉ customer sở hữu đánh giá một lần mỗi đơn. Validate rating/nội dung; lưu quan hệ order/restaurant để quán và AI đọc đúng phạm vi.
-- [ ] **P03-T09** — **[ALL]** Chạy test sửa giá, gửi trùng, tranh suất cuối, cancel/reject đồng thời, nhảy trạng thái/sai actor, voucher tranh chấp và COD retry. Assert tồn/usage/event/tổng sau test, không chỉ assert HTTP status.
+- [x] **P03-T09** — **[ALL]** Chạy test sửa giá, gửi trùng, tranh suất cuối, cancel/reject đồng thời, nhảy trạng thái/sai actor, voucher tranh chấp và COD retry. Assert tồn/usage/event/tổng sau test, không chỉ assert HTTP status.
 
-Staging đã kiểm tra gửi trùng, chặn khách chuyển trạng thái, COD sai và gửi lại, tồn sau hoàn tất và đánh giá. B/C còn review transaction và các ca đồng thời. [Bằng chứng API](../../artifacts/evidence/P09/staging-cod-journey.json)
+Staging đã kiểm tra gửi trùng, chặn khách chuyển trạng thái, COD sai và gửi lại, tồn sau hoàn tất và đánh giá. Ngày 2026-11-27, máy thành viên thứ hai đã rà soát chéo `orders.js`/`orderPricing.js` và chạy lại đạt toàn bộ bộ kiểm thử transaction/tranh chấp (56/56 Emulator, 50/50 unit). [Bằng chứng API](../../artifacts/evidence/P09/staging-cod-journey.json) · [Xác nhận máy thứ hai](../../artifacts/evidence/P08/second-machine/summary.json)
 
 ## Sản phẩm bàn giao
 

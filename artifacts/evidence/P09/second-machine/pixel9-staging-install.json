@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-11-27T09:04:00Z",
+  "machineRole": "second-member-verification",
+  "avd": "Pixel_9",
+  "serial": "emulator-5554",
+  "model": "sdk_gphone16k_x86_64",
+  "androidRelease": "17",
+  "apiLevel": 37,
+  "abi": "x86_64",
+  "apk": "artifacts/releases/FoodOrderNext-v1.8-staging-x86_64-test.apk",
+  "apkSha256": "cd1abcb00f4956d411c1c7713d19c806809a3bc56c36ab6109c0d909b084ff5f",
+  "checks": {
+    "cleanUninstallAndInstall": "PASS",
+    "coldLaunchMs": 1557,
+    "loginScreenRendered": "PASS",
+    "clearDataAndRelaunchMs": 1203,
+    "relaunchRendered": "PASS",
+    "fatalLogcatErrors": 0
+  },
+  "screenshot": "artifacts/evidence/P09/second-machine/pixel9-staging-login.png",
+  "note": "Clean install and launch verified on second machine using staging test APK. Full login/checkout/FCM/3-device flow on staging awaits Firebase staging access and shared staging demo credentials."
+}

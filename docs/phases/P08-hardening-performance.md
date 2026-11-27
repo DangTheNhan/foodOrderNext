@@ -1,6 +1,6 @@
 # P08 — An toàn, độ ổn định và tối ưu có số đo
 
-**Trạng thái:** IN_PROGRESS  
+**Trạng thái:** DONE  
 **Chủ trì:** ALL; C điều phối bằng chứng  
 **Phụ thuộc:** tích hợp [P02](P02-customer.md) đến [P07](P07-ai.md); baseline bắt đầu ghi từ các pha trước.  
 **Nguồn thống nhất:** [MASTER_PLAN](../MASTER_PLAN.md).
@@ -15,15 +15,15 @@ Bắt đầu local với **P08-T07/T08** và theo dõi lỗi cần sửa ở **P
 
 - [x] **P08-T01** — **[B]** Chuẩn bị dataset tổng hợp tái lập và kịch bản tải có chi phí kiểm soát, ví dụ mục tiêu 10.000 đơn với nhiều dòng đơn/review. Ghi kích thước thật, seed namespace và cách reset; emulator dùng kiểm logic, production smoke nhỏ có ngân sách và không đẩy tải không kiểm soát.
 - [x] **P08-T02** — **[ALL]** Đo baseline query/API/realtime trên cấu hình cố định: thiết bị, mạng, dataset, cache nóng/lạnh, số lần chạy và điểm timestamp. Chốt mục tiêu nội bộ sau baseline; nếu đặt p95 dưới một ngưỡng thì ghi là mục tiêu, không biến thành kết quả chưa đo.
-- [ ] **P08-T03** — **[B]** Tối ưu Firestore query/filter/composite index/cursor cho catalog, lịch sử, queue, review và tổng ngày. Kiểm tra read count và trang tiếp theo; dùng aggregate/materialized totals theo contract, không tải toàn bộ order lên app để cộng.
+- [x] **P08-T03** — **[B]** Tối ưu Firestore query/filter/composite index/cursor cho catalog, lịch sử, queue, review và tổng ngày. Kiểm tra read count và trang tiếp theo; dùng aggregate/materialized totals theo contract, không tải toàn bộ order lên app để cộng.
 - [x] **P08-T04** — **[A]** Tối ưu màn hình dữ liệu nhiều bằng virtualized/lazy loading, ảnh kích thước phù hợp, cache có TTL/invalidation và namespace uid. Chặn fetch lặp, bỏ cache khi đổi tài khoản và kiểm tra giỏ/giá cũ vẫn được quote server. [Thử Android local](../PHASE08_REPORT.md#android-local-ngày-2026-11-25)
-- [ ] **P08-T05** — **[C]** Tối ưu listener scope/lifecycle, tần suất GPS, payload và retry/outbox; kiểm tra worker restart, mất mạng và backoff. Batch xử lý seed/maintenance theo giới hạn SDK chính thức đang dùng, có checkpoint, không biến một lỗi thành ghi lặp toàn bộ.
+- [x] **P08-T05** — **[C]** Tối ưu listener scope/lifecycle, tần suất GPS, payload và retry/outbox; kiểm tra worker restart, mất mạng và backoff. Batch xử lý seed/maintenance theo giới hạn SDK chính thức đang dùng, có checkpoint, không biến một lỗi thành ghi lặp toàn bộ.
 - [x] **P08-T06** — **[C]** Hoàn thiện Firebase Performance Monitoring traces cho tác vụ chính và ghi số đo trước/sau cùng kịch bản; kiểm tra log/API error correlation. Đối chiếu ảnh trace trên console với thao tác Android thật, ghi rõ nơi SDK không tự đo và custom trace bổ sung.
-- [ ] **P08-T07** — **[ALL]** Chạy ma trận negative test cả Rules/Storage và REST: không token, giả role, cross-user/order/restaurant, driver chưa duyệt/chưa gán, sửa giá, sai state, đọc chat/vị trí, upload không đúng quyền và secret trong bundle/log. Nhớ Admin SDK bỏ qua Rules nên test REST riêng là bắt buộc.
-- [ ] **P08-T08** — **[ALL]** Chạy regression invariants: suất cuối, idempotency, giải phóng tồn/voucher một lần, COMPLETED+COD atomic, message+outbox atomic, listener reconnect và AI fallback. Kiểm tra dữ liệu cuối cùng, không chỉ thông báo UI; thành viên khác chạy lại case trọng yếu.
-- [ ] **P08-T09** — **[ALL]** Tổng hợp defect theo mức độ, sửa lỗi chặn luồng/quyền/tiền/tồn trước; chạy lại phần liên quan sau sửa. Ghi giới hạn chưa giải quyết, chi phí đọc/AI/FCM quan sát được và quyết định cắt phần mở rộng; chỉ chuyển P09 khi không còn lỗi chặn.
+- [x] **P08-T07** — **[ALL]** Chạy ma trận negative test cả Rules/Storage và REST: không token, giả role, cross-user/order/restaurant, driver chưa duyệt/chưa gán, sửa giá, sai state, đọc chat/vị trí, upload không đúng quyền và secret trong bundle/log. Nhớ Admin SDK bỏ qua Rules nên test REST riêng là bắt buộc.
+- [x] **P08-T08** — **[ALL]** Chạy regression invariants: suất cuối, idempotency, giải phóng tồn/voucher một lần, COMPLETED+COD atomic, message+outbox atomic, listener reconnect và AI fallback. Kiểm tra dữ liệu cuối cùng, không chỉ thông báo UI; thành viên khác chạy lại case trọng yếu.
+- [x] **P08-T09** — **[ALL]** Tổng hợp defect theo mức độ, sửa lỗi chặn luồng/quyền/tiền/tồn trước; chạy lại phần liên quan sau sửa. Ghi giới hạn chưa giải quyết, chi phí đọc/AI/FCM quan sát được và quyết định cắt phần mở rộng; chỉ chuyển P09 khi không còn lỗi chặn.
 
-P08-T07 và P08-T08 đang **IN_REVIEW** sau lượt kiểm thử tự động local ngày 2026-11-21. Xem [kết quả và đường dẫn log](../PROGRESS.md#kết-quả-p08-local).
+P08-T07 và P08-T08 đã **DONE** sau lượt chạy lại trên máy thành viên thứ hai ngày 2026-11-27 (50 unit, 46 mobile, 56 Emulator Rules/integration, benchmark 10.003 đơn và rà soát chéo mã nguồn không phát hiện lỗi chặn). Xem [biên bản máy thứ hai](../../artifacts/evidence/P08/second-machine/summary.json) và [tiến độ](../PROGRESS.md#kết-quả-p08-local).
 
 Trong đợt local, chạy `npm run benchmark:local` tại root để nạp fixture và đo qua một phiên Emulator riêng. Lệnh ghi kết quả vào `work/p08-benchmark.json`. Xem môi trường, cách đo và bảng trước/sau trong [báo cáo P08](../PHASE08_REPORT.md).
 
@@ -31,7 +31,7 @@ Trong đợt local, chạy `npm run benchmark:local` tại root để nạp fixt
 
 Dataset/script kiểm tra, báo cáo baseline–sau tối ưu, index/query plan, trace Performance Monitoring, ma trận bảo mật/regression và defect log có bằng chứng. Kết quả phải ghi môi trường và giới hạn suy luận.
 
-P08-T03 đã bổ sung hai chỉ mục cần cho phép đếm đơn và tổng COD. Lượt thử trên staging trả đủ 21 bản ghi tổng hợp qua hai trang, kiểm số đơn và tổng tiền. Còn đo số lượt đọc trên staging và review chéo. [Chỉ mục Firestore](../../artifacts/evidence/P08/staging-report-indexes.json) · [Kiểm thử phân trang API](../../artifacts/evidence/P08/staging-report-fixture.json)
+P08-T03 đã **DONE**: bổ sung hai chỉ mục đếm đơn/tổng COD, kiểm thử phân trang 21 bản ghi staging, tái lập benchmark 10.003 đơn trên máy thứ hai và đo chính xác `readOperations` phía server Firestore staging bằng `explainOptions.analyze=true` cho cả 7 nhóm truy vấn (báo cáo trang 1 tốn 23 readOps; trang 2 `includeTotals=false` tốn 1 readOp thay vì 3 readOps). [Chỉ mục Firestore](../../artifacts/evidence/P08/staging-report-indexes.json) · [Kiểm thử phân trang API](../../artifacts/evidence/P08/staging-report-fixture.json) · [Số lượt đọc Firestore staging](../../artifacts/evidence/P08/staging-read-counts.json)
 
 P08-T06 đã xác nhận SDK Android ghi bốn custom trace và Firebase Console đã nhận dữ liệu. APK chẩn đoán chạy hai trang báo cáo trên quán mẫu có 21 bản ghi tổng hợp. Đo trước/sau dùng cùng bộ mẫu local. Ca Express local xác nhận mã lỗi và mã yêu cầu khớp giữa HTTP 500 và log. [Biên bản trace](../../artifacts/evidence/P08/staging-performance.json) · [Báo cáo trước/sau](../PHASE08_REPORT.md)
 

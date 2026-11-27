@@ -1,0 +1,109 @@
+{
+  "verifiedAt": "2026-11-27T08:57:00Z",
+  "commit": "cd3bf4d",
+  "machineRole": "second-member-verification",
+  "environment": {
+    "os": "Windows 10.0.22631",
+    "node": "v22.20.0",
+    "npm": "10.9.3",
+    "jdk": "21.0.7",
+    "firebaseTools": "15.34.2",
+    "androidSdkAvailable": true,
+    "firebaseCliAuthenticated": false,
+    "ollamaInstalled": false
+  },
+  "checks": {
+    "npmCiRootAndMobile": "PASS",
+    "doctor": "PASS",
+    "seedDryRunCloudGuardFailClosed": "PASS",
+    "seedDryRunLocalEmulator": {
+      "status": "PASS",
+      "datasetId": "foodordernext-seed-v1",
+      "accounts": 8,
+      "documentCount": 40
+    },
+    "unitTests": {
+      "status": "PASS",
+      "contracts": "5/5",
+      "api": "38/38",
+      "seedAndMigration": "7/7",
+      "total": "50/50"
+    },
+    "mobileTests": {
+      "status": "PASS",
+      "suites": "8/8",
+      "tests": "46/46"
+    },
+    "mobileLint": {
+      "lintP01": "PASS",
+      "lintP02": "PASS"
+    },
+    "firebaseEmulatorSuite": {
+      "status": "PASS",
+      "mode": "isolated",
+      "tests": "56/56"
+    },
+    "benchmarkLocal": {
+      "status": "PASS",
+      "datasetVersion": "p08-benchmark-v1",
+      "totalDocuments": 11310,
+      "orders": 10003,
+      "reviews": 1001,
+      "menuItems": 279,
+      "p95Ms": {
+        "catalogTwoPages": 62.74,
+        "customerHistoryTwoPages": 199.17,
+        "merchantQueueTwoPages": 158.35,
+        "publicReviewsTwoPages": 37.15,
+        "dailyReport": 138.32,
+        "dailyReportNext": 131.69,
+        "dailyReportNextRowsOnly": 119.15,
+        "orderWriteAndListen": 20.05
+      }
+    },
+    "stagingApiHealth": {
+      "status": "PASS",
+      "endpoint": "https://foodordernext-api-staging.onrender.com/health",
+      "service": "foodordernext-api",
+      "apiVersion": "v1"
+    },
+    "releaseArtifactsChecksumMatch": {
+      "stagingTestApk": "PASS",
+      "localDebugApk": "PASS"
+    }
+  },
+  "crossReviewFiles": [
+    "firebase/firestore.rules",
+    "firebase/storage.rules",
+    "services/api/src/auth.js",
+    "services/api/src/customer.js",
+    "services/api/src/orders.js",
+    "services/api/src/orderPricing.js",
+    "services/api/src/adminOperations.js",
+    "services/api/src/catalogOperations.js",
+    "services/api/src/orderChat.js",
+    "services/api/src/outboxWorker.js",
+    "services/api/src/notificationDelivery.js",
+    "services/api/src/locationTracking.js",
+    "apps/mobile/android/app/build.gradle"
+  ],
+  "crossReviewDefectsFound": 0,
+  "remainingBlockers": [
+    "Firebase CLI authentication and project access to foodordernext-staging (required for apps:sdkconfig google-services.json, staging Firestore read counts, and staging scripts).",
+    "Render IAM role for FCM send on service account render-express-staging plus FCM_SEND_ENABLED=true on Render.",
+    "Non-DPAPI shared staging demo credentials (current accounts.dpapi is encrypted to the original Windows user account).",
+    "Group Android release signing keystore for candidate ARM/universal APK (P09-T01).",
+    "Physical Android devices for clean install, 3-device concurrent UI/FCM demo, real foreground GPS, slow-network QA, defense video and 3-person rehearsal."
+  ],
+  "evidenceFiles": [
+    "artifacts/evidence/P08/second-machine/doctor.log",
+    "artifacts/evidence/P08/second-machine/unit.log",
+    "artifacts/evidence/P08/second-machine/mobile.log",
+    "artifacts/evidence/P08/second-machine/lint-p01.log",
+    "artifacts/evidence/P08/second-machine/lint-p02.log",
+    "artifacts/evidence/P08/second-machine/emulator.log",
+    "artifacts/evidence/P08/second-machine/benchmark.log",
+    "artifacts/evidence/P08/second-machine/benchmark.json",
+    "artifacts/evidence/P08/second-machine/seed-dry-run.log"
+  ]
+}

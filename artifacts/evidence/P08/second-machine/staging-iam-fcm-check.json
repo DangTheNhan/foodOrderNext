@@ -1,0 +1,40 @@
+{
+  "projectId": "foodordernext-staging",
+  "checkedAt": "2026-11-27T09:11:36.105Z",
+  "machineRole": "second-member-verification",
+  "iam": {
+    "httpStatus": 200,
+    "renderServiceAccount": "render-express-staging@foodordernext-staging.iam.gserviceaccount.com",
+    "renderServiceAccountRoles": [
+      "roles/datastore.user",
+      "roles/firebaseauth.viewer"
+    ],
+    "hasFcmSendRole": false,
+    "currentMemberCanSetIam": false
+  },
+  "outboxRecent30": {
+    "SKIPPED:FCM_DISABLED": 30
+  },
+  "manifests": {
+    "p09-staging-demo-v1": {
+      "exists": true,
+      "shopId": "p09-staging-demo-v1-shop",
+      "documentCount": 12,
+      "rolesPresent": [
+        "customer",
+        "driver",
+        "merchant"
+      ]
+    },
+    "p08-staging-report-v1": {
+      "exists": true,
+      "shopId": "p08-staging-report-v1",
+      "count": 21
+    }
+  },
+  "requiredOwnerAction": [
+    "Grant an FCM send IAM role (e.g. roles/firebasecloudmessaging.admin or a custom role with cloudmessaging.messages.create) to render-express-staging@foodordernext-staging.iam.gserviceaccount.com on project foodordernext-staging.",
+    "Set FCM_SEND_ENABLED=true on Render service foodordernext-api-staging and redeploy/restart.",
+    "Share or rotate non-DPAPI credentials for the three p09-staging-demo-v1 accounts (or authorize creating a fresh team-shared staging demo dataset) so second-machine/multi-device Pixel_9 + Pixel_9_2 + physical phone tests can run live."
+  ]
+}

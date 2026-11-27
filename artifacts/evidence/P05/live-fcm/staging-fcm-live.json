@@ -1,0 +1,64 @@
+{
+  "projectId": "foodordernext-staging",
+  "apiBaseUrl": "https://foodordernext-api-staging.onrender.com/api/v1",
+  "checkedAt": "2026-11-27T13:07:38.267930+00:00",
+  "device": {
+    "avd": "Pixel_9",
+    "serial": "emulator-5554",
+    "apiLevel": 37,
+    "googlePlayServices": true,
+    "emulator": true
+  },
+  "result": "PASS",
+  "events": {
+    "foregroundAccept": {
+      "eventId": "uPyUPybslHWjrHmEWK4s-s2-a0",
+      "status": "SENT",
+      "lastErrorCode": null,
+      "attempts": 1,
+      "deliveredCount": 1
+    },
+    "backgroundChat": {
+      "eventId": "message-c3e9b57f9f49c77016e2b200b38880c98c00731fc47f32e8e9cc5bf822e2fe50",
+      "status": "SENT",
+      "lastErrorCode": null,
+      "attempts": 1,
+      "deliveredCount": 1
+    },
+    "coldStartPreparing": {
+      "eventId": "uPyUPybslHWjrHmEWK4s-s3-a0",
+      "status": "SENT",
+      "lastErrorCode": null,
+      "attempts": 1,
+      "deliveredCount": 1
+    }
+  },
+  "cases": [
+    {
+      "case": "Customer logged in on Pixel_9, granted POST_NOTIFICATIONS, and bound real FCM device token",
+      "status": "PASS"
+    },
+    {
+      "case": "Foreground FCM received on Pixel_9 (outbox SENT) and tapping Mở opened OrderDetail",
+      "status": "PASS"
+    },
+    {
+      "case": "Background FCM delivered with generic privacy body (no chat/PII leak) and tapping opened OrderChat",
+      "status": "PASS"
+    },
+    {
+      "case": "Cold-start FCM arrived after app swiped closed from Recents and tapping cold-launched directly to OrderDetail",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "01-fcm-foreground-alert.png",
+    "02-fcm-foreground-opened-order.png",
+    "03-fcm-background-shade.png",
+    "04-fcm-background-opened-chat.png",
+    "05-fcm-coldstart-shade.png",
+    "06-fcm-coldstart-opened-order.png"
+  ],
+  "orderId": "uPyUPybslHWjrHmEWK4s",
+  "coldStartPidBeforePush": "NONE"
+}

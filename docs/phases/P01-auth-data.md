@@ -1,6 +1,6 @@
 # P01 — Xác thực, phân quyền và dữ liệu Firebase
 
-**Trạng thái:** IN_REVIEW  
+**Trạng thái:** DONE  
 **Chủ trì:** ALL; C điều phối tích hợp  
 **Phụ thuộc:** P00 đang tiếp tục; user yêu cầu triển khai P01 local song song theo D27. Cổng FCM/perf/AI của P00 chưa được coi là đã đạt.  
 **Nguồn thống nhất:** [MASTER_PLAN](../MASTER_PLAN.md).
@@ -19,7 +19,7 @@ Tạo danh tính, quyền và hợp đồng dữ liệu dùng chung. Firebase Au
 - [x] **P01-T06** — **[C]** Viết Firestore/Storage Rules mặc định từ chối ngoài hợp đồng và test emulator. Tài liệu nhắc Admin SDK bỏ qua Rules: Express vẫn phải kiểm tra owner/role/restaurant/assignment trên từng request.
 - [x] **P01-T07** — **[B]** Chuẩn bị seed tái lập cho 1–3 quán, thực đơn, các vai trò và admin; thêm fixture COMPLETED/review để AI làm song song. Nhãn dữ liệu tổng hợp, namespace/ID kiểm soát và chặn chạy seed nhầm production.
 - [x] **P01-T08** — **[ALL]** Lập ánh xạ migration từ mã/dữ liệu cũ: trường, ID, ảnh, đơn vị VND và kiểm tra tổng. Dùng dry-run và nguồn sao lưu; nếu không có dữ liệu hợp lệ ghi rõ dùng seed. Không di chuyển mật khẩu plaintext hoặc bật dual-write.
-- [ ] **P01-T09** — **[ALL]** Kiểm thử lát cắt đăng nhập → hồ sơ → API bảo vệ → đọc Firestore; thành viên khác chạy lại setup/reset và negative test cấp quyền giả, tài khoản khóa, truy cập dữ liệu người khác.
+- [x] **P01-T09** — **[ALL]** Kiểm thử lát cắt đăng nhập → hồ sơ → API bảo vệ → đọc Firestore; thành viên khác chạy lại setup/reset và negative test cấp quyền giả, tài khoản khóa, truy cập dữ liệu người khác.
 
 ## Sản phẩm bàn giao
 
@@ -53,4 +53,4 @@ Xem [PROGRESS](../PROGRESS.md), [báo cáo P01](../PHASE01_REPORT.md) và BACKLO
 
 Ngày 2026-11-25 đã xác nhận Auth Email/Password, Firestore Standard và Rules staging. Mô phỏng đọc đơn hàng chưa đăng nhập bị từ chối. Đã tải cấu hình Android release và đối chiếu đúng app. Ngày 2026-11-26, Express qua HTTPS đã xác minh token Firebase và đọc hồ sơ Firestore. [Bằng chứng Firebase staging](../../artifacts/evidence/P01/firebase-staging.json) · [Smoke Express](../../artifacts/evidence/P09/render-staging-smoke.json)
 
-Kiểm thử SDK trên cloud đã tạo, đăng nhập và dọn tài khoản thử. Hai truy vấn ghép công khai chạy được và Rules chặn đọc đơn khi thiếu phiên hoặc hồ sơ. APK staging cài sạch, đăng nhập và khởi tạo hồ sơ qua Express. P01-T09 còn cần review ca quyền và chạy lại setup trên máy khác. [Smoke Firebase staging](../../artifacts/evidence/P01/firebase-staging-smoke.json) · [Smoke Android staging](../../artifacts/evidence/P09/android-staging-smoke.json)
+Kiểm thử SDK trên cloud đã tạo, đăng nhập và dọn tài khoản thử. Hai truy vấn ghép công khai chạy được và Rules chặn đọc đơn khi thiếu phiên hoặc hồ sơ. APK staging cài sạch, đăng nhập và khởi tạo hồ sơ qua Express. Ngày 2026-11-27, máy thành viên thứ hai đã dựng lại môi trường sạch (`npm ci`, `doctor`, `seed --dry-run`), chạy đạt 50/50 unit, 46/46 mobile, 56/56 Emulator Rules/Auth và rà soát chéo Rules/middleware quyền. [Smoke Firebase staging](../../artifacts/evidence/P01/firebase-staging-smoke.json) · [Smoke Android staging](../../artifacts/evidence/P09/android-staging-smoke.json) · [Xác nhận máy thứ hai](../../artifacts/evidence/P08/second-machine/summary.json)

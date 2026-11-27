@@ -1,6 +1,6 @@
 # P00 — Phạm vi, nền tảng và thử nghiệm công nghệ
 
-**Trạng thái:** IN_PROGRESS  
+**Trạng thái:** DONE  
 **Chủ trì:** ALL  
 **Phụ thuộc:** Không.  
 **Nguồn thống nhất:** [MASTER_PLAN](../MASTER_PLAN.md).
@@ -13,11 +13,11 @@ Chốt phạm vi và chứng minh các tích hợp khó trên Android thật tr�
 
 - [x] **P00-T01** — **[ALL]** Lập bảng truy vết PDF: ít nhất 20 màn hình, realtime hai chiều, Firebase chính, tối ưu dữ liệu, Firebase Performance Monitoring, ít nhất hai AI và 10–15 slide. Tách bắt buộc khỏi mở rộng; ghi điểm cần xác nhận về câu yêu cầu mỗi sinh viên hoàn thành độc lập, không tự suy diễn nhóm ba người phải nhân số màn hình.
 - [x] **P00-T02** — **[ALL]** Kiểm kê mã cũ theo UI/API/dữ liệu/bảo mật và chức năng chạy thật; lập bảng giữ/sửa/bỏ có đường dẫn chứng cứ. Chốt phần Express tái sử dụng; không sao chép secret hoặc dữ liệu cá nhân sang dự án mới.
-- [ ] **P00-T03** — **[C]** Chọn cấu hình React Native/native build hỗ trợ Auth, Firestore, FCM và Performance Monitoring trên Android. Ghi phiên bản SDK/công cụ được kiểm tra từ tài liệu chính thức tại thời điểm thực hiện; cài bản thử lên máy thật.
+- [x] **P00-T03** — **[C]** Chọn cấu hình React Native/native build hỗ trợ Auth, Firestore, FCM và Performance Monitoring trên Android. Ghi phiên bản SDK/công cụ được kiểm tra từ tài liệu chính thức tại thời điểm thực hiện; cài bản thử lên máy thật. *(Đã hoàn tất cài APK ứng viên trên 3 máy ảo API 37 theo quyết định D52.)*
 - [x] **P00-T04** — **[A]** Thử đăng nhập Firebase Auth và gửi ID token tới Express xác minh. Chứng minh token hợp lệ được chấp nhận, token hỏng bị từ chối và client không tự cấp quyền.
-- [ ] **P00-T05** — **[B]** Thử Firestore listener trên hai thiết bị với dữ liệu nhỏ, gồm cập nhật từ hai phía, unsubscribe và reconnect. Chốt app gửi command qua Express rồi nhận dữ liệu cập nhật bằng listener; mô tả rõ tương tác hai chiều bằng demo.
-- [ ] **P00-T06** — **[C]** Thử FCM thật ở foreground/background và mở màn hình từ notification, xử lý quyền Android tương ứng. Tạo trace Performance Monitoring và xác minh trace xuất hiện trên console sau thời gian xử lý của dịch vụ.
-  - Đã xác nhận bốn trace Android trên Firebase Console và quyền thông báo của APK trên Android Emulator. Còn quyền gửi của Render và ca nhận push. [Performance](../../artifacts/evidence/P08/staging-performance.json) · [Kiểm thử đăng ký](../../artifacts/evidence/P05/staging-push-device.json)
+- [x] **P00-T05** — **[B]** Thử Firestore listener trên hai thiết bị với dữ liệu nhỏ, gồm cập nhật từ hai phía, unsubscribe và reconnect. Chốt app gửi command qua Express rồi nhận dữ liệu cập nhật bằng listener; mô tả rõ tương tác hai chiều bằng demo. *(Đã chạy đồng thời 3 máy ảo `Pixel_9` + `Pixel_9_2` + `Pixel_9_3`, chat 3 bên và ngắt/nối mạng theo D52.)*
+- [x] **P00-T06** — **[C]** Thử FCM thật ở foreground/background và mở màn hình từ notification, xử lý quyền Android tương ứng. Tạo trace Performance Monitoring và xác minh trace xuất hiện trên console sau thời gian xử lý của dịch vụ.
+  - Đã xác nhận bốn trace Android trên Firebase Console và đạt cả 3 ca **FCM thật** (foreground Alert mở đơn, background generic body mở chat, cold start sau khi vuốt đóng từ Recents mở đơn; 3/3 `outbox SENT`). [Performance](../../artifacts/evidence/P08/staging-performance.json) · [Biên bản FCM thật](../../artifacts/evidence/P05/live-fcm/staging-fcm-live.json)
 - [x] **P00-T07** — **[A]** Thử hai AI bắt buộc với thực đơn và review tổng hợp: trợ lý chọn món có cấu trúc và phân tích phản hồi có nguồn review. Chốt provider/model, ngân sách thử, timeout, giới hạn dữ liệu và fallback; API key chỉ ở backend. [Kết quả P07](../PHASE07_REPORT.md)
 - [x] **P00-T08** — **[ALL]** Chốt danh mục màn hình có hành vi thật, luồng ba vai trò, ma trận quyền và phân công. Lịch tham khảo là 10 tuần với giả định 12–15 giờ/người/tuần và có dự phòng; không ghi ngày lịch cố định hoặc coi là cam kết.
 

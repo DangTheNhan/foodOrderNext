@@ -1,0 +1,160 @@
+{
+  "projectId": "foodordernext-staging",
+  "database": "(default)",
+  "region": "asia-southeast1",
+  "checkedAt": "2026-11-27T09:12:29.253Z",
+  "method": "Firestore REST runQuery/runAggregationQuery with explainOptions.analyze=true (server-side billable readOperations)",
+  "result": "PASS",
+  "queries": {
+    "shopsPage": {
+      "status": "PASS",
+      "resultsReturned": 1,
+      "readOperations": 1,
+      "executionDuration": "0.018012s",
+      "indexesUsed": [
+        {
+          "queryScope": "Collection",
+          "properties": "(active ASC, name ASC, __name__ ASC)"
+        }
+      ]
+    },
+    "catalogMenuPage": {
+      "status": "PASS",
+      "resultsReturned": 3,
+      "readOperations": 3,
+      "executionDuration": "0.013076s",
+      "indexesUsed": [
+        {
+          "queryScope": "Collection",
+          "properties": "(shopId ASC, active ASC, nameKey ASC, __name__ ASC)"
+        }
+      ]
+    },
+    "customerHistoryPage": {
+      "status": "PASS",
+      "resultsReturned": 5,
+      "readOperations": 5,
+      "executionDuration": "0.022365s",
+      "indexesUsed": [
+        {
+          "queryScope": "Collection",
+          "properties": "(customerUid ASC, createdAt DESC, __name__ DESC)"
+        }
+      ]
+    },
+    "merchantQueuePage": {
+      "status": "PASS",
+      "resultsReturned": 5,
+      "readOperations": 5,
+      "executionDuration": "0.003953s",
+      "indexesUsed": [
+        {
+          "queryScope": "Collection",
+          "properties": "(shopId ASC, status ASC, createdAt ASC, __name__ ASC)"
+        }
+      ]
+    },
+    "driverTripsPage": {
+      "status": "PASS",
+      "resultsReturned": 0,
+      "readOperations": 1,
+      "executionDuration": "0.005177s",
+      "indexesUsed": [
+        {
+          "queryScope": "Collection",
+          "properties": "(driverUid ASC, status ASC, updatedAt DESC, __name__ DESC)"
+        },
+        {
+          "queryScope": "Collection",
+          "properties": "(driverUid ASC, status ASC, updatedAt DESC, __name__ DESC)"
+        },
+        {
+          "queryScope": "Collection",
+          "properties": "(driverUid ASC, status ASC, updatedAt DESC, __name__ DESC)"
+        },
+        {
+          "queryScope": "Collection",
+          "properties": "(driverUid ASC, status ASC, updatedAt DESC, __name__ DESC)"
+        }
+      ]
+    },
+    "publicReviewsPage": {
+      "status": "PASS",
+      "resultsReturned": 3,
+      "readOperations": 3,
+      "executionDuration": "0.015818s",
+      "indexesUsed": [
+        {
+          "queryScope": "Collection",
+          "properties": "(shopId ASC, verifiedCompletedOrder ASC, createdAt DESC, __name__ DESC)"
+        }
+      ]
+    },
+    "dailyReport": {
+      "fixtureShopId": "p08-staging-report-v1",
+      "day": "2026-01-02",
+      "timezone": "Asia/Ho_Chi_Minh",
+      "page1RowsQuery": {
+        "status": "PASS",
+        "resultsReturned": 21,
+        "readOperations": 21,
+        "executionDuration": "0.033686s",
+        "indexesUsed": [
+          {
+            "queryScope": "Collection",
+            "properties": "(shopId ASC, createdAt DESC, __name__ DESC)"
+          }
+        ]
+      },
+      "page1CreatedCountAgg": {
+        "status": "PASS",
+        "aggregateFields": {
+          "createdCount": 21
+        },
+        "readOperations": 1,
+        "executionDuration": "0.024064s",
+        "indexesUsed": [
+          {
+            "queryScope": "Collection",
+            "properties": "(shopId ASC, createdAt ASC, __name__ ASC)"
+          }
+        ]
+      },
+      "page1SettledAgg": {
+        "status": "PASS",
+        "aggregateFields": {
+          "completedCount": 21,
+          "codVnd": 1365000
+        },
+        "readOperations": 1,
+        "executionDuration": "0.020683s",
+        "indexesUsed": [
+          {
+            "queryScope": "Collection",
+            "properties": "(paymentStatus ASC, shopId ASC, status ASC, completedAt ASC, codCollectedVnd ASC, __name__ ASC)"
+          }
+        ]
+      },
+      "page2RowsOnlyQuery": {
+        "status": "PASS",
+        "resultsReturned": 1,
+        "readOperations": 1,
+        "executionDuration": "0.024949s",
+        "indexesUsed": [
+          {
+            "queryScope": "Collection",
+            "properties": "(shopId ASC, createdAt DESC, __name__ DESC)"
+          }
+        ]
+      },
+      "comparison": {
+        "page1WithTotalsReadOps": 23,
+        "page2WithTotalsReadOps": 3,
+        "page2RowsOnlyReadOps": 1,
+        "savedAggregateQueriesPerNextPage": 2,
+        "savedReadOpsPerNextPageAtFixtureSize": 2,
+        "note": "Firestore bills 1 read operation per up to 1,000 index entries scanned in an aggregation query, plus minimum 1 read when 0 documents match. Skipping both aggregates on subsequent pages (includeTotals=false) saves 2 aggregation queries and >=2 billable read operations per page."
+      }
+    }
+  }
+}

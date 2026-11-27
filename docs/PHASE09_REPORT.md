@@ -1,12 +1,14 @@
 # Bàn giao FoodOrderNext v1.8
 
-Ngày **2026-11-25**. Hồ sơ này ghi bản chạy thử local và các ca cần ký nghiệm thu cho staging.
+Ngày **2026-11-27**. Hồ sơ này ghi bản ứng viên staging (`arm64-v8a` + `x86_64`), bản chạy thử local và các ca cần ký nghiệm thu cuối trên thiết bị vật lý.
 
 ## Tài liệu và tệp dùng khi bảo vệ
 
 - [Slide bảo vệ 12 trang](../artifacts/releases/FoodOrderNext-BaoVe-v1.8-local.pptx)
+- [Video toàn luồng 3 máy ảo staging (3,34 MB, có gắn nhãn `EMULATED_GPS`)](../artifacts/releases/FoodOrderNext-3Device-Staging-Demo.mp4) · [Biên bản 3 máy ảo đồng thời `Pixel_9` + `Pixel_9_2` + `Pixel_9_3` (9/9 PASS)](../artifacts/evidence/P09/three-device/three-device-staging-result.json) · [Biên bản FCM thật foreground/background/cold start (3/3 SENT)](../artifacts/evidence/P05/live-fcm/staging-fcm-live.json)
+- [APK ứng viên staging (`arm64-v8a, x86_64`)](../artifacts/releases/FoodOrderNext-v1.8-staging-arm64-x86_64-candidate.apk) · [Phiếu checksum và chữ ký bản ứng viên](../artifacts/evidence/P09/android-staging-candidate-receipt.json) · [Kiểm thử đồng thời 2 máy ảo `Pixel_9` + `Pixel_9_2` (10/10 PASS)](../artifacts/evidence/P09/second-machine/two-device/two-device-staging-result.json)
 - [APK debug x86_64 cho Android Emulator](../artifacts/releases/FoodOrderNext-v1.8-local-x86_64-debug.apk) · [Phiếu checksum và chữ ký](../artifacts/evidence/P09/android-debug-receipt.json) · [Biên bản cài sạch local](../artifacts/evidence/P09/clean-install-local.json)
-- [APK staging x86_64 dùng thử](../artifacts/releases/FoodOrderNext-v1.8-staging-x86_64-test.apk) · [Phiếu checksum và chữ ký thử nghiệm](../artifacts/evidence/P09/android-staging-test-receipt.json) · [Biên bản cài sạch staging](../artifacts/evidence/P09/android-staging-smoke.json) · [Luồng ba vai trò lần lượt trên máy ảo](../artifacts/evidence/P09/android-staging-cod-journey.json)
+- [APK staging x86_64 dùng thử trước đó](../artifacts/releases/FoodOrderNext-v1.8-staging-x86_64-test.apk) · [Phiếu checksum và chữ ký thử nghiệm](../artifacts/evidence/P09/android-staging-test-receipt.json) · [Biên bản cài sạch staging](../artifacts/evidence/P09/android-staging-smoke.json) · [Luồng ba vai trò lần lượt trên máy ảo](../artifacts/evidence/P09/android-staging-cod-journey.json)
 - [Chạy local và dùng dữ liệu demo](SETUP_LOCAL.md)
 - [Kiến trúc](ARCHITECTURE.md) · [Mô hình dữ liệu](DATA_MODEL.md) · [Hợp đồng API](API_CONTRACT.md) · [Kế hoạch kiểm thử](TEST_PLAN.md)
 - [Hai tính năng AI và lượt chạy Ollama](PHASE07_REPORT.md) · [Benchmark trên 10.003 đơn](PHASE08_REPORT.md) · [Trạng thái từng task](BACKLOG.csv)
@@ -63,7 +65,7 @@ Demo local dùng dữ liệu tổng hợp trong phiên Emulator riêng. Để c�
 
 ## Kiểm tra APK ứng viên
 
-APK local đã được cài trên một Android Emulator sau khi xóa dữ liệu app. Phiếu build có SHA-256 và manifest mã nguồn vì thư mục dự án hiện chưa có commit Git. APK này cần Metro, Express và Firebase Emulator. Kiểm tra bước tác vụ Google Services của release xác nhận build dừng khi thiếu cấu hình Firebase staging. [Log preflight](../artifacts/evidence/P09/release-preflight.log)
+APK ứng viên staging (`arm64-v8a` + `x86_64`, commit `cd3bf4d`, SHA-256 `d2a0d5959181f41b48f03fcf0bee3187205f7226e7b269c52321f99be8ce3042`) đã được build và ký xác minh bằng `apksigner verify` (keystore lưu ngoài git tại `work/signing/`), cài sạch trên hai máy ảo `Pixel_9` + `Pixel_9_2` (API 37) và chạy đạt **10/10 ca** luồng đồng thời (đặt đơn COD 35.000đ, hàng đợi live, nhận đơn live, chat 2 chiều live, gán tài xế, đổi tài khoản sau `pm clear`, quyền vị trí từ chối/cấp + GPS mô phỏng gắn nhãn `EMULATED_GPS_ADB_GEO_FIX`, thu COD + đánh giá live, từ chối quyền thông báo). [Phiếu bản ứng viên](../artifacts/evidence/P09/android-staging-candidate-receipt.json) · [Biên bản 2 máy ảo](../artifacts/evidence/P09/second-machine/two-device/two-device-staging-result.json) · [Log preflight](../artifacts/evidence/P09/release-preflight.log)
 
 1. Ghi commit hoặc tag, version, application ID và SHA-256 APK. Dùng bản staging đã ký và API HTTPS cùng Firebase project.
 2. Thành viên khác cài mới trên thiết bị thử, quay lại màn đăng nhập sau khi đổi tài khoản và thử từ chối quyền thông báo, vị trí.
